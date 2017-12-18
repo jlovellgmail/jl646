@@ -43,6 +43,9 @@
     letter-spacing: .01em;
 
 }
+.pageContent.emailmarketing {
+	max-width: 600px;
+}
 .itemContent {
 	letter-spacing: .01em;
 }
@@ -62,6 +65,9 @@
 }
 .pageContent .spacersmall {
 	height: 20px;
+}
+.pageContent .spacerextrasmall {
+	height: 10px;
 }
 .aspectratio {
 	position: relative;
@@ -256,6 +262,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin: 20px;
 }
 
 

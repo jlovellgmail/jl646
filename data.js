@@ -37,54 +37,61 @@ function makedata(){
 		var spacer = div("spacer");
 		var spacermedium = div("spacermedium");
 		var spacersmall = div("spacersmall");
+		var spacerextrasmall = div("spacerextrasmall");
 		contentlist.webdesign = ""
 
 
 			+ img("images/page_images/visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
-			+ spacer
-			+ img("images/page_images/visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
-			+ spacer
-			+ img("images/page_images/visual_20171221_Academy_DigitalLastMinuteDeals.gif")
-			+ spacer
 
 
-			+ img("images/page_images/visual_20171212_lifestyle_GreenMonday_DailyDeals.jpg")
+			+ spacer
+			+ img("images/page_images/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
+			+ spacerextrasmall
+			+ img("images/page_images/visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
+
+
+
 			+ spacer
 			+ img("images/page_images/visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
-			+ spacersmall
+			+ spacerextrasmall
 			+ img("images/page_images/visual_20171211_lifestyle_GreenMonday_PM_SiteWide_01.jpg")
-			+ spacersmall
+			+ spacerextrasmall
 			+ img("images/page_images/visual_20171211_lifestyle_GreenMonday_PM_SiteWide_03.jpg")
+			+ spacerextrasmall
+			+ img("images/page_images/visual_20171212_lifestyle_GreenMonday_DailyDeals.jpg")
+
+
 			+ spacer
-
-
-			+ img("images/page_images/visual_20171219_Lifestyle_BestOf2017.jpg")
-			+ spacer
-			+ img("images/page_images/visual_20171219_Academy_BestOf2017.jpg")
-			+ spacer
-
-
-
 			+ img("images/page_images/visual_20171113_lifestyle_doorbusters_day_1.jpg")
+
+
 			+ spacer
 			+ img("images/page_images/visual_20171122_lifestyle_black_friday_sitewide.jpg")
-			+ spacer
 
 
 
-			+ img("images/page_images/visual_20171127_PM_Academy_cyber_monday.jpg")
 			+ spacer
 			+ img("images/page_images/visual_20171201_Lifestyle_cyber_week.gif")
 			+ spacer
 			+ img("images/page_images/visual_20171202_Lifestyle_cyber_week.jpg")
+
+
+
 			+ spacer
-
-
-
-			+ img("images/page_images/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
+			+ img("images/page_images/visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
 			+ spacer
-			+ img("images/page_images/visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
+			+ img("images/page_images/visual_20171221_Academy_DigitalLastMinuteDeals.gif")
 
+
+			+ spacer
+			+ img("images/page_images/visual_20171219_Lifestyle_BestOf2017.jpg")
+			+ spacer
+			+ img("images/page_images/visual_20171219_Academy_BestOf2017.jpg")
+
+
+
+			+ spacer
+			+ img("images/page_images/visual_20171127_PM_Academy_cyber_monday.jpg")
 
 
 
@@ -130,16 +137,19 @@ function makedata(){
 			+ img("images/page_images/fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
-			+ img("images/page_images/fayum_1800.jpg")
 			+ img("images/page_images/fayum.jpg")
+			+ img("images/page_images/fayum_1800.jpg")
 			+ "<p class='caption'>Scientific Illustration published by The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
 			//+ caption("Scientific Illustration published by The American Museum of Natural History, NYC")
+
+			/*
 			+ spacer
 			+ img("images/page_images/bentshape.jpg")
 			+ caption("Charcoal on paper")
 			+ spacer
 			+ img("images/page_images/torso.jpg")
 			+ caption("Ink and graphite on paper")
+			*/
 			/*
 			+ spacer
 			+ img("images/page_images/parabola.jpg")
@@ -199,7 +209,8 @@ function makedata(){
 			+ text("Art Direction. I took finalized headline and body copy, and designed and executed all visual aspects including photo selection, visual treatment and typography. I worked closely with the copywriter and creative director to ensure the ads stayed on-strategy and spoke in the intended voice.", " ", "margin-top:2px;")
 
 			+ spacersmall
-			+ "<span style='font-weight:bold'>Copywriter:</span> <a target='_blank' href='https://www.jessbrophy.com/#/health-warrior/'>Jessica Brophy</a>"
+			//+ "<span style='font-weight:bold'>Copywriter:</span> <a target='_blank' href='https://www.jessbrophy.com/#/health-warrior/'>Jessica Brophy</a>"
+			+ "<span style='font-weight:bold'>Copywriter:</span> Jessica Brophy"
 
 			+ spacer
 			
@@ -232,10 +243,9 @@ function makedata(){
 			// + img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
 			+ img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
 			
-			+ spacer			
-
+			// + spacer
 			// + img("images/page_images/bags_SFclutch_1800.jpg")
-			+ img("images/page_images/bags_SF-Clutch-v2_1800.jpg")
+			//+ img("images/page_images/bags_SF-Clutch-v2_1800.jpg")
 
 			+ spacer
 			+ img("images/page_images/bags_grid.jpg", "darkenImage")
@@ -271,6 +281,8 @@ function makedata(){
 			+ spacermedium
 			+ img("images/page_images/event_aramark.jpg")
 			//-------------------------
+
+			/*
 			+ spacer
 			+ text("Hershey's BlogHer Conference Suites 2012", "heading")
 			+ text("Floor-to-ceiling environmental graphics.")
@@ -288,6 +300,9 @@ function makedata(){
 			+ img("images/page_images/event_blogher2012_wallD_detail_1500.jpg")
 			+ spacer
 			+ img("images/page_images/event_blogher2012_wallE_2000.jpg")
+			*/
+
+
 			;
 		contentlist.oysters = ""
 			+ text("The problem: ", "heading")
@@ -338,9 +353,13 @@ function makedata(){
 		contentlist.other = ""
 			+ img("images/page_images/raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
+
+			/*
 			+ spacer
 			+ img("images/page_images/shirt_front.jpg")
 			+ caption("MAGA")
+			*/
+			
 			;
 		contentlist.rd = ""
 			+ img("images/page_images/keyart_vegucated.jpg")
@@ -373,9 +392,9 @@ function makedata(){
 		//------------------------------------
 		add(
 			"th_itsfinallyhere.jpg"
-			,"Visual Design"
-			,"visualdesign"
-			,"Visual Design"
+			,"Email Marketing"
+			,"emailmarketing"
+			,"Email Marketing"
 			,""
 			,contentlist.webdesign
 		);
@@ -409,6 +428,7 @@ function makedata(){
 			,""
 			,contentlist.event
 		);
+		/*
 		add(
 			"titleist_th.jpg"
 			,"Brochure"
@@ -417,6 +437,7 @@ function makedata(){
 			,"Titleist"
 			,contentlist.titleist
 		);
+		*/
 		add(
 			
 			//"gp_th.jpg"
