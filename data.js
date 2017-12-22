@@ -392,9 +392,9 @@ function makedata(){
 		//------------------------------------
 		add(
 			"th_itsfinallyhere.jpg"
-			,"Email Marketing"
+			,"Email Design"
 			,"emailmarketing"
-			,"Email Marketing"
+			,"Email Design"
 			,""
 			,contentlist.webdesign
 		);
