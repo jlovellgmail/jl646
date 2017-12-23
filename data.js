@@ -46,6 +46,11 @@ function makedata(){
 
 
 			+ spacer
+			+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
+
+
+
+			+ spacer
 			+ img(image_folder + "visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
 			+ spacerextrasmall
 			+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
@@ -89,6 +94,9 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "visual_20171219_Academy_BestOf2017.jpg")
 
+
+			+ spacer
+			+ img(image_folder + "visual_20171223_Lifestyle_Christmas_02.jpg")
 
 
 			+ spacer
