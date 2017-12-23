@@ -27,6 +27,7 @@ function getdata(){
 
 function makeitems(){
 	// create thumbnails
+	var th_folder = "/images/";
 	var items = 
 		d3.select(".workbody .content")
 		.selectAll(".item")
@@ -43,7 +44,7 @@ function makeitems(){
 		;
 	aspect
 		.append("div").attr("class", "image")
-		.append("img").attr("src", function(d){ return "images/"+d.image; })
+		.append("img").attr("src", function(d){ return th_folder+d.image; })
 		;
 	aspect
 		.append("div").attr("class", "container-abs")

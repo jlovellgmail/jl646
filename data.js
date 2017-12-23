@@ -38,80 +38,81 @@ function makedata(){
 		var spacermedium = div("spacermedium");
 		var spacersmall = div("spacersmall");
 		var spacerextrasmall = div("spacerextrasmall");
+		var image_folder = "/images/page_images/";
 		contentlist.webdesign = ""
 
 
-			+ img("images/page_images/visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
+			+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
 
 
 			+ spacer
-			+ img("images/page_images/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
+			+ img(image_folder + "visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
 			+ spacerextrasmall
-			+ img("images/page_images/visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
+			+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
 
 
 
 			+ spacer
-			+ img("images/page_images/visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
+			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
 			+ spacerextrasmall
-			+ img("images/page_images/visual_20171211_lifestyle_GreenMonday_PM_SiteWide_01.jpg")
+			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_01.jpg")
 			+ spacerextrasmall
-			+ img("images/page_images/visual_20171211_lifestyle_GreenMonday_PM_SiteWide_03.jpg")
+			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_03.jpg")
 			+ spacerextrasmall
-			+ img("images/page_images/visual_20171212_lifestyle_GreenMonday_DailyDeals.jpg")
+			+ img(image_folder + "visual_20171212_lifestyle_GreenMonday_DailyDeals.jpg")
 
 
 			+ spacer
-			+ img("images/page_images/visual_20171113_lifestyle_doorbusters_day_1.jpg")
+			+ img(image_folder + "visual_20171113_lifestyle_doorbusters_day_1.jpg")
 
 
 			+ spacer
-			+ img("images/page_images/visual_20171122_lifestyle_black_friday_sitewide.jpg")
-
-
-
-			+ spacer
-			+ img("images/page_images/visual_20171201_Lifestyle_cyber_week.gif")
-			+ spacer
-			+ img("images/page_images/visual_20171202_Lifestyle_cyber_week.jpg")
+			+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
 
 
 
 			+ spacer
-			+ img("images/page_images/visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
+			+ img(image_folder + "visual_20171201_Lifestyle_cyber_week.gif")
 			+ spacer
-			+ img("images/page_images/visual_20171221_Academy_DigitalLastMinuteDeals.gif")
-
-
-			+ spacer
-			+ img("images/page_images/visual_20171219_Lifestyle_BestOf2017.jpg")
-			+ spacer
-			+ img("images/page_images/visual_20171219_Academy_BestOf2017.jpg")
+			+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
 
 
 
 			+ spacer
-			+ img("images/page_images/visual_20171127_PM_Academy_cyber_monday.jpg")
+			+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
+			+ spacer
+			+ img(image_folder + "visual_20171221_Academy_DigitalLastMinuteDeals.gif")
+
+
+			+ spacer
+			+ img(image_folder + "visual_20171219_Lifestyle_BestOf2017.jpg")
+			+ spacer
+			+ img(image_folder + "visual_20171219_Academy_BestOf2017.jpg")
 
 
 
 			+ spacer
-			//+ div("containImage", img("images/page_images/visual_marketing_email.jpg", "dropshadow", "width:69%"))
-			+ div("", img("images/page_images/visual_marketing_email.jpg", " ", "width:69%;"))
+			+ img(image_folder + "visual_20171127_PM_Academy_cyber_monday.jpg")
+
+
+
+			+ spacer
+			//+ div("containImage", img(image_folder + "visual_marketing_email.jpg", "dropshadow", "width:69%"))
+			+ div("", img(image_folder + "visual_marketing_email.jpg", " ", "width:69%;"))
 
 
 			/*
 			+ spacer
-			+ img("images/page_images/web_landing-page_1800.jpg", "dropshadow")
+			+ img(image_folder + "web_landing-page_1800.jpg", "dropshadow")
 			+ caption("Landing page, Virgil James")
 			+ spacer
-			+ img("images/page_images/icons.jpg", "darkenImage")
+			+ img(image_folder + "icons.jpg", "darkenImage")
 			+ caption("App icons, Illumina BaseSpace app store")
 			+ spacer
 			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
 			+ spacer
-			+ img("images/page_images/developer-stats.jpg", "dropshadow")
+			+ img(image_folder + "developer-stats.jpg", "dropshadow")
 			+ caption("Analytics dashboard, Illumina BaseSpace")
 			+ spacer
 			+ '<div class="aspectratio piechart"><iframe src="https://player.vimeo.com/video/168895922?autoplay=1&loop=1&autopause=0" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
@@ -121,43 +122,43 @@ function makedata(){
 
 			;
 		contentlist.titleist = ""
-			+ img("images/page_images/titleist.jpg")
+			+ img(image_folder + "titleist.jpg")
 			;
 		contentlist.flowers = ""
-			+ img("images/page_images/flowers_1600.jpg")
+			+ img(image_folder + "flowers_1600.jpg")
 			+ text("2017, colored pencil on paper")
 			;
 		contentlist.drawings = ""
-			+ img("images/page_images/flowers_1600.jpg")
+			+ img(image_folder + "flowers_1600.jpg")
 			+ caption("Colored pencil on paper")
 			+ spacer
-			+ img("images/page_images/smith.jpg")
+			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
 			+ spacer
-			+ img("images/page_images/fallingwater.jpg")
+			+ img(image_folder + "fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
-			+ img("images/page_images/fayum.jpg")
-			+ img("images/page_images/fayum_1800.jpg")
+			+ img(image_folder + "fayum.jpg")
+			+ img(image_folder + "fayum_1800.jpg")
 			+ "<p class='caption'>Scientific Illustration published by The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
 			//+ caption("Scientific Illustration published by The American Museum of Natural History, NYC")
 
 			/*
 			+ spacer
-			+ img("images/page_images/bentshape.jpg")
+			+ img(image_folder + "bentshape.jpg")
 			+ caption("Charcoal on paper")
 			+ spacer
-			+ img("images/page_images/torso.jpg")
+			+ img(image_folder + "torso.jpg")
 			+ caption("Ink and graphite on paper")
 			*/
 			/*
 			+ spacer
-			+ img("images/page_images/parabola.jpg")
+			+ img(image_folder + "parabola.jpg")
 			+ caption("Charcoal on paper, 24.7 x 40 inches")
 			*/
 			;
 		contentlist.gp = ""
-			+ img("images/page_images/gp_eye-170912.jpg")
+			+ img(image_folder + "gp_eye-170912.jpg")
 			+ spacer
 			+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 			+ spacer
@@ -165,39 +166,39 @@ function makedata(){
 			/*
 			+ '<img class="darkenImage" style="width:600px;" src="images/page_images/gp_targethorse.jpg" onclick="blowup(this.src)">'
 			*/
-			+ img("images/page_images/gp_horse-170912.jpg")
+			+ img(image_folder + "gp_horse-170912.jpg")
 			+ spacermedium
-			+ img("images/page_images/gp_targethorse.jpg", "darkenImage", "width:100%;")
+			+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;")
 			+ spacermedium
 			+ text("Stochastic process", "heading")
 			+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
 			+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
 			+ spacermedium
-			+ img("images/page_images/gp_cat-170912.jpg")
+			+ img(image_folder + "gp_cat-170912.jpg")
 			+ spacermedium
 
 			/*
 			+ '<div class="aspectratio hand"><iframe src="https://player.vimeo.com/video/169456761?autoplay=1&loop=1&autopause=0" width="640" height="760" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
 			*/
 
-			+ img("images/page_images/gp_hand-170912.jpg")
+			+ img(image_folder + "gp_hand-170912.jpg")
 			/*
 			+ spacer
-			+ img("images/page_images/gp_woman.jpg")
+			+ img(image_folder + "gp_woman.jpg")
 			*/
 
 			+ spacer
-			+ img("images/page_images/gp_camera-170912.jpg")
+			+ img(image_folder + "gp_camera-170912.jpg")
 			+ spacer
 			
 			/*
-			+ img("images/page_images/gp_triangles.png")
+			+ img(image_folder + "gp_triangles.png")
 			+ spacer
 			*/
 
-			+ img("images/page_images/gp_1211080-230.best.1009.fullscreen_crop_945.jpg")
+			+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg")
 			+ spacer
-			+ img("images/page_images/gp_1211080-230.best.1009.fullscreen_target_945.jpg")
+			+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg")
 			+ spacer
 			+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
 			+ caption("Casting lines with genetic programs")
@@ -214,19 +215,19 @@ function makedata(){
 
 			+ spacer
 			
-			+ img("images/page_images/ad_set.jpg")
+			+ img(image_folder + "ad_set.jpg")
 			+ spacer
-			+ img("images/page_images/ad_startsmart.jpg")
+			+ img(image_folder + "ad_startsmart.jpg")
 			+ spacer
-			+ img("images/page_images/ad_secondwind.jpg")
+			+ img(image_folder + "ad_secondwind.jpg")
 			+ spacer
-			+ img("images/page_images/ad_theonly.jpg")
+			+ img(image_folder + "ad_theonly.jpg")
 			+ spacer
-			+ img("images/page_images/ad_onlysit.jpg")
+			+ img(image_folder + "ad_onlysit.jpg")
 			+ spacer
-			+ img("images/page_images/ad_earlycomp1.jpg")
+			+ img(image_folder + "ad_earlycomp1.jpg")
 			+ spacer
-			+ img("images/page_images/ad_headlines_1500.jpg")
+			+ img(image_folder + "ad_headlines_1500.jpg")
 			+ caption("Exploring line break variations")
 			;
 		contentlist.bags = ""
@@ -235,27 +236,27 @@ function makedata(){
 
 			+ spacer
 			
-			//+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
-			+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
+			//+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
+			+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
 
 			+ spacer
 			
-			// + img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
-			+ img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
+			// + img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
+			+ img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
 			
 			// + spacer
-			// + img("images/page_images/bags_SFclutch_1800.jpg")
-			//+ img("images/page_images/bags_SF-Clutch-v2_1800.jpg")
+			// + img(image_folder + "bags_SFclutch_1800.jpg")
+			//+ img(image_folder + "bags_SF-Clutch-v2_1800.jpg")
 
 			+ spacer
-			+ img("images/page_images/bags_grid.jpg", "darkenImage")
+			+ img(image_folder + "bags_grid.jpg", "darkenImage")
 			/*
 			+ spacer
-			+ img("images/page_images/bags_IMG_8892_1200.jpg")
+			+ img(image_folder + "bags_IMG_8892_1200.jpg")
 			+ spacer
-			+ img("images/page_images/bags_2016-12-08-13.04.20_rt2_50_q9_1200.jpg")
+			+ img(image_folder + "bags_2016-12-08-13.04.20_rt2_50_q9_1200.jpg")
 			+ spacer
-			+ img("images/page_images/bags_2016-11-28-13.21.43---drawstring-top-edge_1200.jpg")
+			+ img(image_folder + "bags_2016-11-28-13.21.43---drawstring-top-edge_1200.jpg")
 			*/
 			;
 		contentlist.event = ""
@@ -263,23 +264,23 @@ function makedata(){
 			+ text("Hershey's BlogHer Conference Suites 2010", "heading")
 			+ text("Floor-to-ceiling environmental graphics.")
 			+ spacermedium
-			+ img("images/page_images/smores2.jpg")
+			+ img(image_folder + "smores2.jpg")
 			+ spacer
-			+ img("images/page_images/event_forest.jpg")
+			+ img(image_folder + "event_forest.jpg")
 			//-------------------------
 			+ spacer
 			+ text("Hershey's Easter Event", "heading")
 			+ text("Step and repeat, kiosks and stage backdrop.")
 			+ spacermedium
-			+ img("images/page_images/hersheys_double.jpg")
+			+ img(image_folder + "hersheys_double.jpg")
 			+ spacer
-			+ img("images/page_images/hersheys_stage.jpg")
+			+ img(image_folder + "hersheys_stage.jpg")
 			//-------------------------
 			+ spacer
 			+ text("Aramark Guest Chef Event", "heading")
 			+ text("Entrance and sponsor banners.")
 			+ spacermedium
-			+ img("images/page_images/event_aramark.jpg")
+			+ img(image_folder + "event_aramark.jpg")
 			//-------------------------
 
 			/*
@@ -287,19 +288,19 @@ function makedata(){
 			+ text("Hershey's BlogHer Conference Suites 2012", "heading")
 			+ text("Floor-to-ceiling environmental graphics.")
 			+ spacermedium
-			+ img("images/page_images/event_perspectivethreewalls.png")
+			+ img(image_folder + "event_perspectivethreewalls.png")
 			+ spacer
-			+ img("images/page_images/event_rightwall.jpg")
+			+ img(image_folder + "event_rightwall.jpg")
 			+ spacer
-			+ img("images/page_images/event_wallgraphic_door.jpg")
+			+ img(image_folder + "event_wallgraphic_door.jpg")
 			+ spacer
-			+ img("images/page_images/event_wall_beach.jpg")
+			+ img(image_folder + "event_wall_beach.jpg")
 			+ spacer
-			+ img("images/page_images/event_blogher2012_wallD_2000.jpg")
+			+ img(image_folder + "event_blogher2012_wallD_2000.jpg")
 			+ spacer
-			+ img("images/page_images/event_blogher2012_wallD_detail_1500.jpg")
+			+ img(image_folder + "event_blogher2012_wallD_detail_1500.jpg")
 			+ spacer
-			+ img("images/page_images/event_blogher2012_wallE_2000.jpg")
+			+ img(image_folder + "event_blogher2012_wallE_2000.jpg")
 			*/
 
 
@@ -315,23 +316,23 @@ function makedata(){
 			+ text("The first major challenge was the size of the data to be visualized. In these networks a node represents a slice of the genome, and an edge represents a relationship between those two slices. The shear interconnectedness of the network, with over 50,000 edges, was so dense that it appeared to be a solid mass.")
 
 			+ spacermedium
-			+ img("images/page_images/oysters_network-1.jpg")
+			+ img(image_folder + "oysters_network-1.jpg")
 			/*
-			+ img("images/page_images/oysters_network-2.jpg")
+			+ img(image_folder + "oysters_network-2.jpg")
 			*/
 			+ spacer
 			+ "<p>The first version of the tool was named <span style='font-style:italic;'>Permissive</span> because of the extreme number of connections - we chose to use the most permissive thresholds in generating the network. The task was then to create interactive tools that allowed the researchers to \"dissolve\" edges in order to isolate small structures within the network that persisted under certain conditions. These structures would signify a special evolutionary relationship shared by a group of genes.</p>"
 			+ spacer
 			+ '<div class="aspectratio permissive"><iframe src="https://player.vimeo.com/video/233454716?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 			+ spacermedium
-			+ img("images/page_images/oysters_network-2_crop-1.jpg")
+			+ img(image_folder + "oysters_network-2_crop-1.jpg")
 
 			
 
 
 
 			/*
-			+ img("images/page_images/oysters_perspectives.jpg")
+			+ img(image_folder + "oysters_perspectives.jpg")
 			+ div("caption credit", 'Credit: Emok via <a href="https://commons.wikimedia.org/wiki/File%3AFirst_angle_projection.svg">Wikimedia Commons</a>')
 			*/
 			/*
@@ -340,36 +341,36 @@ function makedata(){
 			*/
 
 			+ spacer
-			//+ img("images/page_images/oysters_slider.gif")
+			//+ img(image_folder + "oysters_slider.gif")
 			//+ '<iframe src="https://player.vimeo.com/video/170709062?autoplay=1&amp;loop=1&amp;autopause=0" width="640" height="88" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-			+ img("images/page_images/oysters_oysters - Screen shot 2012-09-10 at 3.53.03 AM.jpg")
+			+ img(image_folder + "oysters_oysters - Screen shot 2012-09-10 at 3.53.03 AM.jpg")
 			+ spacermedium
-			+ img("images/page_images/oysters2.jpg")
+			+ img(image_folder + "oysters2.jpg")
 			+ spacermedium
-			+ img("images/page_images/oysters1.jpg")
+			+ img(image_folder + "oysters1.jpg")
 			+ spacermedium
-			+ img("images/page_images/oysters_2.jpg")
+			+ img(image_folder + "oysters_2.jpg")
 			;
 		contentlist.other = ""
-			+ img("images/page_images/raytrace.jpg")
+			+ img(image_folder + "raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
 
 			/*
 			+ spacer
-			+ img("images/page_images/shirt_front.jpg")
+			+ img(image_folder + "shirt_front.jpg")
 			+ caption("MAGA")
 			*/
 			
 			;
 		contentlist.rd = ""
-			+ img("images/page_images/keyart_vegucated.jpg")
+			+ img(image_folder + "keyart_vegucated.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
 			+ spacer
-			+ img("images/page_images/keyart_rd_1600.jpg")
+			+ img(image_folder + "keyart_rd_1600.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
 			/*
 			+ spacer
-			+ img("images/page_images/keyart_skinnydip.jpg")
+			+ img(image_folder + "keyart_skinnydip.jpg")
 			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			*/
 			;
