@@ -2,6 +2,9 @@ cout = console.log;
 var pagename = "project.html";
 var keyname = "project";
 var pi = undefined;
+var th_folder = "/images/";
+var datafile = "http://jl646.com/test/data.js";
+
 
 
 // get data
@@ -12,7 +15,7 @@ function getdata(){
 		
 		// for local testing
 		//$.getScript('data.js', function()
-		$.getScript('http://jl646.com/data.js', function()
+		$.getScript(datafile, function()
 
 		{
 		    // script is now loaded and executed.
@@ -283,7 +286,7 @@ function populate() {
 	imageloader.onload = function () {
 	   $(".menu").css("opacity", "1");
 	}
-	imageloader.src = "images/arrow_white_fill.png";
+	imageloader.src = th_folder + "arrow_white_fill.png";
 
 
 
