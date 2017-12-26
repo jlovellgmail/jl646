@@ -60,8 +60,10 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
 			+ spacerextrasmall
+			/*
 			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_01.jpg")
 			+ spacerextrasmall
+			*/
 			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_03.jpg")
 			+ spacerextrasmall
 			+ img(image_folder + "visual_20171212_lifestyle_GreenMonday_DailyDeals.jpg")
