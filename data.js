@@ -45,6 +45,11 @@ function makedata(){
 			+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
 
 
+
+			+ spacer
+			+ img(image_folder + "visual_20180114_joyus_combat-winter-skin_preview.jpg")
+
+
 			+ spacer
 			+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
 
@@ -107,8 +112,7 @@ function makedata(){
 
 
 			+ spacer
-			//+ div("containImage", img(image_folder + "visual_marketing_email.jpg", "dropshadow", "width:69%"))
-			+ div("", img(image_folder + "visual_marketing_email.jpg", " ", "width:69%;"))
+			+ img(image_folder + "visual_marketing_email.jpg")
 
 
 			/*
@@ -139,9 +143,13 @@ function makedata(){
 			+ text("2017, colored pencil on paper")
 			;
 		contentlist.drawings = ""
+
+			/*
 			+ img(image_folder + "flowers_1600.jpg")
 			+ caption("Colored pencil on paper")
 			+ spacer
+			*/
+
 			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
 			+ spacer
@@ -247,12 +255,15 @@ function makedata(){
 			+ spacer
 			
 			//+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
-			+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
+			//+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
+			+ img(image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg")
 
 			+ spacer
 			
 			// + img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
-			+ img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
+			//+ img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
+			+ img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg")
+
 			
 			// + spacer
 			// + img(image_folder + "bags_SFclutch_1800.jpg")
@@ -364,13 +375,9 @@ function makedata(){
 		contentlist.other = ""
 			+ img(image_folder + "raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
-
-			/*
 			+ spacer
 			+ img(image_folder + "shirt_front.jpg")
-			+ caption("MAGA")
-			*/
-			
+			+ caption("MAGA")			
 			;
 		contentlist.rd = ""
 			+ img(image_folder + "keyart_vegucated.jpg")
@@ -417,7 +424,7 @@ function makedata(){
 			,"Product Photography"
 			,"bags"
 			,"Product Photography"
-			,"Leather handbags"
+			,"" //,"Leather handbags"
 			,contentlist.bags
 		);
 		add(
@@ -461,10 +468,10 @@ function makedata(){
 			,contentlist.gp
 		);
 		add(
-			"flowers_th.jpg"
-			,"Drawings"
+			"th_smith.jpg"
+			,"Illustrations"
 			,"drawings"
-			,"Drawings"
+			,"Illustrations"
 			,""
 			,contentlist.drawings
 		);
