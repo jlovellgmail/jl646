@@ -46,8 +46,26 @@ function makedata(){
 
 
 
+			
+
+			+ spacer
+			+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
+			+ spacersmall
+			+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg")
+			+ spacersmall
+			+ img(image_folder + "visual_Joyus-1.21.18-collection-hero.jpg")
+			
+
+
+			+ spacer
+			+ img(image_folder + "visual_Dashlane.jpg")
+
+
+
+			/*
 			+ spacer
 			+ img(image_folder + "visual_20180114_joyus_combat-winter-skin_preview.jpg")
+			*/
 
 
 			+ spacer
