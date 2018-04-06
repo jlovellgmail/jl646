@@ -286,6 +286,7 @@ body {
 	opacity: 1;
 	transition: .2s;
 	font-size: 40px;
+	padding: 20px;
 }
 .container-cell.hide {
 	opacity: 0;

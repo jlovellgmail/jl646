@@ -201,9 +201,9 @@ function makedata(){
 			+ img(image_folder + "fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
-			+ img(image_folder + "fayum.jpg")
 			+ img(image_folder + "fayum_1800.jpg")
-			+ "<p class='caption'>Scientific Illustration published by The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
+			+ img(image_folder + "fayum.jpg")
+			+ "<p class='caption'>Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
 			//+ caption("Scientific Illustration published by The American Museum of Natural History, NYC")
 
 			/*
@@ -430,16 +430,14 @@ function makedata(){
 			
 			;
 		contentlist.rd = ""
-			+ img(image_folder + "keyart_vegucated.jpg")
-			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
+			+ img(image_folder + "keyart_skinnydip.jpg")
+			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			+ spacer
 			+ img(image_folder + "keyart_rd_1600.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
-			/*
 			+ spacer
-			+ img(image_folder + "keyart_skinnydip.jpg")
-			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
-			*/
+			+ img(image_folder + "keyart_vegucated.jpg")
+			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
 			;
 	}
 
@@ -460,9 +458,9 @@ function makedata(){
 		//------------------------------------
 		add(
 			"th_itsfinallyhere.jpg"
-			,"Email Design"
+			,"Digital Marketing Campaigns"
 			,"emailmarketing"
-			,"Email Design"
+			,"Digital Marketing Campaigns"
 			,""
 			,contentlist.webdesign
 		);
@@ -490,9 +488,9 @@ function makedata(){
 			//"hersheys_th.jpg"
 			"th_smores.jpg"
 			
-			,"Event Graphics"
+			,"Environmental Graphics"
 			,"event"
-			,"Event Graphics"
+			,"Environmental Graphics"
 			,""
 			,contentlist.event
 		);
@@ -511,17 +509,17 @@ function makedata(){
 			//"gp_th.jpg"
 			"th_gp_camera.jpg"
 
-			,"Experimental Rendering"
+			,"Drawing Algorithms"
 			,"gp"
-			,"Experimental Digital Rendering"
+			,"Drawing Algorithms"
 			,"Using simulations of evolution to draw pictures"
 			,contentlist.gp
 		);
 		add(
 			"th_smith.jpg"
-			,"Illustrations"
+			,"Hand-Rendered Artwork"
 			,"drawings"
-			,"Illustrations"
+			,"Hand-Rendered Artwork"
 			,""
 			,contentlist.drawings
 		);
