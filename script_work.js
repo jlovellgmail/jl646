@@ -68,10 +68,12 @@ function makeitems(){
 		// mouseenter
 		function(){
 			$(this).find(".container-cell").removeClass("hide");
+			$(this).find(".image img").addClass("enlarge");
 		},
 		// mouseleave
 		function(){
 			$(this).find(".container-cell").addClass("hide");
+			$(this).find(".image img").removeClass("enlarge");
 		}
 	);
 

@@ -255,6 +255,13 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
+	overflow: hidden;
+}
+.image img {
+	transition: .2s;
+}
+.enlarge {
+	transform: scale(1.2);
 }
 .container-abs {
 	position: absolute;
