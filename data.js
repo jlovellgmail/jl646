@@ -46,19 +46,46 @@ function makedata(){
 
 
 
+
+			+ spacer
+			+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
+			+ spacer
+			+ img(image_folder + "20180216_LIfestyle_PresidentsDaySaleLaunches_PREVIEW.jpg")
+			+ spacer
+			+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
+
 			
 
 			+ spacer
 			+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
 			+ spacersmall
 			+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg")
+			/*
 			+ spacersmall
 			+ img(image_folder + "visual_Joyus-1.21.18-collection-hero.jpg")
+			*/
 			
 
 
 			+ spacer
+			+ img(image_folder + "Civilization-Ad-300x600_frames.gif")
+
+
+
+			+ spacer
+			+ img(image_folder + "20180125_joyus_Tria.jpg")
+			
+
+			/*
+			+ spacer
+			+ img(image_folder + "visual_20180123_joyus_Spotlight-Mirror-40-off_1000.jpg")
+			*/
+
+
+			+ spacer
 			+ img(image_folder + "visual_Dashlane.jpg")
+
+
 
 
 
@@ -393,9 +420,14 @@ function makedata(){
 		contentlist.other = ""
 			+ img(image_folder + "raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
+
+			/*
 			+ spacer
 			+ img(image_folder + "shirt_front.jpg")
-			+ caption("MAGA")			
+			+ caption("MAGA")
+			*/
+
+			
 			;
 		contentlist.rd = ""
 			+ img(image_folder + "keyart_vegucated.jpg")
