@@ -363,21 +363,19 @@
 	}
 
 	.goright {
-		padding-right: 6px;
+		/*padding-right: 6px;*/
+		display: none;
 	}
 	.goleft {
-		padding-left: 6px;
+		/*padding-left: 6px;*/
+		display: none;
 	}
 	.goleft, .goright {
-		width: auto;
+		/*width: auto;
 		height: auto;
-		/*z-index: 1;*/
 		height: 50px;
-
-
-		top: 0;
-
-
+		top: 0;*/
+		display: none;
 	}
 	.goleft .cell, .goright .cell {
 		padding: 0;
