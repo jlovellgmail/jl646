@@ -42,38 +42,59 @@ function makedata(){
 		contentlist.webdesign = ""
 
 
+
+
+
+
 			+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
 
 
 
 
 			+ spacer
-			+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
-			+ spacer
-			+ img(image_folder + "20180216_LIfestyle_PresidentsDaySaleLaunches_PREVIEW.jpg")
-			+ spacer
-			+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
-
-			
-
-			+ spacer
 			+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
+			/*
 			+ spacersmall
 			+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg")
+			*/
 			/*
 			+ spacersmall
 			+ img(image_folder + "visual_Joyus-1.21.18-collection-hero.jpg")
 			*/
+
+
+
+			+ spacer
+			+ img(image_folder + "20180329_joyus_fitness_ellip_blender_preview_crop2.jpg", " ", "filter:brightness(.97);")
+
+
+
+			+ spacer
+			+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
+			/*
+			+ spacer
+			+ img(image_folder + "20180216_LIfestyle_PresidentsDaySaleLaunches_PREVIEW.jpg")
+			+ spacer
+			+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
+			*/
+
 			
 
 
+
+			+ spacer
+			+ img(image_folder + "20180328_stackskills_ANIMATION_600.gif")
+
+
+
+
+			/*
 			+ spacer
 			+ img(image_folder + "Civilization-Ad-300x600_frames.gif")
+			*/
 
 
 
-			+ spacer
-			+ img(image_folder + "20180125_joyus_Tria.jpg")
 			
 
 			/*
@@ -81,9 +102,10 @@ function makedata(){
 			+ img(image_folder + "visual_20180123_joyus_Spotlight-Mirror-40-off_1000.jpg")
 			*/
 
-
+			/*
 			+ spacer
 			+ img(image_folder + "visual_Dashlane.jpg")
+			*/
 
 
 
@@ -120,6 +142,30 @@ function makedata(){
 
 
 			+ spacer
+			+ img(image_folder + "20180320_lifestlye_pricedrop_vibes_earplugs_PREVIEW.jpg")
+
+
+			+ spacer
+			+ img(image_folder + "20180201_joyus_Valentines-Day_material_cropped.jpg", " ", "filter:brightness(.98);")
+
+
+			+ spacer
+			+ img(image_folder + "20180125_joyus_Tria.jpg")
+
+
+			+ spacer
+			+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg")
+
+
+			+ spacer
+			+ img(image_folder + "20180308_lifestlye_complete_digital_marketing_course_preview.jpg", " ", "filter:brightness(.98);")
+
+
+			+ spacer
+			+ img(image_folder + "20180306_lifestyle_comp_tia_preview.jpg")
+
+
+			+ spacer
 			+ img(image_folder + "visual_20171113_lifestyle_doorbusters_day_1.jpg")
 
 
@@ -136,7 +182,8 @@ function makedata(){
 
 
 			+ spacer
-			+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
+			//+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
+			+ img(image_folder + "frames-from-timeline.gif", " ", "filter:brightness(.98);")
 			+ spacer
 			+ img(image_folder + "visual_20171221_Academy_DigitalLastMinuteDeals.gif")
 
@@ -517,9 +564,9 @@ function makedata(){
 		);
 		add(
 			"th_smith.jpg"
-			,"Hand-Rendered Artwork"
+			,"Drawings"
 			,"drawings"
-			,"Hand-Rendered Artwork"
+			,"Drawings"
 			,""
 			,contentlist.drawings
 		);
