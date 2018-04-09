@@ -351,7 +351,7 @@ body {
 	}
 	.workbody .container-cell {
 		font-size: 20px;
-		background: rgba(0,0,0, 1);
+		background: rgba(0,0,0, .8);
 		padding: 13px;
 	}
 	.workbody .container-cell.hide {
