@@ -64,6 +64,14 @@ function makedata(){
 
 
 
+
+			+ spacer
+			+ img(image_folder + "20180412_lifestyle_xeric_00.jpg")
+			+ img(image_folder + "20180412_lifestyle_xeric_01.gif")
+			+ img(image_folder + "20180412_lifestyle_xeric_02.jpg")
+
+
+
 			+ spacer
 			+ img(image_folder + "20180329_joyus_fitness_ellip_blender_preview_crop2.jpg", " ", "filter:brightness(.97);")
 
@@ -142,6 +150,26 @@ function makedata(){
 
 
 			+ spacer
+			+ img(image_folder + "visual_20171113_lifestyle_doorbusters_day_1.jpg")
+
+
+			+ spacer
+			+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
+
+
+
+			+ spacer
+			//+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
+			+ img(image_folder + "frames-from-timeline.gif", " ", "filter:brightness(.98);")
+
+
+
+			+ spacer
+			+ img(image_folder + "visual_20171219_Lifestyle_BestOf2017.jpg")
+
+
+
+			+ spacer
 			+ img(image_folder + "20180320_lifestlye_pricedrop_vibes_earplugs_PREVIEW.jpg")
 
 
@@ -150,11 +178,18 @@ function makedata(){
 
 
 			+ spacer
-			+ img(image_folder + "20180125_joyus_Tria.jpg")
+			+ img(image_folder + "20180125_joyus_Tria.jpg", " ", "filter:brightness(.97);")
 
 
 			+ spacer
-			+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg")
+			+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", " ", "filter:brightness(.98);")
+
+
+			+ spacer
+			+ img(image_folder + "20180412_tech_treblab_z2_wireless_noise-cancelling_headphones_00.jpg")
+			+ spacer
+			+ img(image_folder + "20180414_academy_project_management.gif", " ", "filter:brightness(.97);")
+
 
 
 			+ spacer
@@ -166,15 +201,6 @@ function makedata(){
 
 
 			+ spacer
-			+ img(image_folder + "visual_20171113_lifestyle_doorbusters_day_1.jpg")
-
-
-			+ spacer
-			+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
-
-
-
-			+ spacer
 			+ img(image_folder + "visual_20171201_Lifestyle_cyber_week.gif")
 			+ spacer
 			+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
@@ -182,14 +208,10 @@ function makedata(){
 
 
 			+ spacer
-			//+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
-			+ img(image_folder + "frames-from-timeline.gif", " ", "filter:brightness(.98);")
-			+ spacer
 			+ img(image_folder + "visual_20171221_Academy_DigitalLastMinuteDeals.gif")
 
 
 			+ spacer
-			+ img(image_folder + "visual_20171219_Lifestyle_BestOf2017.jpg")
 			+ spacer
 			+ img(image_folder + "visual_20171219_Academy_BestOf2017.jpg")
 
