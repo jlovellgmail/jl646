@@ -341,10 +341,6 @@ function makedata(){
 			+ text("My role:", " ", "font-weight:bold;")
 			+ text("Art Direction. I took finalized headline and body copy, and designed and executed all visual aspects including photo selection, visual treatment and typography. I worked closely with the copywriter and creative director to ensure the ads stayed on-strategy and spoke in the intended voice.", " ", "margin-top:2px;")
 
-			+ spacersmall
-			//+ "<span style='font-weight:bold'>Copywriter:</span> <a target='_blank' href='https://www.jessbrophy.com/#/health-warrior/'>Jessica Brophy</a>"
-			+ "<span style='font-weight:bold'>Copywriter:</span> Jessica Brophy"
-
 			+ spacer
 			
 			+ img(image_folder + "ad_set.jpg")
@@ -527,10 +523,10 @@ function makedata(){
 		//------------------------------------
 		add(
 			"th_itsfinallyhere.jpg"
-			,"Digital Marketing Campaigns"
+			,"Digital Marketing"
 			,"emailmarketing"
-			,"Digital Marketing Campaigns"
-			,""
+			,"Digital Marketing"
+			,"Emails And Social Media Ads"
 			,contentlist.webdesign
 		);
 		add(
@@ -557,9 +553,9 @@ function makedata(){
 			//"hersheys_th.jpg"
 			"th_smores.jpg"
 			
-			,"Environmental Graphics"
+			,"Environmental Design"
 			,"event"
-			,"Environmental Graphics"
+			,"Environmental Design"
 			,""
 			,contentlist.event
 		);
@@ -578,9 +574,9 @@ function makedata(){
 			//"gp_th.jpg"
 			"th_gp_camera.jpg"
 
-			,"Drawing Algorithms"
+			,"Custom Image Filters"
 			,"gp"
-			,"Drawing Algorithms"
+			,"Custom Image Filters"
 			,"Using simulations of evolution to draw pictures"
 			,contentlist.gp
 		);
@@ -595,12 +591,13 @@ function makedata(){
 		add(
 			
 			//"rd_th.jpg"
-			"th_vegucated.jpg"
+			// "th_vegucated.jpg"
+			"th_skinnydip.jpg"
 
 			,"Key Art"
 			,"rd"
 			,"Key Art"
-			,"Film branding"
+			,"Film Posters"
 			,contentlist.rd
 		);
 		add(
