@@ -102,12 +102,11 @@ a
 }
 .name {
 	color: white;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-weight: 500;
 	letter-spacing: 1.7pt;
 	font-size: 15px;
 	display: inline-block;
-	margin-left: 8px;
 }
 
 /*
@@ -128,33 +127,44 @@ body {
     padding-top: 60px;
 }
 .menu {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	max-width: 95%;
 	color: white;
-	background: black;
 	font-size: 20px;
-	/*height: 60px;*/
 	display: table;
 	font-weight: 100;
 	font-size: 20px;
 }
+.menu .name a {
+	color: black;
+	font-weight: 600;
+	letter-spacing: initial;
+    font-size: 22px;
+}
 .menu .wrap {
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 20px;
+	padding-left: 29px;
 	padding-right: 24px;
-	padding-top: 12px;
+	padding-top: 21px;
 	padding-bottom: 13px;
 }
-.menuItem {
+.menuitem {
+	display: inline-block;
+    margin-left: 20px;
+    border-left: 1px solid rgba(0,0,0, .2);
+    padding-left: 20px;
+}
+.menuItem a {
+	color: black;
+	font-weight: 400;
+	/*letter-spacing: 1pt;*/
+	font-size: 14px;
 }
 .menuItem.active {
 	text-decoration: underline;
-}
-.menuItem a {
-	color: rgba(255,255,255, .7);
 }
 @media screen and (max-width: 1100px) {
 	.button {
@@ -190,6 +200,7 @@ body {
 	.menu .wrap {
 		/*padding-left: 0;
 		padding-right: 0;*/
+		padding-left: 30px;
 	}
 	.button {
 		margin-top: 20px;
@@ -209,8 +220,30 @@ body {
 	display: none;
 }
 
-
-
+.contactbody {
+	text-align: center;
+	letter-spacing: 1pt;
+}
+.contactbody .content {
+	margin-top: 50px;
+}
+.contactbody .line {
+	display: block;
+	margin-bottom: 15px;
+}
+.contactname {
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	text-transform: initial;
+	letter-spacing: 1pt;
+}
+.contactbody .content, .contactbody .content a {
+	color: black;
+}
+.contactbody .menu {
+	letter-spacing: inherit;
+}
 
 
 
@@ -270,11 +303,24 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
+	background: rgba(0,0,0, .3);
+	transition: .2s;
 }
 .container-table {
 	display: table;
+	
+	/*
 	width: 100%;
 	height: 100%;
+	*/
+
+	margin-left: 10px;
+	margin-top: 10px;
+	width: auto;
+	height: 10px;
+	bottom: 0;
+
+
 }
 .container-cell {
 	display: table-cell;
@@ -282,16 +328,42 @@ body {
 	height: 100%;
 	vertical-align: middle;
 	text-align: center;
-	background: rgba(0,0,0, .8);
-	color: white;
+	/*background: rgba(0,0,0, .8);*/
+	/*color: white;*/
 	opacity: 1;
 	transition: .2s;
-	font-size: 40px;
-	padding: 20px;
+	/*font-size: 40px;*/
+	/*padding: 20px;*/
+
+
+	/*font-size: 20px;*/
+	/*letter-spacing: 1pt;*/
+	padding: 8px;
+	padding-left: 14px;
+	padding-right: 15px;
+	background: rgba(255,255,255, .95);
+	color: black;
+
+
+	font-size: 14px;
+	letter-spacing: .8pt;
+	font-family: "aktiv-grotesk",sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+
+
 }
+
+/*
 .container-cell.hide {
 	opacity: 0;
 }
+*/
+.container-abs.hide {
+	background: rgba(0,0,0, 0);
+}
+
+
 .item img {
 	width: 100%;
 }
@@ -329,10 +401,6 @@ body {
 
 @media screen and (max-width: 600px) {
 
-	.name {
-		/*letter-spacing: 1pt;
-		margin-left: 0;*/
-	}
 	.menu {
 		/*height: 46px;*/
 	}
@@ -344,8 +412,11 @@ body {
 	    padding-top: 30px;
 	}
 	.workbody .aspect {
-		margin-bottom: 23px;
+		/*margin-bottom: 23px;*/
+		margin-bottom: 1px;
 	}
+
+	/*
 	.workbody .container-abs {
 		top: initial;
 	}
@@ -357,6 +428,13 @@ body {
 	.workbody .container-cell.hide {
 		opacity: 1;
 	}
+	*/
+	.workbody .container-abs {
+		background: rgba(0,0,0, .1);
+	}
+
+
+
 }
 
 

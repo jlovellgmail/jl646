@@ -299,6 +299,12 @@ function populate() {
 		.append("a").attr("href", "/")
 		.text("Jack Lovell")
 		;
+	wrap
+		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
+		.append("a").attr("href", "contact.html")
+		.text("contact")
+		;
+
 		/*
 	wrap
 		.append("div").attr("class", "tag tk-aktiv-grotesk")
