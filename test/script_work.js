@@ -47,9 +47,9 @@ function makeitems(){
 		.append("img").attr("src", function(d){ return th_folder+d.image; })
 		;
 	aspect
-		.append("div").attr("class", "container-abs")
+		.append("div").attr("class", "container-abs hide")
 		.append("div").attr("class", "container-table")
-		.append("div").attr("class", "container-cell museo hide")
+		.append("div").attr("class", "container-cell")
 		.text(function(d){ return d.blurb; })
 		;
 
@@ -67,11 +67,13 @@ function makeitems(){
 	$(".item").hover(
 		// mouseenter
 		function(){
-			$(this).find(".container-cell").removeClass("hide");
+			$(this).find(".container-abs").removeClass("hide");
+			$(this).find(".image img").addClass("enlarge");
 		},
 		// mouseleave
 		function(){
-			$(this).find(".container-cell").addClass("hide");
+			$(this).find(".container-abs").addClass("hide");
+			$(this).find(".image img").removeClass("enlarge");
 		}
 	);
 
@@ -85,6 +87,11 @@ function makeitems(){
 		.append("div").attr("class", "name tk-aktiv-grotesk")
 		.append("a").attr("href", "/")
 		.text("Jack Lovell")
+		;
+	wrap
+		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
+		.append("a").attr("href", "contact.html")
+		.text("contact")
 		;
 		/*
 	wrap

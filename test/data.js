@@ -42,7 +42,92 @@ function makedata(){
 		contentlist.webdesign = ""
 
 
+
+
+
+
 			+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
+
+
+
+
+			+ spacer
+			+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
+			/*
+			+ spacersmall
+			+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg")
+			*/
+			/*
+			+ spacersmall
+			+ img(image_folder + "visual_Joyus-1.21.18-collection-hero.jpg")
+			*/
+
+
+
+
+			+ spacer
+			+ img(image_folder + "20180412_lifestyle_xeric_00.jpg")
+			+ img(image_folder + "20180412_lifestyle_xeric_01.gif")
+			+ img(image_folder + "20180412_lifestyle_xeric_02.jpg")
+
+
+
+			+ spacer
+			+ img(image_folder + "20180329_joyus_fitness_ellip_blender_preview_crop2.jpg", " ", "filter:brightness(.97);")
+
+
+
+			+ spacer
+			+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
+			/*
+			+ spacer
+			+ img(image_folder + "20180216_LIfestyle_PresidentsDaySaleLaunches_PREVIEW.jpg")
+			+ spacer
+			+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
+			*/
+
+			
+
+
+
+			+ spacer
+			+ img(image_folder + "20180328_stackskills_ANIMATION_600.gif")
+
+
+
+
+			/*
+			+ spacer
+			+ img(image_folder + "Civilization-Ad-300x600_frames.gif")
+			*/
+
+
+
+			
+
+			/*
+			+ spacer
+			+ img(image_folder + "visual_20180123_joyus_Spotlight-Mirror-40-off_1000.jpg")
+			*/
+
+			/*
+			+ spacer
+			+ img(image_folder + "visual_Dashlane.jpg")
+			*/
+
+
+
+
+
+			/*
+			+ spacer
+			+ img(image_folder + "visual_20180114_joyus_combat-winter-skin_preview.jpg")
+			*/
+
+
+			+ spacer
+			+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
+
 
 
 			+ spacer
@@ -55,8 +140,10 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
 			+ spacerextrasmall
+			/*
 			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_01.jpg")
 			+ spacerextrasmall
+			*/
 			+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_03.jpg")
 			+ spacerextrasmall
 			+ img(image_folder + "visual_20171212_lifestyle_GreenMonday_DailyDeals.jpg")
@@ -72,6 +159,48 @@ function makedata(){
 
 
 			+ spacer
+			//+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
+			+ img(image_folder + "frames-from-timeline.gif", " ", "filter:brightness(.98);")
+
+
+
+			+ spacer
+			+ img(image_folder + "visual_20171219_Lifestyle_BestOf2017.jpg")
+
+
+
+			+ spacer
+			+ img(image_folder + "20180320_lifestlye_pricedrop_vibes_earplugs_PREVIEW.jpg")
+
+
+			+ spacer
+			+ img(image_folder + "20180201_joyus_Valentines-Day_material_cropped.jpg", " ", "filter:brightness(.98);")
+
+
+			+ spacer
+			+ img(image_folder + "20180125_joyus_Tria.jpg", " ", "filter:brightness(.97);")
+
+
+			+ spacer
+			+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", " ", "filter:brightness(.98);")
+
+
+			+ spacer
+			+ img(image_folder + "20180412_tech_treblab_z2_wireless_noise-cancelling_headphones_00.jpg")
+			+ spacer
+			+ img(image_folder + "20180414_academy_project_management.gif", " ", "filter:brightness(.97);")
+
+
+
+			+ spacer
+			+ img(image_folder + "20180308_lifestlye_complete_digital_marketing_course_preview.jpg", " ", "filter:brightness(.98);")
+
+
+			+ spacer
+			+ img(image_folder + "20180306_lifestyle_comp_tia_preview.jpg")
+
+
+			+ spacer
 			+ img(image_folder + "visual_20171201_Lifestyle_cyber_week.gif")
 			+ spacer
 			+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
@@ -79,16 +208,16 @@ function makedata(){
 
 
 			+ spacer
-			+ img(image_folder + "visual_20171221_Lifestyle_DigitalLastMinuteDeals.jpg", " ", "filter:brightness(.97);")
-			+ spacer
 			+ img(image_folder + "visual_20171221_Academy_DigitalLastMinuteDeals.gif")
 
 
 			+ spacer
-			+ img(image_folder + "visual_20171219_Lifestyle_BestOf2017.jpg")
 			+ spacer
 			+ img(image_folder + "visual_20171219_Academy_BestOf2017.jpg")
 
+
+			+ spacer
+			+ img(image_folder + "visual_20171223_Lifestyle_Christmas_02.jpg")
 
 
 			+ spacer
@@ -97,8 +226,7 @@ function makedata(){
 
 
 			+ spacer
-			//+ div("containImage", img(image_folder + "visual_marketing_email.jpg", "dropshadow", "width:69%"))
-			+ div("", img(image_folder + "visual_marketing_email.jpg", " ", "width:69%;"))
+			+ img(image_folder + "visual_marketing_email.jpg")
 
 
 			/*
@@ -129,18 +257,22 @@ function makedata(){
 			+ text("2017, colored pencil on paper")
 			;
 		contentlist.drawings = ""
+
+			/*
 			+ img(image_folder + "flowers_1600.jpg")
 			+ caption("Colored pencil on paper")
 			+ spacer
+			*/
+
 			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
 			+ spacer
 			+ img(image_folder + "fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
-			+ img(image_folder + "fayum.jpg")
 			+ img(image_folder + "fayum_1800.jpg")
-			+ "<p class='caption'>Scientific Illustration published by The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
+			+ img(image_folder + "fayum.jpg")
+			+ "<p class='caption'>Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
 			//+ caption("Scientific Illustration published by The American Museum of Natural History, NYC")
 
 			/*
@@ -209,10 +341,6 @@ function makedata(){
 			+ text("My role:", " ", "font-weight:bold;")
 			+ text("Art Direction. I took finalized headline and body copy, and designed and executed all visual aspects including photo selection, visual treatment and typography. I worked closely with the copywriter and creative director to ensure the ads stayed on-strategy and spoke in the intended voice.", " ", "margin-top:2px;")
 
-			+ spacersmall
-			//+ "<span style='font-weight:bold'>Copywriter:</span> <a target='_blank' href='https://www.jessbrophy.com/#/health-warrior/'>Jessica Brophy</a>"
-			+ "<span style='font-weight:bold'>Copywriter:</span> Jessica Brophy"
-
 			+ spacer
 			
 			+ img(image_folder + "ad_set.jpg")
@@ -237,12 +365,15 @@ function makedata(){
 			+ spacer
 			
 			//+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
-			+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
+			//+ img(image_folder + "bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
+			+ img(image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg")
 
 			+ spacer
 			
 			// + img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
-			+ img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
+			//+ img(image_folder + "bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
+			+ img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg")
+
 			
 			// + spacer
 			// + img(image_folder + "bags_SFclutch_1800.jpg")
@@ -360,19 +491,18 @@ function makedata(){
 			+ img(image_folder + "shirt_front.jpg")
 			+ caption("MAGA")
 			*/
+
 			
 			;
 		contentlist.rd = ""
-			+ img(image_folder + "keyart_vegucated.jpg")
-			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
+			+ img(image_folder + "keyart_skinnydip.jpg")
+			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			+ spacer
 			+ img(image_folder + "keyart_rd_1600.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
-			/*
 			+ spacer
-			+ img(image_folder + "keyart_skinnydip.jpg")
-			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
-			*/
+			+ img(image_folder + "keyart_vegucated.jpg")
+			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
 			;
 	}
 
@@ -393,10 +523,10 @@ function makedata(){
 		//------------------------------------
 		add(
 			"th_itsfinallyhere.jpg"
-			,"Email Design"
+			,"Digital Marketing"
 			,"emailmarketing"
-			,"Email Design"
-			,""
+			,"Digital Marketing"
+			,"Emails And Social Media Ads"
 			,contentlist.webdesign
 		);
 		add(
@@ -407,7 +537,7 @@ function makedata(){
 			,"Product Photography"
 			,"bags"
 			,"Product Photography"
-			,"Leather handbags"
+			,"" //,"Leather handbags"
 			,contentlist.bags
 		);
 		add(
@@ -423,9 +553,9 @@ function makedata(){
 			//"hersheys_th.jpg"
 			"th_smores.jpg"
 			
-			,"Event Graphics"
+			,"Environmental Design"
 			,"event"
-			,"Event Graphics"
+			,"Environmental Design"
 			,""
 			,contentlist.event
 		);
@@ -444,14 +574,14 @@ function makedata(){
 			//"gp_th.jpg"
 			"th_gp_camera.jpg"
 
-			,"Experimental Rendering"
+			,"Custom Image Filters"
 			,"gp"
-			,"Experimental Digital Rendering"
+			,"Custom Image Filters"
 			,"Using simulations of evolution to draw pictures"
 			,contentlist.gp
 		);
 		add(
-			"flowers_th.jpg"
+			"th_smith.jpg"
 			,"Drawings"
 			,"drawings"
 			,"Drawings"
@@ -461,12 +591,13 @@ function makedata(){
 		add(
 			
 			//"rd_th.jpg"
-			"th_vegucated.jpg"
+			// "th_vegucated.jpg"
+			"th_skinnydip.jpg"
 
 			,"Key Art"
 			,"rd"
 			,"Key Art"
-			,"Film branding"
+			,"Film Posters"
 			,contentlist.rd
 		);
 		add(

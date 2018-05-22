@@ -3,7 +3,7 @@ var pagename = "project.html";
 var keyname = "project";
 var pi = undefined;
 var th_folder = "/images/";
-var datafile = "http://jl646.com/test/data.js";
+var datafile = "http://jl646.com/data.js";
 
 
 
@@ -299,6 +299,12 @@ function populate() {
 		.append("a").attr("href", "/")
 		.text("Jack Lovell")
 		;
+	wrap
+		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
+		.append("a").attr("href", "contact.html")
+		.text("contact")
+		;
+
 		/*
 	wrap
 		.append("div").attr("class", "tag tk-aktiv-grotesk")
