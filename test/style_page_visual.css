@@ -2,6 +2,8 @@
 	background: rgba(78,78,78, 1);
 	padding-top: 120px;
 	margin-bottom: 120px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .pageBody.visual .menu .name a, .pageBody.visual .menuItem a {
 	color: white;
@@ -74,4 +76,43 @@
 	background-position: center;
 	margin: 20px;
 }
+
+
+
+@media screen and (max-width: 600px) {
+
+	.masonry-layout__panel-content .gap {
+		height: 18px;
+	}
+	.masonry-layout__panel-content {
+		margin-bottom: 18px;
+	}
+	.masonry-layout__panel-content .caption {
+		display: none;
+	}
+	.menu .wrap {
+	    padding-left: 22px;
+	}
+	.pageBody.visual {
+	    padding-top: 90px;
+	    background: rgba(0,0,0, 0.6);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
