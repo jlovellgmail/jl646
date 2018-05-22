@@ -108,10 +108,29 @@ function getnextindex(){
 	return newindex;
 }
 function goleft(){
-	window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
+
+	// special handling for "emailmarketing" page
+	// window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
+	if(data[getpreviousindex()].query == "emailmarketing"){
+		window.location = "project_visual.html";
+	}
+	else {
+		window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
+	}
+
 }
 function goright(){
-	window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
+
+	// special handling for "emailmarketing" page
+	//window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
+	if(data[getnextindex()].query == "emailmarketing"){
+		window.location = "project_visual.html";
+	}
+	else {
+		window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
+	}
+
+
 }
 function getpreviousblurb(){
 	return data[getpreviousindex()].blurb;
