@@ -204,8 +204,22 @@ function setBlowupViewKeys(){
 function populate() {
 
 
+
+
+
 	// populate page based on query string
 	var item = data[pi];
+
+
+
+	// special handling for "emailmarketing" page
+	if(item.query == "emailmarketing"){
+		window.location = "project_visual.html";
+	}
+	
+
+
+
 	d3.select(".pageContent")
 		.append("div").attr("class", "title museo")
 		.text(item.title)

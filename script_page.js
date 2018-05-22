@@ -108,10 +108,29 @@ function getnextindex(){
 	return newindex;
 }
 function goleft(){
-	window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
+
+	// special handling for "emailmarketing" page
+	// window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
+	if(data[getpreviousindex()].query == "emailmarketing"){
+		window.location = "project_visual.html";
+	}
+	else {
+		window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
+	}
+
 }
 function goright(){
-	window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
+
+	// special handling for "emailmarketing" page
+	//window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
+	if(data[getnextindex()].query == "emailmarketing"){
+		window.location = "project_visual.html";
+	}
+	else {
+		window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
+	}
+
+
 }
 function getpreviousblurb(){
 	return data[getpreviousindex()].blurb;
@@ -185,8 +204,22 @@ function setBlowupViewKeys(){
 function populate() {
 
 
+
+
+
 	// populate page based on query string
 	var item = data[pi];
+
+
+
+	// special handling for "emailmarketing" page
+	if(item.query == "emailmarketing"){
+		window.location = "project_visual.html";
+	}
+	
+
+
+
 	d3.select(".pageContent")
 		.append("div").attr("class", "title museo")
 		.text(item.title)

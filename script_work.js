@@ -33,11 +33,22 @@ function makeitems(){
 		.selectAll(".item")
 		.data(data)
 		;
+
+
 	items = 
 		items.enter()
 		.append("a").attr("class", "item")
-		.attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
+		// special handling for "emailmarketing" page
+		// .attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
+		.attr("href", function(d){
+			if(d.query == "emailmarketing") return "project_visual.html";
+			else return pagename+"?"+keyname+"="+d.query;
+		})
 		;
+
+
+
+
 	var aspect = 
 		items
 		.append("div").attr("class", "aspect")
