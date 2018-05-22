@@ -300,6 +300,7 @@ body {
 }
 .enlarge {
 	transform: scale(1.015);
+    filter: brightness(.8);
 }
 .container-abs {
 	position: absolute;
@@ -307,7 +308,7 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: rgba(0,0,0, .3);
+	/*background: rgba(0,0,0, .3);*/
 	transition: .2s;
 }
 .container-table {
@@ -410,7 +411,7 @@ body {
 	}
 	*/
 	.workbody .container-abs {
-		background: rgba(0,0,0, .1);
+		/*background: rgba(0,0,0, .1);*/
 	}
 
 
