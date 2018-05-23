@@ -2,8 +2,8 @@
 	background: rgba(78,78,78, 1);
 	padding-top: 120px;
 	margin-bottom: 120px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 4px;
+	margin-right: 4px;
 }
 .pageBody.visual .menu .name a, .pageBody.visual .menuItem a {
 	color: white;
@@ -76,6 +76,17 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.blowup .x {
+	background-image: url(/images/x.svg);
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	margin: 9px;
 }
 
 
