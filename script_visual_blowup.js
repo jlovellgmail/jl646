@@ -6,6 +6,7 @@ var scrollPos = 0;
 function blowup(s){
 	d3.select(".pageBody")
 		.append("div").attr("class", "blowup")
+		.append("div").attr("class", "blowupimagecontainer")
 		.append("div").attr("class", "blowupImage")
 		.attr("data-src", s)
 		.style("background-image", "url("+s+")")
