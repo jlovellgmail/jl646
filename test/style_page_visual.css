@@ -2,8 +2,8 @@
 	background: rgba(78,78,78, 1);
 	padding-top: 120px;
 	margin-bottom: 120px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .pageBody.visual .menu .name a, .pageBody.visual .menuItem a {
 	color: white;
@@ -21,6 +21,7 @@
 
 .masonry-layout {
 	column-count: 3;
+	column-gap: 4px;
 }
 .masonry-layout__panel {
 	max-width: 225px;
@@ -82,10 +83,12 @@
 @media screen and (max-width: 600px) {
 
 	.masonry-layout__panel-content .gap {
-		height: 18px;
+		/*height: 18px;*/
+		height: 4px;
 	}
 	.masonry-layout__panel-content {
-		margin-bottom: 18px;
+		/*margin-bottom: 18px;*/
+		margin-bottom: 4px;
 	}
 	.masonry-layout__panel-content .caption {
 		display: none;
@@ -94,8 +97,8 @@
 	    padding-left: 22px;
 	}
 	.pageBody.visual {
-	    padding-top: 90px;
-	    background: rgba(0,0,0, 0.6);
+	    padding-top: 75px;
+	    background: rgba(0,0,0, .9);
 	}
 }
 
