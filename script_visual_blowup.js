@@ -3,7 +3,7 @@
 
 // enlarge images
 var scrollPos = 0;
-function blowup(s){
+function blowup(s, maxwidth){
 	d3.select(".pageBody")
 		.append("div").attr("class", "blowup")
 		.append("div").attr("class", "blowupimagecontainer")
@@ -11,6 +11,12 @@ function blowup(s){
 		.attr("data-src", s)
 		.style("background-image", "url("+s+")")
 		;
+
+
+	$(".blowupimagecontainer").css("max-width", "");
+	if(maxwidth != undefined){
+		$(".blowupimagecontainer").css("max-width", maxwidth);
+	}
 
 
 	d3.select(".blowup")
@@ -77,6 +83,12 @@ function setBlowupViewKeys(){
 			.css("background-image", "url("+list[i]+")")
 				.attr("data-src", list[i])
 				;
+			
+			
+			// wider max-width for marked images
+			checkforwideimage(list[i]);
+
+
 		}
 		else if(e.keyCode == 39) { // right
 			
@@ -116,9 +128,23 @@ function shownextimage(){
 	});
 	i = (i+1) % list.length;
 	$(".blowupImage")
-	.css("background-image", "url("+list[i]+")")
+		.css("background-image", "url("+list[i]+")")
 		.attr("data-src", list[i])
 		;
+
+	
+	// wider max-width for marked images
+	checkforwideimage(list[i]);
+
+}
+
+function checkforwideimage(src){
+	var img = $(".pageContent img[src$='"+src+"']");
+	var attr = img.attr("data-maxwidth");
+	$(".blowupimagecontainer").css("max-width", "");
+	if (typeof attr !== typeof undefined && attr !== false) {
+		$(".blowupimagecontainer").css("max-width", "1200px");
+	}
 }
 
 
