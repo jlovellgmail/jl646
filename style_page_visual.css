@@ -4,6 +4,8 @@
 	margin-bottom: 120px;
 	margin-left: 4px;
 	margin-right: 4px;
+	left: 0;
+	right: 0;
 }
 .pageBody.visual .menu .name a, .pageBody.visual .menuItem a {
 	color: white;
