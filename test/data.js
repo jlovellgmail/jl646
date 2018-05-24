@@ -39,9 +39,6 @@ function makedata(){
 		var spacersmall = div("spacersmall");
 		var spacerextrasmall = div("spacerextrasmall");
 		var image_folder = "/images/page_images/";
-		contentlist.pattern = ""
-			+ img(image_folder + "pattern1.jpg")
-			;
 		contentlist.webdesign = ""
 
 
@@ -256,18 +253,14 @@ function makedata(){
 			+ img(image_folder + "titleist.jpg")
 			;
 		contentlist.drawings = ""
-
-			
-			
-
 			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
 			+ spacer
-			+ img(image_folder + "fallingwater.jpg")
-			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
-			+ spacer
 			+ img(image_folder + "flowers_1600.jpg", " ", "filter:contrast(1.07);")
 			+ caption("Colored pencil on paper")
+			+ spacer
+			+ img(image_folder + "fallingwater.jpg")
+			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
 			+ img(image_folder + "fayum_1800.jpg")
 			+ img(image_folder + "fayum.jpg")
@@ -289,9 +282,7 @@ function makedata(){
 			*/
 			;
 		contentlist.gp = ""
-			+ img(image_folder + "gp_eye-170912.jpg")
-			+ spacer
-			+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+			+ img(image_folder + "gp_hand-170912.jpg")
 			+ spacer
 
 			/*
@@ -301,10 +292,14 @@ function makedata(){
 			+ spacermedium
 			+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;")
 			+ spacermedium
+			+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+			+ spacermedium
 			+ text("Stochastic process", "heading")
 			+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
 			+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
 			+ spacermedium
+			+ img(image_folder + "gp_eye-170912.jpg")
+			+ spacer
 			+ img(image_folder + "gp_cat-170912.jpg")
 			+ spacermedium
 
@@ -312,7 +307,6 @@ function makedata(){
 			+ '<div class="aspectratio hand"><iframe src="https://player.vimeo.com/video/169456761?autoplay=1&loop=1&autopause=0" width="640" height="760" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
 			*/
 
-			+ img(image_folder + "gp_hand-170912.jpg")
 			/*
 			+ spacer
 			+ img(image_folder + "gp_woman.jpg")
@@ -527,15 +521,6 @@ function makedata(){
 			,"Digital Marketing"
 			,"Emails And Social Media Ads"
 			,contentlist.webdesign
-		);
-		add(
-			
-			"th_bags.jpg"
-			,"Surface Pattern Design"
-			,"pattern"
-			,"Surface Pattern Design"
-			,"" //,"Leather handbags"
-			,contentlist.pattern
 		);
 		add(
 			
