@@ -252,20 +252,12 @@ function makedata(){
 		contentlist.titleist = ""
 			+ img(image_folder + "titleist.jpg")
 			;
-		contentlist.flowers = ""
-			+ img(image_folder + "flowers_1600.jpg")
-			+ text("2017, colored pencil on paper")
-			;
 		contentlist.drawings = ""
-
-			/*
-			+ img(image_folder + "flowers_1600.jpg")
-			+ caption("Colored pencil on paper")
-			+ spacer
-			*/
-
 			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
+			+ spacer
+			+ img(image_folder + "flowers_1600.jpg", " ", "filter:contrast(1.07);")
+			+ caption("Colored pencil on paper")
 			+ spacer
 			+ img(image_folder + "fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"

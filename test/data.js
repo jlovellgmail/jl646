@@ -39,6 +39,9 @@ function makedata(){
 		var spacersmall = div("spacersmall");
 		var spacerextrasmall = div("spacerextrasmall");
 		var image_folder = "/images/page_images/";
+		contentlist.pattern = ""
+			+ img(image_folder + "pattern1.jpg")
+			;
 		contentlist.webdesign = ""
 
 
@@ -252,23 +255,19 @@ function makedata(){
 		contentlist.titleist = ""
 			+ img(image_folder + "titleist.jpg")
 			;
-		contentlist.flowers = ""
-			+ img(image_folder + "flowers_1600.jpg")
-			+ text("2017, colored pencil on paper")
-			;
 		contentlist.drawings = ""
 
-			/*
-			+ img(image_folder + "flowers_1600.jpg")
-			+ caption("Colored pencil on paper")
-			+ spacer
-			*/
+			
+			
 
 			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
 			+ spacer
 			+ img(image_folder + "fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
+			+ spacer
+			+ img(image_folder + "flowers_1600.jpg", " ", "filter:contrast(1.07);")
+			+ caption("Colored pencil on paper")
 			+ spacer
 			+ img(image_folder + "fayum_1800.jpg")
 			+ img(image_folder + "fayum.jpg")
@@ -528,6 +527,15 @@ function makedata(){
 			,"Digital Marketing"
 			,"Emails And Social Media Ads"
 			,contentlist.webdesign
+		);
+		add(
+			
+			"th_bags.jpg"
+			,"Surface Pattern Design"
+			,"pattern"
+			,"Surface Pattern Design"
+			,"" //,"Leather handbags"
+			,contentlist.pattern
 		);
 		add(
 			
