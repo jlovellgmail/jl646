@@ -233,18 +233,6 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "web_landing-page_1800.jpg", "dropshadow")
 			+ caption("Landing page, Virgil James")
-			+ spacer
-			+ img(image_folder + "icons.jpg", "darkenImage")
-			+ caption("App icons, Illumina BaseSpace app store")
-			+ spacer
-			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
-			+ spacer
-			+ img(image_folder + "developer-stats.jpg", "dropshadow")
-			+ caption("Analytics dashboard, Illumina BaseSpace")
-			+ spacer
-			+ '<div class="aspectratio piechart"><iframe src="https://player.vimeo.com/video/168895922?autoplay=1&loop=1&autopause=0" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-			+ caption("Piechart animations, Illumina BaseSpace")
 			*/
 
 
@@ -476,6 +464,37 @@ function makedata(){
 			+ img(image_folder + "oysters_2.jpg")
 			;
 		contentlist.other = ""
+			
+
+
+			+ img(image_folder + "icons-5.25.18.jpg", "darkenImage")
+			+ caption("Icons for website")
+
+			+ spacer
+			+ img(image_folder + "icons.jpg", "darkenImage")
+			+ caption("App icons for Illumina's BaseSpace app store")
+
+			/*
+			+ spacer
+			+ img(image_folder + "logos.jpg", "darkenImage")
+			+ caption("Logos")
+			*/
+
+			+ spacer
+			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
+			
+
+			/*
+			+ spacer
+			+ img(image_folder + "developer-stats.jpg", "dropshadow")
+			+ caption("Analytics dashboard, Illumina BaseSpace")
+			+ spacer
+			+ '<div class="aspectratio piechart"><iframe src="https://player.vimeo.com/video/168895922?autoplay=1&loop=1&autopause=0" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+			+ caption("Piechart animations, Illumina BaseSpace")
+			*/
+
+			+ spacer
 			+ img(image_folder + "raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
 
