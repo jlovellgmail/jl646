@@ -8,9 +8,10 @@ getdata();
 function getdata(){
 	if(!window.data){
 		
-		// for local testing
-		//$.getScript('data.js', function()
-		$.getScript('http://jl646.com/data.js', function()
+
+		// $.getScript('http://jl646.com/data.js', function()
+		$.getScript('http://jl646.com/test/data.js', function()
+
 
 		{
 		    // script is now loaded and executed.
