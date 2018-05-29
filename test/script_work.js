@@ -100,17 +100,14 @@ function makeitems(){
 		.append("a").attr("href", "/")
 		.text("Jack Lovell")
 		;
+	var menuitems = 
 	wrap
 		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
+		;
+	menuitems
 		.append("a").attr("href", "contact.html")
 		.text("contact")
 		;
-		/*
-	wrap
-		.append("div").attr("class", "tag tk-aktiv-grotesk")
-		.text("Graphic Designer")
-		;
-		*/
 
 
 }

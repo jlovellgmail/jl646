@@ -163,6 +163,9 @@ body {
 	/*letter-spacing: 1pt;*/
 	font-size: 14px;
 }
+.menuItem a.notfirst {
+	margin-left: 20px;
+}
 .menuItem.active {
 	text-decoration: underline;
 }
