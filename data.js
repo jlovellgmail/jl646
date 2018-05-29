@@ -361,7 +361,7 @@ function makedata(){
 			//+ img(image_folder + "bags_SF-Clutch-v2_1800.jpg")
 
 			+ spacer
-			+ img(image_folder + "bags_grid.jpg", "darkenImage")
+			+ img(image_folder + "bags_grid2.jpg", "darkenImage")
 			/*
 			+ spacer
 			+ img(image_folder + "bags_IMG_8892_1200.jpg")
