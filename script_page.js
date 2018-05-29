@@ -323,6 +323,8 @@ function populate() {
 
 
 
+	// moving to separate file
+	/*
 	// create menu
 	var wrap = d3.select(".menu")
 		.append("div").attr("class", "wrap")
@@ -332,20 +334,19 @@ function populate() {
 		.append("a").attr("href", "/")
 		.text("Jack Lovell")
 		;
+	var menuitems = 
 	wrap
 		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
-		.append("a").attr("href", "contact.html")
+		;
+	menuitems
+		.append("a").attr("href", "/")
+		.text("home")
+		;
+	menuitems
+		.append("a").attr("href", "contact.html").attr("class", "notfirst")
 		.text("contact")
 		;
-
-		/*
-	wrap
-		.append("div").attr("class", "tag tk-aktiv-grotesk")
-		.text("Graphic Designer")
-		;
-		*/
-
-
+	*/
 
 
 }

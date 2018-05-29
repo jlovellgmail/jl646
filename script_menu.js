@@ -1,38 +1,6 @@
-cout = console.log;
-var pagename = "project.html";
-var keyname = "project";
-var pi = undefined;
-var th_folder = "/images/";
-var datafile = "http://jl646.com/data.js";
-
-
-
-// get data
-var data;
-getdata();
-function getdata(){
-	if(!window.data){
-		
-		// for local testing
-		//$.getScript('data.js', function()
-		$.getScript(datafile, function()
-		{
-		    // script is now loaded and executed.
-		    data = window.data;
-		    $(document).ready(readyhandler);
-		});
-	}
-	else {
-		data = window.data;
-		$(document).ready(readyhandler);
-	}
-}
-
-
-function readyhandler(){
-	menu();
-}
-
+$(document).ready(function(){
+	menu()
+});
 
 
 
@@ -46,9 +14,16 @@ function menu() {
 		.append("a").attr("href", "/")
 		.text("Jack Lovell")
 		;
+	var menuitems = 
 	wrap
 		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
-		.append("a").attr("href", "contact.html")
+		;
+	menuitems
+		.append("a").attr("href", "/")
+		.text("home")
+		;
+	menuitems
+		.append("a").attr("href", "contact.html").attr("class", "notfirst")
 		.text("contact")
 		;
 }
