@@ -238,14 +238,17 @@ function makedata(){
 
 			;
 		contentlist.titleist = ""
-			+ img(image_folder + "titleist.jpg")
 			;
 		contentlist.drawings = ""
 			+ img(image_folder + "smith.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
+			
+			/*
 			+ spacer
 			+ img(image_folder + "flowers_1600.jpg", " ", "filter:contrast(1.07);")
 			+ caption("Colored pencil on paper")
+			*/
+
 			+ spacer
 			+ img(image_folder + "fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
@@ -481,6 +484,11 @@ function makedata(){
 			*/
 
 			+ spacer
+			+ img(image_folder + "titleist.jpg")
+			+ div("caption", "Brochure for Titleist products")
+			
+
+			+ spacer
 			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
 			
@@ -565,9 +573,9 @@ function makedata(){
 			//"hersheys_th.jpg"
 			"th_smores.jpg"
 			
-			,"Environmental Design"
+			,"Environmental / Events"
 			,"event"
-			,"Environmental Design"
+			,"Environmental / Events"
 			,""
 			,contentlist.event
 		);

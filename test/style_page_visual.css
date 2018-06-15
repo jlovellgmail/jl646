@@ -1,5 +1,8 @@
 .pageBody.visual {
-	background: rgba(78,78,78, 1);
+	
+	/*background: rgba(78,78,78, 1);*/
+	background: rgba(0,0,0, .09);
+
 	padding-top: 120px;
 	margin-bottom: 120px;
 	margin-left: 24px;
@@ -8,10 +11,10 @@
 	right: 0;
 }
 .pageBody.visual .menu .name a, .pageBody.visual .menuItem a {
-	color: white;
+	/*color: white;*/
 }
 .pageBody.visual .menuItem {
-	border-left: 1px solid rgba(255,255,255, .2);
+	/*border-left: 1px solid rgba(255,255,255, .2);*/
 }
 .pageContent {
 	max-width: 1440px;
@@ -39,12 +42,12 @@
 	max-width: 100%;
 }
 .masonry-layout__panel-content .caption {
-	color: rgba(255,255,255, .6);
+	color: rgba(0,0,0, 0.8);
 	font-family: aktiv-grotesk;
-	font-size: 14px;
-	line-height: 23px;
+	font-size: 13px;
+	line-height: 21px;
 	font-weight: 100;
-	letter-spacing: .04em;
+	letter-spacing: .03em;
 	margin-top: 9px;
 }
 .masonry-layout__panel.break {
@@ -127,7 +130,9 @@
 	}
 	.pageBody.visual {
 	    padding-top: 75px;
-	    background: rgba(0,0,0, .9);
+	    
+	    /*background: rgba(0,0,0, .9);*/
+	    
 	    /*
 	    margin-left: 4px;
 	    margin-right: 4px;
