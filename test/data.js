@@ -13,19 +13,9 @@ function makedata(){
 			else return "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)'>";
 		}
 		function text(s, classes, style){
-
-			/*
-			if(classes != undefined)
-				return "<p class='"+classes+"''>"+s+"</p>";
-			else
-				return "<p>"+s+"</p>";
-
-			*/
 			if(!classes) return  "<p>"+s+"</p>";
 			else if(!style) return "<p class='"+classes+"'>"+s+"</p>";
 			else return "<p class='"+classes+"' style='"+style+"'>"+s+"</p>";
-
-
 		}
 		function caption(s){
 			return text(s, "caption");
@@ -579,16 +569,6 @@ function makedata(){
 			,""
 			,contentlist.event
 		);
-		/*
-		add(
-			"titleist_th.jpg"
-			,"Brochure"
-			,"titleist"
-			,"Brochure"
-			,"Titleist"
-			,contentlist.titleist
-		);
-		*/
 		add(
 			
 			//"gp_th.jpg"
@@ -609,7 +589,6 @@ function makedata(){
 			,contentlist.drawings
 		);
 		add(
-			
 			//"rd_th.jpg"
 			// "th_vegucated.jpg"
 			"th_skinnydip.jpg"

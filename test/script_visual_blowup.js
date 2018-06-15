@@ -90,25 +90,8 @@ function setBlowupViewKeys(){
 
 
 		}
-		else if(e.keyCode == 39) { // right
-			
-			/*
-			var list = $(".pageContent img")
-				.map(function() {
-					return this.src;
-				})
-			.get();
-			var i = list.findIndex(function(d){
-				return d == $(".blowupImage").attr("data-src");
-			});
-			i = (i+1) % list.length;
-			$(".blowupImage")
-			.css("background-image", "url("+list[i]+")")
-				.attr("data-src", list[i])
-				;
-			*/
+		else if(e.keyCode == 39) { // right			
 			shownextimage();
-
 		}
 		else if (e.keyCode == 27) { // escape
 		    exitBlowup();

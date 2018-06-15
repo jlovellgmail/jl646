@@ -102,23 +102,11 @@ a
 }
 .name {
 	color: white;
-	/*text-transform: uppercase;*/
 	font-weight: 500;
 	letter-spacing: 1.7pt;
 	font-size: 15px;
 	display: inline-block;
 }
-
-/*
-.tag {
-	color: white;
-	text-transform: uppercase;
-	font-weight: 100;
-	font-size: 10px;
-	display: inline-block;
-}
-*/
-
 body {
 	margin: 0;
     font-family: sans-serif;
@@ -153,18 +141,12 @@ body {
 }
 .menuitem {
 	display: inline-block;
-    
-    /*margin-left: 20px;*/
     margin-left: 5px;
-
-    /*border-left: 1px solid rgba(0,0,0, .2);*/
-    
     padding-left: 20px;
 }
 .menuItem a {
 	color: black;
 	font-weight: 400;
-	/*letter-spacing: 1pt;*/
 	font-size: 14px;
 }
 .menuItem a.notfirst {
@@ -199,14 +181,7 @@ body {
 	.overlay, .overlay2 {
 		display: none;
 	}
-	.menu {
-		/*width: 100%;
-		max-width: 100%;
-		text-align: center;*/
-	}
 	.menu .wrap {
-		/*padding-left: 0;
-		padding-right: 0;*/
 		padding-left: 30px;
 	}
 	.button {
@@ -255,16 +230,6 @@ body {
 .contactbody .menu {
 	letter-spacing: inherit;
 }
-
-
-
-
-
-
-
-
-
-
 .workbody {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -277,26 +242,19 @@ body {
 	margin: 0 auto;
 	padding-top: 70px;
 	padding-bottom: 100px;
-
 }
 .item {
 	width: 404px;
 	max-width: 100%;
 	display: inline-block;
 	position: relative;
-
 	margin-left: 15px;
 	margin-right: 15px;
-
 }
 .aspect {
-	
-	/*padding-bottom: 77.5%;*/
 	padding-bottom: 74%;
-
 	position: relative;
 	margin: 2px;
-
 	margin-bottom: 75px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -326,19 +284,14 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	/*background: rgba(0,0,0, .3);*/
 	transition: .2s;
 }
 .container-table {
 	display: table;
 	width: auto;
 	height: 10px;
-	
-	/*bottom: 0;*/
 	bottom: -43px;
 	position: absolute;
-
-
 	margin-left: 0;
 	margin-top: 0;
 }
@@ -350,42 +303,22 @@ body {
 	text-align: center;
 	opacity: 1;
 	transition: .2s;
-
 	padding: 11px;
-
-	/*padding-left: 14px;*/
 	padding-left: 1px;
-
 	padding-right: 15px;
-	
-	/*
-	background: rgba(30,30,30, 1);
-	color: rgba(255,255,255, .9);
-	*/
 	background: none;
 	color: black;
-
-
 	font-family: "aktiv-grotesk",sans-serif;
 	font-size: 19px;
 	letter-spacing: .3pt;
 	font-weight: 500;
-
-
 }
 .container-abs.hide {
 	background: rgba(0,0,0, 0);
 }
-
-
 .item img {
 	width: 100%;
 }
-
-
-
-
-
 .contactBody {
 }
 .contactBody .headline {
@@ -411,13 +344,7 @@ body {
 .contactBody .copy a {
 	color: rgba(0,0,0, .6);
 }
-
-
 @media screen and (max-width: 600px) {
-
-	.menu {
-		/*height: 46px;*/
-	}
 	.contactBody .headline {
 		font-size: 44px;
 	}
@@ -425,34 +352,10 @@ body {
 	    padding-bottom: 40px;
 	    padding-top: 30px;
 	}
-	.workbody .aspect {
-		/*margin-bottom: 23px;*/
-		/*margin-bottom: 1px;*/
-	}
-
-	/*
-	.workbody .container-abs {
-		top: initial;
-	}
-	.workbody .container-cell {
-		font-size: 20px;
-		background: rgba(0,0,0, .8);
-		padding: 13px;
-	}
-	.workbody .container-cell.hide {
-		opacity: 1;
-	}
-	*/
 	.workbody .item {
 		margin-left: initial;
 		margin-right: initial;
 	}
-	.workbody .container-abs {
-		/*background: rgba(0,0,0, .1);*/
-	}
-
-
-
 }
 
 
