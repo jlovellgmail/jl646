@@ -565,9 +565,9 @@ function makedata(){
 			//"hersheys_th.jpg"
 			"th_smores.jpg"
 			
-			,"Environmental Design"
+			,"Environmental / Events"
 			,"event"
-			,"Environmental Design"
+			,"Environmental / Events"
 			,""
 			,contentlist.event
 		);
