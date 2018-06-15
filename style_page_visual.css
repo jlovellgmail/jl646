@@ -1,8 +1,5 @@
 .pageBody.visual {
-	
-	/*background: rgba(78,78,78, 1);*/
 	background: rgba(0,0,0, .09);
-
 	padding-top: 120px;
 	margin-bottom: 120px;
 	margin-left: 24px;
@@ -10,20 +7,11 @@
 	left: 0;
 	right: 0;
 }
-.pageBody.visual .menu .name a, .pageBody.visual .menuItem a {
-	/*color: white;*/
-}
-.pageBody.visual .menuItem {
-	/*border-left: 1px solid rgba(255,255,255, .2);*/
-}
 .pageContent {
 	max-width: 1440px;
 	display: block;
 	margin: 0 auto;
 }
-
-
-
 .masonry-layout {
 	column-count: 3;
 	column-gap: 24px;
@@ -32,7 +20,6 @@
 	max-width: 225px;
 	display: block;
 	margin: 0 auto;
-	/*background: rgba(255,255,255, .1);*/
 }
 .masonry-layout__panel-content {
 	margin-bottom: 100px;
@@ -56,12 +43,6 @@
 .masonry-layout__panel-content .gap {
 	height: 30px;
 }
-
-
-
-
-
-
 .blowup {
 	position: fixed;
 	left: 0;
@@ -69,7 +50,6 @@
 	right: 0;
 	bottom: 0;
 	background: rgba(0,0,0, .87);
-	/*z-index: 2;*/
 }
 .blowupimagecontainer {
 	position: fixed;
@@ -94,7 +74,6 @@
 	margin-right: 20px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	/*max-width: 600px;*/
 }
 .blowup .x {
 	background-image: url(/images/x.svg);
@@ -105,21 +84,14 @@
 	height: 20px;
 	margin: 9px;
 }
-
-
-
 @media screen and (max-width: 600px) {
-
 	.masonry-layout {
-		/*column-gap: 4px;*/
 	    column-gap: 9px;
 	}
 	.masonry-layout__panel-content .gap {
-		/*height: 4px;*/
 		height: 7px;
 	}
 	.masonry-layout__panel-content {
-		/*margin-bottom: 4px;*/
 		margin-bottom: 28px;
 	}
 	.masonry-layout__panel-content .caption {
@@ -130,13 +102,6 @@
 	}
 	.pageBody.visual {
 	    padding-top: 75px;
-	    
-	    /*background: rgba(0,0,0, .9);*/
-	    
-	    /*
-	    margin-left: 4px;
-	    margin-right: 4px;
-	    */
 	    margin-left: 8px;
 	    margin-right: 8px;
 	}

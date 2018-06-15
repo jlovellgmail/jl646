@@ -41,7 +41,6 @@
 	<!-- for visual page -->
 	<script>
 		$(document).ready(function(){
-			// d3.selectAll(".masonry-layout__panel-content img").attr("onclick", "blowup(this.src)");
 			d3.selectAll(".masonry-layout__panel-content img").attr("onclick", "attribute_check_then_blowup(this)");
 		});
 		function attribute_check_then_blowup(this_arg){

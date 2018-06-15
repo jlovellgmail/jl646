@@ -279,24 +279,6 @@ function populate() {
 
 		;
 
-	/*
-	d3.selectAll(".goleft .cell, .goright .cell")
-		.append("svg")
-		.attr("class", "arrow")
-		.attr("xmlns", "http://www.w3.org/2000/svg")
-		.attr("x", "0px")
-		.attr("y", "0px")
-		.attr("viewBox", "0 0 7.6 12")
-		;
-	d3.select(".goleft svg")
-		.append("polygon")
-		.attr("points", "7.5,10.5 3.1,6 7.6,1.6 6,0 0,6 6,12 ")
-		;
-	d3.select(".goright svg")
-		.append("polygon")
-		.attr("points", "0,1.5 4.5,6 0,10.4 1.6,12 7.6,6 1.6,0 ")
-		;
-	*/
 
 
 
@@ -321,32 +303,6 @@ function populate() {
 	}
 	imageloader.src = th_folder + "arrow_white_fill.png";
 
-
-
-	// moving to separate file
-	/*
-	// create menu
-	var wrap = d3.select(".menu")
-		.append("div").attr("class", "wrap")
-		;
-	wrap
-		.append("div").attr("class", "name tk-aktiv-grotesk")
-		.append("a").attr("href", "/")
-		.text("Jack Lovell")
-		;
-	var menuitems = 
-	wrap
-		.append("div").attr("class", "menuitem tk-aktiv-grotesk")
-		;
-	menuitems
-		.append("a").attr("href", "/")
-		.text("home")
-		;
-	menuitems
-		.append("a").attr("href", "contact.html").attr("class", "notfirst")
-		.text("contact")
-		;
-	*/
 
 
 }
