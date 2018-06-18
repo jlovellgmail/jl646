@@ -563,14 +563,13 @@ function makedata(){
 			,contentlist.ads
 		);
 		add(
-			
-			"th_icon.jpg"
-
-			,"Icons / Logos"
-			,"raytrace"
-			,"Icons / Logos"
+			// "th_smith.jpg"
+			"page_images/smith.jpg"
+			,"Drawings"
+			,"drawings"
+			,"Drawings"
 			,""
-			,contentlist.other
+			,contentlist.drawings
 		);
 		add(
 			
@@ -595,12 +594,14 @@ function makedata(){
 			,contentlist.gp
 		);
 		add(
-			"th_smith.jpg"
-			,"Drawings"
-			,"drawings"
-			,"Drawings"
+			
+			"th_icon.jpg"
+
+			,"Icons / Logos"
+			,"raytrace"
+			,"Icons / Logos"
 			,""
-			,contentlist.drawings
+			,contentlist.other
 		);
 		add(
 			// "rd_th.jpg"
