@@ -94,15 +94,16 @@ body {
 @media screen and (max-width: 600px) {
 	.masonry-layout {
 	    column-gap: 9px;
+    	column-count: 1;
 	}
 	.masonry-layout__panel-content .gap {
 		height: 7px;
 	}
 	.masonry-layout__panel-content {
-		margin-bottom: 28px;
+		/*margin-bottom: 28px;*/
 	}
 	.masonry-layout__panel-content .caption {
-		display: none;
+		/*display: none;*/
 	}
 	.menu .wrap {
 	    padding-left: 22px;
