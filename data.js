@@ -508,14 +508,14 @@ function makedata(){
 			
 			;
 		contentlist.rd = ""
-			+ img(image_folder + "keyart_skinnydip.jpg")
-			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
+			+ img(image_folder + "keyart_vegucated.jpg")
+			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
 			+ spacer
 			+ img(image_folder + "keyart_rd_1600.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
 			+ spacer
-			+ img(image_folder + "keyart_vegucated.jpg")
-			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
+			+ img(image_folder + "keyart_skinnydip.jpg")
+			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			;
 	}
 
@@ -535,7 +535,7 @@ function makedata(){
 		}
 		//------------------------------------
 		add(
-			"th_itsfinallyhere.jpg"
+			"page_images/visual_20171221_Tech_DigitalLastMinuteDeals.jpg"
 			,"Digital Marketing"
 			,"emailmarketing"
 			,"Digital Marketing"
@@ -554,6 +554,15 @@ function makedata(){
 			,contentlist.bags
 		);
 		add(
+			// "ad_th.jpg"
+			"page_images/ad_secondwind.jpg"
+			,"Ad Campaign"
+			,"ad"
+			,"Ad Campaign"
+			,"Spec ads for Health Warrior"
+			,contentlist.ads
+		);
+		add(
 			
 			"th_icon.jpg"
 
@@ -564,21 +573,13 @@ function makedata(){
 			,contentlist.other
 		);
 		add(
-			"ad_th.jpg"
-			,"Ad Campaign"
-			,"ad"
-			,"Ad Campaign"
-			,"Spec ads for Health Warrior"
-			,contentlist.ads
-		);
-		add(
 			
 			//"hersheys_th.jpg"
 			"th_smores.jpg"
 			
-			,"Environmental / Events"
+			,"Event / Environmental Graphics"
 			,"event"
-			,"Environmental / Events"
+			,"Event / Environmental Graphics"
 			,""
 			,contentlist.event
 		);
@@ -602,9 +603,10 @@ function makedata(){
 			,contentlist.drawings
 		);
 		add(
-			//"rd_th.jpg"
+			// "rd_th.jpg"
 			// "th_vegucated.jpg"
-			"th_skinnydip.jpg"
+			// "th_skinnydip.jpg"
+			"page_images/keyart_vegucated.jpg"
 
 			,"Key Art"
 			,"rd"
