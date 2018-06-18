@@ -536,10 +536,10 @@ function makedata(){
 		//------------------------------------
 		add(
 			"page_images/visual_20171221_Tech_DigitalLastMinuteDeals.jpg"
-			,"Digital Marketing"
+			,"Emails / Digital Ads"
 			,"emailmarketing"
 			,"Digital Marketing"
-			,"Emails And Social Media Ads"
+			,"Emails and Digital Ads"
 			,contentlist.webdesign
 		);
 		add(
@@ -556,10 +556,10 @@ function makedata(){
 		add(
 			// "ad_th.jpg"
 			"page_images/ad_secondwind.jpg"
-			,"Ad Campaign"
+			,"Spec Ad Campaign"
 			,"ad"
-			,"Ad Campaign"
-			,"Spec ads for Health Warrior"
+			,"Spec Ad Campaign"
+			,"Health Warrior"
 			,contentlist.ads
 		);
 		add(

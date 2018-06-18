@@ -6,12 +6,18 @@
 }
 .pageBody.visual {
 	/*background: rgba(0,0,0, .09);*/
-	padding-top: 120px;
+	padding-top: 80px;
 	margin-bottom: 120px;
 	margin-left: 24px;
 	margin-right: 24px;
 	left: 0;
 	right: 0;
+}
+.pageBody.visual .title {
+	width: 100%;
+	text-align: center;
+	font-size: 42px;
+	margin-bottom: 50px;
 }
 .pageContent {
 	max-width: 1440px;
