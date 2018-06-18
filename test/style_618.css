@@ -1,10 +1,7 @@
-.darken1 {
-	filter: brightness(.98);
+body {
+    letter-spacing: 0.05em;
 }
-.darken2 {
-	filter: brightness(.98);
-}
-.pageBody.visual {
+.homepage {
 	/*background: rgba(0,0,0, .09);*/
 	padding-top: 120px;
 	margin-bottom: 120px;
@@ -43,6 +40,10 @@
 	letter-spacing: .03em;
 	margin-top: 9px;
 }
+.masonry-layout__panel-content a {
+	text-decoration: none;
+}
+
 .masonry-layout__panel.break {
 	break-before: column;
 }
@@ -103,14 +104,9 @@
 	.masonry-layout__panel-content .caption {
 		display: none;
 	}
-
-	/*
 	.menu .wrap {
 	    padding-left: 22px;
 	}
-	*/
-
-
 	.pageBody.visual {
 	    padding-top: 75px;
 	    margin-left: 8px;
