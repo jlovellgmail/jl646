@@ -517,6 +517,13 @@ function makedata(){
 			+ img(image_folder + "keyart_skinnydip.jpg")
 			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			;
+		contentlist.pattern = ""
+			+ img(image_folder + "leggings_2designs.jpg")
+			+ spacer
+			+ img(image_folder + "pattern_dots.jpg")
+			+ spacer
+			+ img(image_folder + "pattern_pink_camouflage.jpg")
+			;
 	}
 
 	// create list of items
@@ -561,6 +568,14 @@ function makedata(){
 			,"Spec Ad Campaign"
 			,"Health Warrior"
 			,contentlist.ads
+		);
+		add(
+			"page_images/leggings_2designs.jpg"
+			,"Pattern Design"
+			,"pattern"
+			,"Pattern Design"
+			,""
+			,contentlist.pattern
 		);
 		add(
 			// "th_smith.jpg"
