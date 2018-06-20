@@ -1,17 +1,16 @@
 cout = console.log;
 var pagename = "project.html";
 var keyname = "project";
+var datafile = "http://jl646.com/data.js";
+
+
 
 // get data
 var data;
 getdata();
 function getdata(){
 	if(!window.data){
-		
-		// for local testing
-		//$.getScript('data.js', function()
-		$.getScript('http://jl646.com/data.js', function()
-
+		$.getScript(datafile, function()
 		{
 		    // script is now loaded and executed.
 		    data = window.data;
