@@ -9,8 +9,15 @@ function getdata(){
 	if(!window.data){
 		
 
-		// $.getScript('http://jl646.com/data.js', function()
+		//
+		//
+		//
+		//
 		$.getScript('http://jl646.com/test/data.js', function()
+		//
+		//
+		//
+		//
 
 
 		{
