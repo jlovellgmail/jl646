@@ -34,11 +34,11 @@ body {
 .masonry-layout__panel-content .caption {
 	color: rgba(0,0,0, 0.8);
 	font-family: aktiv-grotesk;
-	font-size: 13px;
 	line-height: 21px;
-	font-weight: 100;
-	letter-spacing: .03em;
 	margin-top: 9px;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: .02em;
 }
 .masonry-layout__panel-content a {
 	text-decoration: none;
