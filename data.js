@@ -524,6 +524,28 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "pattern_pink_camouflage.jpg")
 			;
+		contentlist.production = ""
+
+			+ text("My role:", " ", "font-weight:bold;")
+			+ text("Production design. I worked with designers to adjust, refine and clean up their designs as needed and prep files for print. Incorporated metallic and holographic inks. I modified designs to create pattern repeats, and adjusted designs to complement the packaging structure. I completed the print production for gift bags, wrapping paper, and other consumer packaged goods.", " ", "margin-top:2px;")
+
+			+ spacer
+			+ img(image_folder + "production_TBB20_PeonyJoy_GB_BB.jpg")
+			+ spacer
+			+ img(image_folder + "production_gb_abstract.jpg")
+			+ spacer
+			+ img(image_folder + "production_gb_birthday.jpg")
+			+ spacer
+			+ img(image_folder + "production_gb_floral.jpg")
+			+ spacer
+			+ img(image_folder + "production_gb_spring_plants.jpg")
+			+ spacer
+			+ img(image_folder + "production_gb_hooray.jpg")
+			+ spacer
+			+ img(image_folder + "production_unicorns.jpg")
+			+ spacer
+			+ img(image_folder + "production_scales.jpg")
+			;
 	}
 
 	// create list of items
@@ -569,7 +591,6 @@ function makedata(){
 			,"Health Warrior"
 			,contentlist.ads
 		);
-		/*
 		add(
 			"page_images/leggings_2designs.jpg"
 			,"Pattern Design"
@@ -578,7 +599,14 @@ function makedata(){
 			,""
 			,contentlist.pattern
 		);
-		*/
+		add(
+			"page_images/production_TBB20_PeonyJoy_GB_BB.jpg"
+			,"Print Production"
+			,"production"
+			,"Print Production"
+			,""
+			,contentlist.production
+		);
 		add(
 			// "th_smith.jpg"
 			"page_images/smith.jpg"
