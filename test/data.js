@@ -543,10 +543,10 @@ function makedata(){
 		//------------------------------------
 		add(
 			"page_images/visual_20171221_Tech_DigitalLastMinuteDeals.jpg"
-			,"Emails / Digital Ads"
+			,"Emails / Digital Assets"
 			,"emailmarketing"
 			,"Digital Marketing"
-			,"Emails and Digital Ads"
+			,"Emails / Digital Assets"
 			,contentlist.webdesign
 		);
 		add(
@@ -569,6 +569,7 @@ function makedata(){
 			,"Health Warrior"
 			,contentlist.ads
 		);
+		/*
 		add(
 			"page_images/leggings_2designs.jpg"
 			,"Pattern Design"
@@ -577,6 +578,7 @@ function makedata(){
 			,""
 			,contentlist.pattern
 		);
+		*/
 		add(
 			// "th_smith.jpg"
 			"page_images/smith.jpg"
