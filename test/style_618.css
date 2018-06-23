@@ -1,3 +1,7 @@
+.homepage #homelink {
+	display: none;
+}
+
 body {
     letter-spacing: 0.05em;
 }

@@ -24,7 +24,7 @@
 	vertical-align: middle;
 	padding-left: 29px;
 	padding-right: 24px;
-	padding-top: 21px;
+	padding-top: 14px;
 	padding-bottom: 13px;
 }
 .menuitem {
@@ -32,6 +32,8 @@
     /*margin-left: 5px;*/
     /*padding-left: 20px;*/
     float: right;
+    position: relative;
+    top: 7px;
 }
 .menuitem a {
 	color: black;

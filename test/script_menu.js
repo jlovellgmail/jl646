@@ -18,7 +18,7 @@ function menu() {
 		wrap.append("div").attr("class", "menuitem tk-aktiv-grotesk")
 		;
 	menuitems
-		.append("a").attr("href", "/")
+		.append("a").attr("href", "/").attr("id", "homelink")
 		.text("home")
 		;
 	menuitems
