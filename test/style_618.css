@@ -1,7 +1,11 @@
-.homepage #homelink {
+/* turn off mobile view */
+#mobile {
 	display: none;
 }
 
+.homepage #homelink {
+	display: none;
+}
 body {
     letter-spacing: 0.05em;
 }
@@ -96,6 +100,16 @@ body {
 	margin: 9px;
 }
 @media screen and (max-width: 600px) {
+	
+	/*switch to mobile ordering */
+	.homepage .pageContent .masonry-layout {
+		display: none;
+	}
+	#mobile {
+		display: block;
+	}
+
+
 	.masonry-layout {
 	    column-gap: 9px;
     	column-count: 1;
