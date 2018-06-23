@@ -53,6 +53,21 @@ function makeitems(){
 	$( breakelement ).insertAfter( "#event" );
 
 
+
+
+
+
+	// copy layout for reorder
+	$(".homepage .pageContent .masonry-layout").clone().attr("id", "mobile").appendTo(".homepage .pageContent");
+	$("#mobile .break").remove();
+	$("#mobile #pattern").insertAfter("#mobile #emailmarketing");
+	$("#mobile #production").insertAfter("#mobile #pattern");
+	$("#mobile #drawings").insertAfter("#mobile #production");
+
+
+
+
+
 /*
 
 
