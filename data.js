@@ -518,11 +518,15 @@ function makedata(){
 			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			;
 		contentlist.pattern = ""
-			+ img(image_folder + "leggings_2designs.jpg")
+			+ img(image_folder + "pattern_6.20a_swatch-for-store.jpg")
+			+ spacer
+			+ img(image_folder + "pattern_6.20a_mockups-front-and-left_700.jpg", "darkenImage")
 			+ spacer
 			+ img(image_folder + "pattern_dots.jpg")
 			+ spacer
 			+ img(image_folder + "pattern_pink_camouflage.jpg")
+			+ spacer
+			+ img(image_folder + "leggings_2designs.jpg")
 			;
 		contentlist.production = ""
 
@@ -572,10 +576,8 @@ function makedata(){
 			,contentlist.webdesign
 		);
 		add(
-			
-			// "th_bags.jpg"
-			"th_bags_v2.jpg"
-
+			// "th_bags_v2.jpg"
+			"page_images/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg"
 			,"Product Photography"
 			,"bags"
 			,"Product Photography"
@@ -583,7 +585,6 @@ function makedata(){
 			,contentlist.bags
 		);
 		add(
-			// "ad_th.jpg"
 			"page_images/ad_secondwind.jpg"
 			,"Spec Ad Campaign"
 			,"ad"
@@ -592,7 +593,7 @@ function makedata(){
 			,contentlist.ads
 		);
 		add(
-			"page_images/leggings_2designs.jpg"
+			"page_images/pattern_6.20a_swatch-for-store.jpg"
 			,"Pattern Design"
 			,"pattern"
 			,"Pattern Design"
@@ -608,7 +609,15 @@ function makedata(){
 			,contentlist.production
 		);
 		add(
-			// "th_smith.jpg"
+			//"th_smores.jpg"
+			"page_images/event_aramark.jpg"
+			,"Event / Environmental Graphics"
+			,"event"
+			,"Event / Environmental Graphics"
+			,""
+			,contentlist.event
+		);
+		add(
 			"page_images/smith.jpg"
 			,"Drawings"
 			,"drawings"
@@ -617,31 +626,7 @@ function makedata(){
 			,contentlist.drawings
 		);
 		add(
-			
-			//"hersheys_th.jpg"
-			"th_smores.jpg"
-			
-			,"Event / Environmental Graphics"
-			,"event"
-			,"Event / Environmental Graphics"
-			,""
-			,contentlist.event
-		);
-		add(
-			
-			//"gp_th.jpg"
-			"th_gp_camera.jpg"
-
-			,"Custom Image Filters"
-			,"gp"
-			,"Custom Image Filters"
-			,"Using simulations of evolution to draw pictures"
-			,contentlist.gp
-		);
-		add(
-			
 			"th_icon.jpg"
-
 			,"Icons / Logos"
 			,"raytrace"
 			,"Icons / Logos"
@@ -649,11 +634,7 @@ function makedata(){
 			,contentlist.other
 		);
 		add(
-			// "rd_th.jpg"
-			// "th_vegucated.jpg"
-			// "th_skinnydip.jpg"
 			"page_images/keyart_vegucated.jpg"
-
 			,"Key Art"
 			,"rd"
 			,"Key Art"
@@ -661,16 +642,23 @@ function makedata(){
 			,contentlist.rd
 		);
 		add(
-			
-			//"oysters_th.jpg"
+			"th_gp_camera.jpg"
+			,"Custom Image Filters"
+			,"gp"
+			,"Custom Image Filters"
+			,"Using simulations of evolution to draw pictures"
+			,contentlist.gp
+		);
+		/*
+		add(
 			"th_oysters_gray.jpg"
-
 			,"Data Visualization"
 			,"oysters"
 			,"Data Visualization"
 			,"Collaboration with researchers at the University of Rhode Island Department of Oceanography"
 			,contentlist.oysters
 		);
+		*/
 	}
 
 }

@@ -96,6 +96,9 @@ body {
 	    column-gap: 9px;
     	column-count: 1;
 	}
+	.break {
+		display: none;
+	}
 	.masonry-layout__panel-content .gap {
 		height: 7px;
 	}

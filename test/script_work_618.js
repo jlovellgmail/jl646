@@ -45,7 +45,7 @@ function makeitems(){
 
 	items = 
 		items.enter()
-		.append("div").attr("class", "masonry-layout__panel")
+		.append("div").attr("class", "masonry-layout__panel").attr("id", function(d){ return d.query; })
 		.append("div").attr("class", "masonry-layout__panel-content")
 		.append("a").attr("href", function(d){
 			if(d.query == "emailmarketing") return "project_visual.html";
@@ -56,7 +56,10 @@ function makeitems(){
 	items.append("div").attr("class", "caption").text(function(d){ return d.blurb; });
 
 
-
+	// add column breaks
+	var breakelement = "<div class='masonry-layout__panel break'></div>";
+	$( breakelement ).insertAfter( "#ad" );
+	$( breakelement ).insertAfter( "#event" );
 
 
 /*
