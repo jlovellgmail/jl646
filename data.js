@@ -568,7 +568,7 @@ function makedata(){
 		}
 		//------------------------------------
 		add(
-			"page_images/visual_20171221_Tech_DigitalLastMinuteDeals.jpg"
+			"page_images/visual_20171221_Tech_DigitalLastMinuteDeals_500.jpg"
 			,"Emails / Digital Assets"
 			,"emailmarketing"
 			,"Digital Marketing"
@@ -577,7 +577,7 @@ function makedata(){
 		);
 		add(
 			// "th_bags_v2.jpg"
-			"page_images/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg"
+			"page_images/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_500.jpg"
 			,"Product Photography"
 			,"bags"
 			,"Product Photography"
@@ -585,7 +585,7 @@ function makedata(){
 			,contentlist.bags
 		);
 		add(
-			"page_images/ad_secondwind.jpg"
+			"page_images/ad_secondwind_500.jpg"
 			,"Spec Ad Campaign"
 			,"ad"
 			,"Spec Ad Campaign"
@@ -593,15 +593,15 @@ function makedata(){
 			,contentlist.ads
 		);
 		add(
-			"page_images/pattern_6.20a_swatch-for-store.jpg"
-			,"Pattern Design"
+			"page_images/pattern_6.20a_swatch-for-store_500.jpg"
+			,"Patterns"
 			,"pattern"
-			,"Pattern Design"
+			,"Patterns"
 			,""
 			,contentlist.pattern
 		);
 		add(
-			"page_images/production_TBB20_PeonyJoy_GB_BB.jpg"
+			"page_images/production_TBB20_PeonyJoy_GB_BB_500.jpg"
 			,"Print Production"
 			,"production"
 			,"Print Production"
@@ -609,8 +609,7 @@ function makedata(){
 			,contentlist.production
 		);
 		add(
-			//"th_smores.jpg"
-			"page_images/event_aramark.jpg"
+			"page_images/event_aramark_500.jpg"
 			,"Event / Environmental Graphics"
 			,"event"
 			,"Event / Environmental Graphics"
@@ -618,7 +617,7 @@ function makedata(){
 			,contentlist.event
 		);
 		add(
-			"page_images/smith.jpg"
+			"page_images/smith_500.jpg"
 			,"Drawings"
 			,"drawings"
 			,"Drawings"
@@ -626,7 +625,7 @@ function makedata(){
 			,contentlist.drawings
 		);
 		add(
-			"th_icon.jpg"
+			"page_images/icon_500.jpg"
 			,"Icons / Logos"
 			,"raytrace"
 			,"Icons / Logos"
@@ -634,7 +633,7 @@ function makedata(){
 			,contentlist.other
 		);
 		add(
-			"page_images/keyart_vegucated.jpg"
+			"page_images/keyart_vegucated_500.jpg"
 			,"Key Art"
 			,"rd"
 			,"Key Art"
@@ -642,7 +641,7 @@ function makedata(){
 			,contentlist.rd
 		);
 		add(
-			"th_gp_camera.jpg"
+			"page_images/gp_camera_500.jpg"
 			,"Custom Image Filters"
 			,"gp"
 			,"Custom Image Filters"
