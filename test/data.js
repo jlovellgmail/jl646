@@ -518,10 +518,10 @@ function makedata(){
 			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
 			;
 		contentlist.pattern = ""
-			+ img(image_folder + "pattern_6.20a_swatch-for-store.jpg")
-			+ spacer
-			+ img(image_folder + "pattern_6.20a_mockups-front-and-left_700.jpg", "darkenImage")
-			+ spacer
+			// + img(image_folder + "pattern_6.20a_swatch-for-store.jpg")
+			// + spacer
+			// + img(image_folder + "pattern_6.20a_mockups-front-and-left_700.jpg", "darkenImage")
+			// + spacer
 			+ img(image_folder + "pattern_dots.jpg")
 			+ spacer
 			+ img(image_folder + "pattern_pink_camouflage.jpg")
@@ -593,7 +593,8 @@ function makedata(){
 			,contentlist.ads
 		);
 		add(
-			"page_images/pattern_6.20a_swatch-for-store_500.jpg"
+			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
+			"page_images/pattern_dots.jpg"
 			,"Patterns"
 			,"pattern"
 			,"Patterns"
