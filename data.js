@@ -522,6 +522,8 @@ function makedata(){
 			// + spacer
 			// + img(image_folder + "pattern_6.20a_mockups-front-and-left_700.jpg", "darkenImage")
 			// + spacer
+			+ img(image_folder + "pattern_dots-fabric.jpg")
+			+ spacer
 			+ img(image_folder + "pattern_dots.jpg")
 			+ spacer
 			+ img(image_folder + "pattern_pink_camouflage.jpg")
@@ -594,7 +596,8 @@ function makedata(){
 		);
 		add(
 			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
-			"page_images/pattern_dots.jpg"
+			// "page_images/pattern_dots.jpg"
+			"page_images/pattern_dots-fabric.jpg"
 			,"Patterns"
 			,"pattern"
 			,"Patterns"
