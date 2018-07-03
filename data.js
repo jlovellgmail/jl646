@@ -522,13 +522,15 @@ function makedata(){
 			// + spacer
 			// + img(image_folder + "pattern_6.20a_mockups-front-and-left_700.jpg", "darkenImage")
 			// + spacer
-			+ img(image_folder + "pattern_dots-fabric.jpg")
-			+ spacer
 			+ img(image_folder + "pattern_dots.jpg")
+			+ spacer
+			+ img(image_folder + "pattern_dots-fabric.jpg")
 			+ spacer
 			+ img(image_folder + "pattern_pink_camouflage.jpg")
 			+ spacer
-			+ img(image_folder + "leggings_2designs.jpg")
+			+ img(image_folder + "pattern_pink-camouflage-fabric.jpg")
+			// + spacer
+			// + img(image_folder + "leggings_2designs.jpg")
 			;
 		contentlist.production = ""
 
