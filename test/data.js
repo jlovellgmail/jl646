@@ -526,11 +526,21 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "pattern_dots-fabric.jpg")
 			+ spacer
+			+ img(image_folder + "pattern_7.7b.jpg")
+
+
+			/*
+			+ spacer
+			+ img(image_folder + "pattern_7.5.18a_swatch.jpg")
+			+ spacer
 			+ img(image_folder + "pattern_pink_camouflage.jpg")
 			+ spacer
 			+ img(image_folder + "pattern_pink-camouflage-fabric.jpg")
+			*/
+
 			// + spacer
 			// + img(image_folder + "leggings_2designs.jpg")
+			
 			;
 		contentlist.production = ""
 
