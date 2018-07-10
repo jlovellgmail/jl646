@@ -582,7 +582,10 @@ function makedata(){
 		}
 		//------------------------------------
 		add(
-			"page_images/visual_20171221_Tech_DigitalLastMinuteDeals_500.jpg"
+			
+			// "page_images/visual_20171221_Tech_DigitalLastMinuteDeals_500.jpg"
+			"th_visual_2emails.jpg"
+
 			,"Emails / Digital Assets"
 			,"emailmarketing"
 			,"Digital Marketing"
