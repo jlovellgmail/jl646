@@ -611,8 +611,8 @@ function makedata(){
 		);
 		add(
 			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
-			// "page_images/pattern_dots.jpg"
-			"page_images/pattern_dots-fabric.jpg"
+			"page_images/pattern_dots.jpg"
+			// "page_images/pattern_dots-fabric.jpg"
 			,"Patterns"
 			,"pattern"
 			,"Patterns"
