@@ -365,26 +365,30 @@ function makedata(){
 			;
 		contentlist.event = ""
 
-			+ text("Hershey's BlogHer Conference Suites 2010", "heading")
-			+ text("Floor-to-ceiling environmental graphics.")
-			+ spacermedium
+
+			/*
+			+ img(image_folder + "event_7.9b-(m)---rainbow.jpg")
+			+ spacersmall
+			+ img(image_folder + "event_7.18a.jpg")
+			+ caption("Concept renderings for an event.")
+			+ spacer
+			*/
+
+
 			+ img(image_folder + "smores2.jpg")
-			+ spacer
+			+ spacersmall
 			+ img(image_folder + "event_forest.jpg")
+			+ caption("Hershey's BlogHer 2010 Conference exhibits - Floor-to-ceiling environmental graphics.")
 			//-------------------------
 			+ spacer
-			+ text("Hershey's Easter Event", "heading")
-			+ text("Step and repeat, kiosks and stage backdrop.")
-			+ spacermedium
 			+ img(image_folder + "hersheys_double.jpg")
-			+ spacer
+			+ spacermedium
 			+ img(image_folder + "hersheys_stage.jpg")
+			+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
 			//-------------------------
 			+ spacer
-			+ text("Aramark Guest Chef Event", "heading")
-			+ text("Entrance and sponsor banners.")
-			+ spacermedium
 			+ img(image_folder + "event_aramark.jpg")
+			+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
 			//-------------------------
 
 			/*
@@ -564,6 +568,23 @@ function makedata(){
 			+ spacer
 			+ img(image_folder + "production_scales.jpg")
 			;
+		contentlist.compositing = ""
+
+			+ img(image_folder + "face-swap-two-frames.gif")
+			+ spacerextrasmall
+			+ img(image_folder + "face-swap-side-by-side.jpg")
+			+ text("Face swap")
+			
+			/*
+			+ spacer
+			+ img(image_folder + "director-in-chair---face-swapped.jpg")
+			+ spacer
+			+ img(image_folder + "swap with this guy.png")
+			+ spacer
+			+ img(image_folder + "director in chair.jpg")
+			*/
+
+			;
 	}
 
 	// create list of items
@@ -610,6 +631,15 @@ function makedata(){
 			,contentlist.ads
 		);
 		add(
+			// "th_bags_v2.jpg"
+			"page_images/director-in-chair---face-swapped.jpg"
+			,"Image Compositing"
+			,"compositing"
+			,"Image Compositing"
+			,"" //,"Leather handbags"
+			,contentlist.compositing
+		);
+		add(
 			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
 			"page_images/pattern_dots.jpg"
 			// "page_images/pattern_dots-fabric.jpg"
@@ -629,9 +659,9 @@ function makedata(){
 		);
 		add(
 			"page_images/event_aramark_500.jpg"
-			,"Event / Environmental Graphics"
+			,"Event Graphics"
 			,"event"
-			,"Event / Environmental Graphics"
+			,"Event Graphics"
 			,""
 			,contentlist.event
 		);
