@@ -640,15 +640,6 @@ function makedata(){
 			,contentlist.bags
 		);
 		add(
-			// "th_bags_v2.jpg"
-			"page_images/director-in-chair---face-swapped.jpg"
-			,"Image Compositing"
-			,"compositing"
-			,"Image Compositing"
-			,"" //,"Leather handbags"
-			,contentlist.compositing
-		);
-		add(
 			"page_images/event_aramark_500.jpg"
 			,"Environmental / Experiential"
 			,"event"
@@ -663,6 +654,15 @@ function makedata(){
 			,"Print Production"
 			,""
 			,contentlist.production
+		);
+		add(
+			// "th_bags_v2.jpg"
+			"page_images/director-in-chair---face-swapped.jpg"
+			,"Image Compositing"
+			,"compositing"
+			,"Image Compositing"
+			,"" //,"Leather handbags"
+			,contentlist.compositing
 		);
 		add(
 			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
