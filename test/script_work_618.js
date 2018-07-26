@@ -69,9 +69,10 @@ function makeitems(){
 	// copy layout for reorder
 	$(".homepage .pageContent .masonry-layout").clone().attr("id", "mobile").appendTo(".homepage .pageContent");
 	$("#mobile .break").remove();
-	$("#mobile #pattern").insertAfter("#mobile #emailmarketing");
+	$("#mobile #compositing").insertAfter("#mobile #emailmarketing");
+	$("#mobile #drawings").insertAfter("#mobile #compositing");
+	$("#mobile #pattern").insertAfter("#mobile #drawings");
 	$("#mobile #production").insertAfter("#mobile #pattern");
-	$("#mobile #drawings").insertAfter("#mobile #production");
 
 
 

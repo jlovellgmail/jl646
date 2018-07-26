@@ -367,9 +367,7 @@ function makedata(){
 
 
 			+ img(image_folder + "event_7.9b-(m)---rainbow.jpg")
-			+ spacersmall
-			+ img(image_folder + "event_7.18a.jpg")
-			+ caption("Concept renderings for an event.")
+			+ caption("Concept renderings.")
 			+ spacer
 			+ img(image_folder + "smores2.jpg")
 			+ spacersmall
