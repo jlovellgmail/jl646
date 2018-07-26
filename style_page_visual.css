@@ -53,7 +53,7 @@
 	break-before: column;
 }
 .masonry-layout__panel-content .gap {
-	height: 30px;
+	height: 20px;
 }
 .blowup {
 	position: fixed;

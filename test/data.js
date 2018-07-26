@@ -695,7 +695,7 @@ function makedata(){
 			,"Key Art"
 			,"rd"
 			,"Key Art"
-			,"Film Posters"
+			,""
 			,contentlist.rd
 		);
 		add(
