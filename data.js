@@ -315,21 +315,36 @@ function makedata(){
 			// + text("My role:", " ", "font-weight:bold;")
 			// + text("Art Direction. I took finalized headline and body copy, and designed and executed all visual aspects including photo selection, visual treatment and typography. I worked closely with the copywriter and creative director to ensure the ads stayed on-strategy and spoke in the intended voice.", " ", "margin-top:2px;")
 			// + spacer
-			
-			+ img(image_folder + "ad_set.jpg")
+
+			+ img(image_folder + "Tandem-7.26.18b.jpg", "darkenImage")
+			+ caption("Print ad for Tandem.")
 			+ spacer
+
+
+
+			// + img(image_folder + "ad_set.jpg")
+			// + spacer
 			+ img(image_folder + "ad_startsmart.jpg")
+			+ caption("Ad for Health Warrior.")
 			+ spacer
 			+ img(image_folder + "ad_secondwind.jpg")
+			+ caption("Ad for Health Warrior.")
 			+ spacer
 			+ img(image_folder + "ad_theonly.jpg")
+			+ caption("Ad for Health Warrior.")
 			+ spacer
 			+ img(image_folder + "ad_onlysit.jpg")
+			+ caption("Ad for Health Warrior.")
 			+ spacer
 			+ img(image_folder + "ad_earlycomp1.jpg")
+			+ caption("Ad for Health Warrior.")
+
+			/*
 			+ spacer
 			+ img(image_folder + "ad_headlines_1500.jpg")
 			+ caption("Exploring line break variations")
+			*/
+
 			;
 		contentlist.bags = ""
 			+ text("My role:", " ", "font-weight:bold;")
@@ -364,15 +379,6 @@ function makedata(){
 			*/
 			;
 		contentlist.event = ""
-
-
-			/*
-			+ img(image_folder + "event_7.9b-(m)---rainbow.jpg")
-			+ spacersmall
-			+ img(image_folder + "event_7.18a.jpg")
-			+ caption("Concept renderings for an event.")
-			+ spacer
-			*/
 
 
 			+ img(image_folder + "event_aramark.jpg")
@@ -617,6 +623,14 @@ function makedata(){
 			,contentlist.webdesign
 		);
 		add(
+			"page_images/ad_secondwind_500.jpg"
+			,"Ads"
+			,"ad"
+			,"Ads"
+			,""
+			,contentlist.ads
+		);
+		add(
 			// "th_bags_v2.jpg"
 			"page_images/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_500.jpg"
 			,"Product Photography"
@@ -624,14 +638,6 @@ function makedata(){
 			,"Product Photography"
 			,"" //,"Leather handbags"
 			,contentlist.bags
-		);
-		add(
-			"page_images/ad_secondwind_500.jpg"
-			,"Spec Ad Campaign"
-			,"ad"
-			,"Spec Ad Campaign"
-			,"Health Warrior"
-			,contentlist.ads
 		);
 		add(
 			// "th_bags_v2.jpg"
@@ -643,14 +649,12 @@ function makedata(){
 			,contentlist.compositing
 		);
 		add(
-			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
-			"page_images/pattern_dots.jpg"
-			// "page_images/pattern_dots-fabric.jpg"
-			,"Patterns"
-			,"pattern"
-			,"Patterns"
+			"page_images/event_aramark_500.jpg"
+			,"Environmental / Experiential"
+			,"event"
+			,"Environmental / Experiential"
 			,""
-			,contentlist.pattern
+			,contentlist.event
 		);
 		add(
 			"page_images/production_TBB20_PeonyJoy_GB_BB_500.jpg"
@@ -661,12 +665,14 @@ function makedata(){
 			,contentlist.production
 		);
 		add(
-			"page_images/event_aramark_500.jpg"
-			,"Environmental / Experiential"
-			,"event"
-			,"Environmental / Experiential"
+			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
+			"page_images/pattern_dots.jpg"
+			// "page_images/pattern_dots-fabric.jpg"
+			,"Patterns"
+			,"pattern"
+			,"Patterns"
 			,""
-			,contentlist.event
+			,contentlist.pattern
 		);
 		add(
 			"page_images/smith_500.jpg"

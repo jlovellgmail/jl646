@@ -58,8 +58,8 @@ function makeitems(){
 
 	// add column breaks
 	var breakelement = "<div class='masonry-layout__panel break'></div>";
-	$( breakelement ).insertAfter( "#ad" );
-	$( breakelement ).insertAfter( "#event" );
+	$( breakelement ).insertAfter( "#bags" );
+	$( breakelement ).insertAfter( "#pattern" );
 
 
 
