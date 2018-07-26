@@ -366,8 +366,13 @@ function makedata(){
 		contentlist.event = ""
 
 
-			+ img(image_folder + "event_7.9b-(m)---rainbow.jpg")
+			+ img(image_folder + "event_aramark.jpg")
+			+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
+			//-------------------------
+			+ spacer
+			+ img(image_folder + "event_7.9b-rainbow.jpg")
 			+ caption("Concept renderings.")
+			//-------------------------
 			+ spacer
 			+ img(image_folder + "smores2.jpg")
 			+ spacersmall
@@ -379,11 +384,6 @@ function makedata(){
 			+ spacermedium
 			+ img(image_folder + "hersheys_stage.jpg")
 			+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
-			//-------------------------
-			+ spacer
-			+ img(image_folder + "event_aramark.jpg")
-			+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
-			//-------------------------
 
 			/*
 			+ spacer
@@ -653,9 +653,9 @@ function makedata(){
 		);
 		add(
 			"page_images/event_aramark_500.jpg"
-			,"Event Graphics"
+			,"Environmental / Experiential"
 			,"event"
-			,"Event Graphics"
+			,"Environmental / Experiential"
 			,""
 			,contentlist.event
 		);
