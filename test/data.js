@@ -540,6 +540,9 @@ function makedata(){
 			+ img(image_folder + "pattern_dots-fabric.jpg")
 			+ spacer
 			+ img(image_folder + "pattern_7.7b.jpg")
+			+ spacer
+			+ img(image_folder + "7.27d---swatch-for-website.jpg")
+			+ spacer
 
 
 			/*
