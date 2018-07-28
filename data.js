@@ -536,12 +536,14 @@ function makedata(){
 			// + img(image_folder + "pattern_6.20a_mockups-front-and-left_700.jpg", "darkenImage")
 			// + spacer
 			+ img(image_folder + "pattern_dots.jpg")
+			/*
 			+ spacer
 			+ img(image_folder + "pattern_dots-fabric.jpg")
-			+ spacer
-			+ img(image_folder + "pattern_7.7b.jpg")
+			*/
 			+ spacer
 			+ img(image_folder + "7.27d---swatch-for-website.jpg")
+			+ spacer
+			+ img(image_folder + "pattern_7.7b.jpg")
 			+ spacer
 
 
