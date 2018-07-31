@@ -384,9 +384,13 @@ function makedata(){
 			+ img(image_folder + "event_aramark.jpg")
 			+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
 			//-------------------------
+			
+			/*
 			+ spacer
 			+ img(image_folder + "event_7.9b-rainbow.jpg")
 			+ caption("Concept renderings.")
+			*/
+			
 			//-------------------------
 			+ spacer
 			+ img(image_folder + "smores2.jpg")
