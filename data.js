@@ -672,9 +672,9 @@ function makedata(){
 			//"page_images/event_aramark_500.jpg"
 			"page_images/event_7.30a.jpg"
 
-			,"Environmental / Experiential"
+			,"Events / Conference Booths"
 			,"event"
-			,"Environmental / Experiential"
+			,"Events / Conference Booths"
 			,""
 			,contentlist.event
 		);
