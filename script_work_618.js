@@ -63,9 +63,9 @@ function makeitems(){
 
 	$("#mobile #drawings").insertAfter("#mobile #emailmarketing");
 	$("#mobile #event").insertAfter("#mobile #ad");
-	$("#mobile #compositing").insertAfter("#mobile #event");
-	$("#mobile #production").insertAfter("#mobile #compositing");
-	$("#mobile #pattern").insertAfter("#mobile #production");
+	//$("#mobile #compositing").insertAfter("#mobile #event");
+	//$("#mobile #production").insertAfter("#mobile #compositing");
+	//$("#mobile #pattern").insertAfter("#mobile #production");
 
 
 
