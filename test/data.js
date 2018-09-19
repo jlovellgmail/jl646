@@ -381,6 +381,25 @@ function makedata(){
 		contentlist.event = ""
 
 
+			//-------------------------
+			// Sodexo
+
+			+ img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);")
+			+ spacersmall
+			+ img(image_folder + "event_7.31a-01.jpg", " ", "filter:brightness(.97);")
+			+ spacersmall
+			+ img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);")
+			+ spacersmall
+			+ img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);")
+			+ spacersmall
+			+ img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);")
+			+ caption("Sodexo fabric-wrap graphics applied to tradeshow structures.")
+			+ spacer
+
+
+
+
+			//-------------------------
 			+ img(image_folder + "event_aramark.jpg")
 			+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
 			//-------------------------
@@ -649,10 +668,13 @@ function makedata(){
 			,contentlist.bags
 		);
 		add(
-			"page_images/event_aramark_500.jpg"
-			,"Environmental / Experiential"
+			
+			//"page_images/event_aramark_500.jpg"
+			"page_images/event_7.30a.jpg"
+
+			,"Events / Conference Booths"
 			,"event"
-			,"Environmental / Experiential"
+			,"Events / Conference Booths"
 			,""
 			,contentlist.event
 		);
@@ -664,6 +686,8 @@ function makedata(){
 			,""
 			,contentlist.production
 		);
+
+		/*
 		add(
 			// "th_bags_v2.jpg"
 			"page_images/director-in-chair---face-swapped.jpg"
@@ -673,6 +697,8 @@ function makedata(){
 			,"" //,"Leather handbags"
 			,contentlist.compositing
 		);
+		*/
+		
 		add(
 			// "page_images/pattern_6.20a_swatch-for-store_500.jpg"
 			"page_images/pattern_dots.jpg"
