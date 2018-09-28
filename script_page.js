@@ -216,16 +216,38 @@ function populate() {
 
 
 
-	d3.select(".pageContent")
+	/*
+	d3.select(".pageBody")
 		.append("div").attr("class", "title museo")
 		.text(item.title)
 		;
-	d3.select(".pageContent")
+	d3.select(".pageBody")
 		.append("div").attr("class", "subtitle")
 		.text(item.subtitle)
 		;
+	*/
+	$(".pageBody").addClass(item.query);
+	d3.select(".pageBody")
+		.insert("div",":first-child").attr("class", "subtitle")
+		.text(item.subtitle)
+		;
+	d3.select(".pageBody")
+		.insert("div",":first-child").attr("class", "title museo")
+		.text(item.title)
+		;
+
+		
+
+
+
+	/*
 	d3.select(".pageContent")
 		.append("div").attr("class", "itemContent")
+		.html(item.content)
+		;
+	*/
+	d3.select(".pageContent")
+		.append("div").attr("class", "masonry-layout")
 		.html(item.content)
 		;
 

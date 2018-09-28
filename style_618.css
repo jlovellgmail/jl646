@@ -27,19 +27,19 @@ body {
 	column-count: 3;
 	column-gap: 24px;
 }
-.masonry-layout__panel {
+.masonry-layout .panel {
 	max-width: 225px;
 	display: block;
 	margin: 0 auto;
 }
-.masonry-layout__panel-content {
+.masonry-layout .content {
 	margin-bottom: 100px;
 	break-inside: avoid;
 }
-.masonry-layout__panel-content img {
+.masonry-layout .content img {
 	max-width: 100%;
 }
-.masonry-layout__panel-content .caption {
+.masonry-layout .content .caption {
 	color: rgba(0,0,0, 0.8);
 	font-family: aktiv-grotesk;
 	line-height: 21px;
@@ -48,14 +48,14 @@ body {
 	font-size: 15px;
 	letter-spacing: .02em;
 }
-.masonry-layout__panel-content a {
+.masonry-layout .content a {
 	text-decoration: none;
 }
 
-.masonry-layout__panel.break {
+.masonry-layout .panel.break {
 	break-before: column;
 }
-.masonry-layout__panel-content .gap {
+.masonry-layout .content .gap {
 	height: 30px;
 }
 .blowup {
@@ -114,16 +114,18 @@ body {
 	    column-gap: 9px;
     	column-count: 1;
 	}
+
+
 	.break {
 		display: none;
 	}
-	.masonry-layout__panel-content .gap {
+	.masonry-layout .content .gap {
 		height: 7px;
 	}
-	.masonry-layout__panel-content {
+	.masonry-layout .content {
 		/*margin-bottom: 28px;*/
 	}
-	.masonry-layout__panel-content .caption {
+	.masonry-layout .content .caption {
 		/*display: none;*/
 	}
 	.menu .wrap {

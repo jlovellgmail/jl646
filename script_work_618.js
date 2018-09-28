@@ -29,17 +29,17 @@ function makeitems(){
 	var th_folder = "/images/";
 	var items = 
 		d3.select(".homepage .pageContent .masonry-layout")
-		.selectAll(".masonry-layout__panel")
+		.selectAll(".masonry-layout .panel")
 		.data(data)
 		;
 
 
 	items = 
 		items.enter()
-		.append("div").attr("class", "masonry-layout__panel").attr("id", function(d){ return d.query; })
-		.append("div").attr("class", "masonry-layout__panel-content")
+		.append("div").attr("class", "panel").attr("id", function(d){ return d.query; })
+		.append("div").attr("class", "content")
 		.append("a").attr("href", function(d){
-			if(d.query == "emailmarketing") return "project_visual.html";
+			if(d.query == "digital") return "project_visual.html";
 			else return pagename+"?"+keyname+"="+d.query;
 		})
 		;
@@ -48,7 +48,7 @@ function makeitems(){
 
 
 	// add column breaks
-	var breakelement = "<div class='masonry-layout__panel break'></div>";
+	var breakelement = "<div class='panel break'></div>";
 	$( breakelement ).insertAfter( "#bags" );
 	$( breakelement ).insertAfter( "#pattern" );
 
