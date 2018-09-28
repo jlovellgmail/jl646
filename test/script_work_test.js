@@ -2,24 +2,17 @@ cout = console.log;
 var pagename = "project.html";
 var keyname = "project";
 
-
-//
-//
-//
-//
-var datafile = "http://jl646.com/test/data.js";
-//
-//
-//
-//
-
-
 // get data
 var data;
 getdata();
 function getdata(){
 	if(!window.data){
-		$.getScript(datafile, function()
+		
+
+		// $.getScript('http://jl646.com/data.js', function()
+		$.getScript('http://jl646.com/test/data.js', function()
+
+
 		{
 		    // script is now loaded and executed.
 		    data = window.data;
@@ -37,53 +30,14 @@ function makeitems(){
 	// create thumbnails
 	var th_folder = "/images/";
 	var items = 
-		d3.select(".homepage .pageContent .masonry-layout")
-		.selectAll(".masonry-layout .panel")
+		d3.select(".workbody .content")
+		.selectAll(".item")
 		.data(data)
 		;
 
 
 	items = 
 		items.enter()
-		.append("div").attr("class", "panel").attr("id", function(d){ return d.query; })
-		.append("div").attr("class", "content")
-		.append("a").attr("href", function(d){
-			if(d.query == "digital") return "project_visual.html";
-			else return pagename+"?"+keyname+"="+d.query;
-		})
-		;
-	items.append("img").attr("src", function(d){ return th_folder+d.image; });
-	items.append("div").attr("class", "caption").text(function(d){ return d.blurb; });
-
-
-	// add column breaks
-	var breakelement = "<div class='panel break'></div>";
-	$( breakelement ).insertAfter( "#bags" );
-	$( breakelement ).insertAfter( "#pattern" );
-
-
-
-
-
-
-	// copy layout for reorder
-	$(".homepage .pageContent .masonry-layout").clone().attr("id", "mobile").appendTo(".homepage .pageContent");
-	$("#mobile .break").remove();
-
-	$("#mobile #drawings").insertAfter("#mobile #emailmarketing");
-	$("#mobile #event").insertAfter("#mobile #ad");
-	//$("#mobile #compositing").insertAfter("#mobile #event");
-	//$("#mobile #production").insertAfter("#mobile #compositing");
-	//$("#mobile #pattern").insertAfter("#mobile #production");
-
-
-
-
-
-/*
-
-
-
 		.append("a").attr("class", "item")
 		// special handling for "emailmarketing" page
 		// .attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
@@ -92,6 +46,25 @@ function makeitems(){
 			else return pagename+"?"+keyname+"="+d.query;
 		})
 		;
+
+
+
+
+	var aspect = 
+		items
+		.append("div").attr("class", "aspect")
+		;
+	aspect
+		.append("div").attr("class", "image")
+		.append("img").attr("src", function(d){ return th_folder+d.image; })
+		;
+	aspect
+		.append("div").attr("class", "container-abs hide")
+		.append("div").attr("class", "container-table")
+		.append("div").attr("class", "container-cell")
+		.text(function(d){ return d.blurb; })
+		;
+
 
 
 	
@@ -135,14 +108,6 @@ function makeitems(){
 		.append("a").attr("href", "contact.html")
 		.text("contact")
 		;
-
-
-
-*/
-
-
-
-
 
 
 }

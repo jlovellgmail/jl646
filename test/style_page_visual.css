@@ -1,10 +1,15 @@
+
+
+.goleft, .goright {display:none;}
+
+
 .darken1 {
 	filter: brightness(.98);
 }
 .darken2 {
 	filter: brightness(.97);
 }
-.pageBody.visual {
+.pageBody.visual, .pageBody {
 	/*background: rgba(0,0,0, .09);*/
 	padding-top: 80px;
 	margin-bottom: 120px;
@@ -13,7 +18,7 @@
 	left: 0;
 	right: 0;
 }
-.pageBody.visual .title {
+.pageBody.visual .title, .pageBody .title{
 	width: 100%;
 	text-align: center;
 	font-size: 42px;
@@ -23,24 +28,58 @@
 	max-width: 1440px;
 	display: block;
 	margin: 0 auto;
+	padding-top: 0;
 }
 .masonry-layout {
 	column-count: 3;
 	column-gap: 24px;
 }
-.masonry-layout__panel {
+.masonry-layout .panel {
 	max-width: 225px;
 	display: block;
 	margin: 0 auto;
 }
-.masonry-layout__panel-content {
+
+
+.pageBody.event .masonry-layout .panel {
+	max-width: 350px;
+}
+.pageBody.gp .masonry-layout .panel {
+	max-width: 425px;
+}
+.pageBody.bags .masonry-layout .panel {
+	max-width: 450px;
+}
+.pageBody.drawings .masonry-layout .panel {
+	max-width: 355px;
+}
+.pageBody.raytrace .masonry-layout .panel {
+	max-width: 400px;
+}
+.pageBody.production .masonry-layout .panel {
+	max-width: 330px;
+}
+.pageBody.pattern .masonry-layout .panel {
+	max-width: 370px;
+}
+.pageBody.rd .masonry-layout .panel {
+	max-width: 320px;
+}
+.pageBody.ad .masonry-layout .panel {
+	max-width: 310px;
+}
+
+
+
+
+.masonry-layout .content {
 	margin-bottom: 100px;
 	break-inside: avoid;
 }
-.masonry-layout__panel-content img {
+.masonry-layout .content img {
 	max-width: 100%;
 }
-.masonry-layout__panel-content .caption {
+.masonry-layout .content .caption {
 	color: rgba(0,0,0, 0.8);
 	font-family: aktiv-grotesk;
 	font-size: 13px;
@@ -49,10 +88,10 @@
 	letter-spacing: .03em;
 	margin-top: 9px;
 }
-.masonry-layout__panel.break {
+.panel.break {
 	break-before: column;
 }
-.masonry-layout__panel-content .gap {
+.panel .content .gap {
 	height: 20px;
 }
 .blowup {
@@ -97,28 +136,50 @@
 	margin: 9px;
 }
 @media screen and (max-width: 600px) {
-	.masonry-layout {
-	    column-gap: 9px;
+	
+
+
+	/* one column for pages other than visual */
+	.visual .masonry-layout {
+		column-count: 3;
 	}
-	.masonry-layout__panel-content .gap {
+	.masonry-layout {
+		column-count: 1;
+		column-gap: 9px;
+	}
+
+
+
+
+
+
+	.panel .content .gap {
 		height: 7px;
 	}
-	.masonry-layout__panel-content {
+	.masonry-layout .content {
+		margin-bottom: 88px;
+	}
+	.visual .masonry-layout .content {
 		margin-bottom: 28px;
 	}
-	.masonry-layout__panel-content .caption {
+	.masonry-layout .panel {
+		max-width: initial;
+	}
+	.visual .masonry-layout .content .caption {
 		display: none;
 	}
-
-	/*
-	.menu .wrap {
-	    padding-left: 22px;
+	.pageContent {
+		padding: 0;
 	}
-	*/
 
 
-	.pageBody.visual {
-	    padding-top: 75px;
+
+
+
+
+
+
+	.pageBody.visual, .pageBody .pageContent {
 	    margin-left: 8px;
 	    margin-right: 8px;
 	}
