@@ -148,23 +148,23 @@ function makedata(){
 				+ caption("Print ads for BarkBox.")
 				)
 			+ panel(""
-				+ img(image_folder + "Tandem-7.26.18b.jpg", "darkenImage")
-				+ caption("Print ad for Tandem.")
-				)
-			+ panel(""
 				+ img(image_folder + "ad_startsmart.jpg")
 				+ caption("Ad for Health Warrior.")
 				+ spacer
 				+ img(image_folder + "ad_secondwind.jpg")
 				+ caption("Ad for Health Warrior.")
-				+ spacer
+				)
+			+ panel(""
+				+ img(image_folder + "Tandem-7.26.18b.jpg", "darkenImage")
+				+ caption("Print ad for Tandem.")
+				)
+			+ panel(""
 				+ img(image_folder + "ad_theonly.jpg")
 				+ caption("Ad for Health Warrior.")
 				+ spacer
 				+ img(image_folder + "ad_onlysit.jpg")
 				+ caption("Ad for Health Warrior.")
-				)
-			+ panel(""
+				+ spacer
 				+ img(image_folder + "ad_earlycomp1.jpg")
 				+ caption("Ad for Health Warrior.")
 				)
