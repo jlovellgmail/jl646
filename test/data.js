@@ -214,6 +214,21 @@ function makedata(){
 				+ img(image_folder + "hersheys_stage.jpg")
 				+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
 				)
+			+ panel(""
+				+ img(image_folder + "FMBooth_curvedwall1.jpg")
+				+ caption("Sodexo Event graphics mounted on 12-foot Curved Wall")
+				+ spacersmall
+				+ img(image_folder + "FMBooth_curvedwall2.jpg")
+				+ caption("Sodexo Event graphics mounted on 12-foot Curved Wall")
+				)
+			+ panel(""
+				+ img(image_folder + "FMBooth_kiosk1.png")
+				+ spacersmall
+				+ img(image_folder + "FMBooth_kiosk2.png")
+				+ spacersmall
+				+ img(image_folder + "FMBooth_all.jpg", " ", "filter:brightness(.97);")
+				+ caption("Sodexo event grahics")
+				)
 			;
 		contentlist.oysters = ""
 			+ text("The problem: ", "heading")
@@ -397,9 +412,9 @@ function makedata(){
 			//"page_images/event_aramark_500.jpg"
 			"page_images/event_7.30a.jpg"
 
-			,"Events / Conference Booths"
+			,"Events / Trade Show Booths"
 			,"event"
-			,"Events / Conference Booths"
+			,"Events / Trade Show Booths"
 			,""
 			,contentlist.event
 		);
