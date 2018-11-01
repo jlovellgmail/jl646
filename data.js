@@ -209,25 +209,42 @@ function makedata(){
 				+ caption("Hershey's BlogHer 2010 Conference exhibits - Floor-to-ceiling environmental graphics.")
 				)
 			+ panel(""
-				+ img(image_folder + "hersheys_double.jpg")
-				+ spacersmall
-				+ img(image_folder + "hersheys_stage.jpg")
-				+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
-				)
-			+ panel(""
 				+ img(image_folder + "FMBooth_curvedwall1.jpg")
-				+ caption("Sodexo Event graphics mounted on 12-foot Curved Wall")
 				+ spacersmall
 				+ img(image_folder + "FMBooth_curvedwall2.jpg")
-				+ caption("Sodexo Event graphics mounted on 12-foot Curved Wall")
-				)
-			+ panel(""
-				+ img(image_folder + "FMBooth_kiosk1.png")
+				+ caption("Sodexo Event graphics mounted on 12-foot Curved Walls")
 				+ spacersmall
+				+ img(image_folder + "FMBooth_kiosk1.png")
+				+ spacermedium
 				+ img(image_folder + "FMBooth_kiosk2.png")
 				+ spacersmall
 				+ img(image_folder + "FMBooth_all.jpg", " ", "filter:brightness(.97);")
 				+ caption("Sodexo event grahics")
+				)
+			+ panel(""
+				+ img(image_folder + "LeadingAge_curvedwall1.jpg")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_curvedwall2.jpg")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_curvedwall3.jpg")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);")
+				+ caption("Sodexo Trade Show Booth Graphics")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_render1.jpg")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_render2.jpg")
+				+ caption("Concept Renderings")
+				)
+			+ panel(""
+				+ img(image_folder + "LeadingAge_icecream1.jpg")
+				+ caption("Sodexo Trade Show Booth Graphics")
+				)
+			+ panel(""
+				+ img(image_folder + "hersheys_double.jpg")
+				+ spacersmall
+				+ img(image_folder + "hersheys_stage.jpg")
+				+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
 				)
 			;
 		contentlist.oysters = ""
