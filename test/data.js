@@ -222,6 +222,12 @@ function makedata(){
 				+ caption("Sodexo event grahics")
 				)
 			+ panel(""
+				+ img(image_folder + "7.9b-rainbow.jpg")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);")
+				+ spacersmall
 				+ img(image_folder + "LeadingAge_curvedwall1.jpg")
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_curvedwall2.jpg")
@@ -229,12 +235,7 @@ function makedata(){
 				+ img(image_folder + "LeadingAge_curvedwall3.jpg")
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);")
-				+ caption("Sodexo Trade Show Booth Graphics")
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_render1.jpg")
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_render2.jpg")
-				+ caption("Concept Renderings")
+				+ caption("Sodexo Trade Show Booth: initial concept renderings and final graphics")
 				)
 			+ panel(""
 				+ img(image_folder + "LeadingAge_icecream1.jpg")
