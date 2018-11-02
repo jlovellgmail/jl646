@@ -32,7 +32,17 @@ function blowup(s, maxwidth){
 	// click anywhere exits blowup
 	// $(".blowup").click(exitBlowup);
 	// click anywhere goes to next image
-	$(".blowup").click(shownextimage);
+	//$(".blowup").click(shownextimage);
+	var flag = false;
+	$(".blowup .blowupImage").click(function(){
+		shownextimage();
+		flag = true;
+
+	});
+	$(".blowup").click(function(){
+		if(!flag) exitBlowup();
+		flag = false;
+	});
 
 	
 
