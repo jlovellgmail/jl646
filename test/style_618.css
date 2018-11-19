@@ -28,13 +28,23 @@ body {
 	column-gap: 24px;
 }
 .masonry-layout .panel {
-	max-width: 225px;
+	max-width: 290px;
 	display: block;
 	margin: 0 auto;
 }
 .masonry-layout .content {
 	margin-bottom: 100px;
 	break-inside: avoid;
+}
+.masonry-layout .content .headline {
+	line-height: 32px;
+	margin-top: 0;
+	font-family: roboto, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: initial;
+	color: rgba(0,0,0, .7);
+	margin-bottom: 7px;
 }
 .masonry-layout .content img {
 	max-width: 100%;

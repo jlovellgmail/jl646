@@ -52,6 +52,7 @@ function makeitems(){
 			else return pagename+"?"+keyname+"="+d.query;
 		})
 		;
+	items.append("div").attr("class", "headline").text(function(d){ return d.headline; });
 	items.append("img").attr("src", function(d){ return th_folder+d.image; });
 	items.append("div").attr("class", "caption").text(function(d){ return d.blurb; });
 

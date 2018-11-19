@@ -17,13 +17,15 @@ function menu() {
 	var menuitems = 
 		wrap.append("div").attr("class", "menuitem tk-aktiv-grotesk")
 		;
+	/*
 	menuitems
 		.append("a").attr("href", "/").attr("id", "homelink")
-		.text("home")
+		.text("Work")
 		;
+	*/
 	menuitems
 		.append("a").attr("href", "contact.html").attr("class", "notfirst")
-		.text("contact")
+		.text("Contact")
 		;
 }
 
