@@ -162,19 +162,11 @@ function makedata(){
 				+ spacersmall
 				+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
 				+ spacersmall
-				+ img(image_folder + "20180216_stacksocial_vpn_unlimited_display_ad_336x280.gif")
-				+ spacersmall
 				+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
 				+ spacersmall
 				+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
 				+ spacersmall
-				+ img(image_folder + "visual_20171219_Lifestyle_BestOf2017.jpg")
-				+ spacersmall
-				+ img(image_folder + "20180211_Joyus_Vday_BeOurValentine-collection-hero.jpg")
-				+ spacersmall
 				+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
-				+ spacersmall
-				+ img(image_folder + "20180424_joyus_montage_towels_PREVIEW.jpg", "darkenImage")
 				)
 			//---------------------------------------
 			+ panel(""
