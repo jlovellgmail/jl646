@@ -9,15 +9,18 @@
 	font-size: 20px;
 	width: 100%;
 	text-align: left;
+	/*background: rgba(0,0,0, .05);*/
 }
 .menu .name {
 	display: inline-block;
 }
 .menu .name a {
 	color: black;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: initial;
-    font-size: 22px;
+    font-size: 19px;
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 .menu .wrap {
 	display: table-cell;
@@ -39,6 +42,7 @@
 	color: black;
 	font-weight: 400;
 	font-size: 14px;
+	font-family: roboto, sans-serif;
 }
 .menuitem a.notfirst {
 	margin-left: 20px;

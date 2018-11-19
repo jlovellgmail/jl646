@@ -1,3 +1,30 @@
+.pageContent .panelheadline {
+	line-height: 32px;
+	margin-top: 0;
+	font-family: roboto, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: initial;
+	color: rgba(0,0,0, .7);
+	margin-bottom: 7px;
+
+
+    background: initial;
+    color: rgba(0,0,0, .8);
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 21px;
+    margin-bottom: 1px;
+    font-size: 29px;
+    letter-spacing: initial;
+    font-family: arial;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+
+}
+.pageContent .panelheadline .clientname {
+	/*color: rgba(0,120,255,255);*/
+}
 .pageContent {
 	text-align: center;
 	margin-left: auto;
@@ -13,6 +40,7 @@
 .title {
 	font-size: 42px;
 	margin-bottom: 10px;
+	display: none;
 }
 .subtitle {
 	font-size: 17px;
@@ -21,6 +49,7 @@
 	margin-top: 7px;
 	font-family: sans-serif;
 	line-height: 22px;
+	display: none;
 }
 .pageContent {
 	font-size: 14px;
@@ -59,7 +88,9 @@
 	height: 40px;
 }
 .pageContent .spacersmall {
-	height: 20px;
+	/*height: 20px;*/
+	/*height: 13px;*/
+	height: 5px;
 }
 .pageContent .spacerextrasmall {
 	height: 10px;
