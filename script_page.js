@@ -80,6 +80,9 @@ function exitBlowup(){
 // ...
 function getProjectIndex(){
 
+
+	// override this, putting all work on index page
+	/*
 	// get query string
 	var queries = {};
 	$.each(document.location.search.substr(1).split('&'),function(c,q){
@@ -91,6 +94,13 @@ function getProjectIndex(){
 	var i = data.findIndex(function(d){
 		return d.query == queries.project;
 	});
+	*/
+	var i = data.findIndex(function(d){
+		return d.query == "all";
+	});
+
+
+
 	return i;	
 }
 function getpreviousindex(){
