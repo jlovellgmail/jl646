@@ -171,15 +171,16 @@ function makedata(){
 			//---------------------------------------
 			+ panel(""
 				+ panelheadline("Events & Trade Shows")
-				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);")
-				+ spacersmall
-				+ img(image_folder + "7.9b-rainbow.jpg")
+				// + spacersmall
+				// + img(image_folder + "7.9b-rainbow.jpg")
 				+ spacersmall
 				+ img(image_folder + "Booth-9.21a.jpg")
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);")
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.96);")
+				+ spacersmall
+				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);")
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_curvedwall1.jpg")
 				+ spacersmall
@@ -222,9 +223,14 @@ function makedata(){
 				+ panelheadline("Experimental Filters")
 				+ img(image_folder + "gp_hand-170912.jpg")
 				+ spacersmall
-				+ img(image_folder + "gp_horse-170912.jpg")
-				+ spacersmall
 				+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;")
+				+ spacerextrasmall
+				+ img(image_folder + "gp_horse-170912.jpg")
+				+ text("Using simulations of evolution to draw pictures", "heading")
+				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
+				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
+				+ spacersmall
+				+ spacersmall
 				+ spacersmall
 				+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 				+ spacersmall
@@ -232,17 +238,14 @@ function makedata(){
 				+ spacersmall
 				+ img(image_folder + "gp_camera-170912.jpg")
 				+ spacersmall
-				+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg")
-				+ spacersmall
 				+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg")
 				+ spacersmall
+				+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg")
+				+ spacersmall
 				+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
-				// + caption("Casting lines with genetic programs")
+				+ caption("^^ Casting lines with genetic programs")
 				+ spacersmall
 				+ img(image_folder + "gp_cat-170912.jpg")
-				// + text("Using simulations of evolution to draw pictures", "heading")
-				// + text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
-				// + text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
 				)
 			//---------------------------------------
 			//---------------------------------------
