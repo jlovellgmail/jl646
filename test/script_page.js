@@ -46,10 +46,27 @@ function readyhandler(){
 	// build page layout
 	populate();
 
+
+	d3.selectAll(".content img").attr("onclick", "attribute_check_then_blowup(this)");
+
+}
+
+
+function attribute_check_then_blowup(this_arg){
+	var attr = $(this_arg).attr("maxwidth");
+	// For some browsers, `attr` is undefined; for others `attr` is false.  Check for both.
+	if (typeof attr !== typeof undefined && attr !== false) {
+	    blowup(this_arg.src, 1200);
+	}
+	else {
+		blowup(this_arg.src);
+	}
 }
 
 
 
+// switch to using script_visual_blowup.js from original hardcoded project_visual page
+/*
 // enlarge images
 var scrollPos = 0;
 function blowup(s){
@@ -82,6 +99,7 @@ function exitBlowup(){
 	    width: ""
 	}).scrollTop(scrollPos);
 }
+*/
 
 
 
@@ -173,6 +191,11 @@ function setPageViewKeys(){
 		}
 	});
 }
+
+
+
+// switch to using script_visual_blowup.js from original hardcoded project_visual page
+/*
 function setBlowupViewKeys(){
 	$("body").off("keydown");
 	$("body").keydown(function(e) {
@@ -212,6 +235,7 @@ function setBlowupViewKeys(){
 		}
 	});
 }
+*/
 
 
 

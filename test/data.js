@@ -17,10 +17,29 @@ function makedata(){
 			return "<div class='panel break'></div>";
 		}
 		function img(s, classes, style, maxwidth){
-			if(!classes) return  "<img src='"+s+"' onclick='blowup(this.src)'>";
-			else if(!style) return "<img class='"+classes+"' src='"+s+"' onclick='blowup(this.src)'>";
-			else if(!maxwidth) return "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)'>";
-			else return "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)' maxwidth>";
+
+			// cout("s: "+s +"maxwidth"+maxwidth);
+
+			if(!classes){
+				var returnval = "<img src='"+s+"' onclick='blowup(this.src)'>";
+				// cout("returnval: "+returnval);
+				return returnval;
+			}
+			else if(!style){
+				var returnval = "<img class='"+classes+"' src='"+s+"' onclick='blowup(this.src)'>";
+				// cout("returnval: "+returnval);
+				return returnval;
+			}
+			else if(!maxwidth){
+				var returnval = "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)'>";
+				// cout("returnval: "+returnval);
+				return returnval;
+			}
+			else {
+				var returnval = "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)' maxwidth>";
+				// cout("returnval: "+returnval);
+				return returnval;
+			}
 		}
 		function text(s, classes, style){
 			if(!classes) return  "<p>"+s+"</p>";
@@ -134,9 +153,9 @@ function makedata(){
 				+ panelheadline("Digital")
 				+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
 				+ spacersmall
-				+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg", "", "", "maxwidth")
+				+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "20180130_Joyus_Valentines-Day-hero.jpg", "", "", "maxwidth")
+				+ img(image_folder + "20180130_Joyus_Valentines-Day-hero.jpg", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "20180125_joyus_Tria.jpg", "darkenImage")
 				+ spacersmall
@@ -176,13 +195,13 @@ function makedata(){
 				// + spacersmall
 				// + img(image_folder + "7.9b-rainbow.jpg")
 				+ spacersmall
-				+ img(image_folder + "Booth-9.21a.jpg")
+				+ img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.96);")
+				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.96);", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_curvedwall1.jpg")
 				+ spacersmall
