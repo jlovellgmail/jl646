@@ -132,8 +132,10 @@ function shownextimage(){
 }
 
 function checkforwideimage(src){
+	src = src.replace("http://jl646.com", "");
+	src = src.replace("%20", " ");
 	var img = $(".pageContent img[src$='"+src+"']");
-	var attr = img.attr("data-maxwidth");
+	var attr = img.attr("maxwidth");
 	$(".blowupimagecontainer").css("max-width", "");
 	if (typeof attr !== typeof undefined && attr !== false) {
 		$(".blowupimagecontainer").css("max-width", "1200px");

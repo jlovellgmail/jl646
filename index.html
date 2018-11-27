@@ -15,6 +15,7 @@
 
 	<script src="script_page.js"></script>
 	<script src="script_menu.js"></script>
+	<script src="script_visual_blowup.js"></script>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,6 +27,30 @@
 	  ga('send', 'pageview');
 
 	</script>
+
+
+	<script>
+		// move to script_page
+		// this is being overrided by document.ready in there
+		/*
+		$(document).ready(function(){
+			d3.selectAll(".content img").attr("onclick", "attribute_check_then_blowup(this)");
+		});
+		function attribute_check_then_blowup(this_arg){
+			var attr = $(this_arg).attr("data-maxwidth");
+			// For some browsers, `attr` is undefined; for others `attr` is false.  Check for both.
+			if (typeof attr !== typeof undefined && attr !== false) {
+			    blowup(this_arg.src, 1200);
+			}
+			else {
+				blowup(this_arg.src);
+			}
+		}
+		*/
+	</script>
+
+
+
 </head>
 <body class="pageBody">
 
