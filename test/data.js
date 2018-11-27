@@ -140,6 +140,8 @@ function makedata(){
 				+ spacersmall
 				+ img(image_folder + "20180125_joyus_Tria.jpg", "darkenImage")
 				+ spacersmall
+				+ img(image_folder + "Pinterest Pin_300x600_3.jpg")
+				+ spacersmall
 				+ img(image_folder + "Social;-Creative---11.1-Grinch-Theme-Guarantee.gif", "darkenImage")
 				+ spacersmall
 				+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
