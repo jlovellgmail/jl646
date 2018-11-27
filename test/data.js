@@ -197,56 +197,56 @@ function makedata(){
 				+ spacersmall
 				+ img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", " ", " ", true)
+				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.96);", " ", " ", true)
+				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.96);", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", " ", " ", true)
+				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_curvedwall1.jpg")
+				+ img(image_folder + "LeadingAge_curvedwall1.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_curvedwall2.jpg")
+				+ img(image_folder + "LeadingAge_curvedwall2.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "LeadingAge_curvedwall3.jpg")
+				+ img(image_folder + "LeadingAge_curvedwall3.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "Convex---Booth-Wall-1.jpg")
+				+ img(image_folder + "Convex---Booth-Wall-1.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "Convex---Booth-Wall-2.jpg")
+				+ img(image_folder + "Convex---Booth-Wall-2.jpg", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_icecream1.jpg")
 				+ spacersmall
-				+ img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
-				+ img(image_folder + "event_7.31a-01.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "event_7.31a-01.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
-				+ img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
-				+ img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
-				+ img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
 				+ img(image_folder + "event_aramark.jpg")
 				+ spacersmall
-				+ img(image_folder + "smores2.jpg")
+				+ img(image_folder + "smores2.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "event_forest.jpg")
+				+ img(image_folder + "event_forest.jpg", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "hersheys_double.jpg")
 				+ spacersmall
 				+ img(image_folder + "hersheys_stage.jpg")
 				+ spacersmall
-				+ img(image_folder + "FMBooth_elements_set1.jpg", " ", "filter:brightness(.97);")
+				+ img(image_folder + "FMBooth_elements_set1.jpg", " ", "filter:brightness(.97);", true)
 				+ spacersmall
 				+ img(image_folder + "Kiosk-1---flat-100dpi_detail.jpg")
 				)
 			//---------------------------------------
 			+ panel(""
 				+ panelheadline("Experimental Filters")
-				+ img(image_folder + "gp_hand-170912.jpg")
+				+ img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;")
+				+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
 				+ spacerextrasmall
-				+ img(image_folder + "gp_horse-170912.jpg")
+				+ img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
 				+ text("Using simulations of evolution to draw pictures", "heading")
 				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
 				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
@@ -257,7 +257,7 @@ function makedata(){
 				+ spacersmall
 				+ img(image_folder + "gp_eye-170912.jpg")
 				+ spacersmall
-				+ img(image_folder + "gp_camera-170912.jpg")
+				+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg")
 				+ spacersmall
@@ -280,24 +280,24 @@ function makedata(){
 			//---------------------------------------
 			+ panel(""
 				+ panelheadline("Drawings")
-				+ img(image_folder + "smith.jpg")
+				+ img(image_folder + "smith.jpg", " ", " ", true)
 				// + "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
 				+ spacersmall
-				+ img(image_folder + "fallingwater.jpg")
+				+ img(image_folder + "fallingwater.jpg", " ", " ", true)
 				// + "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 				+ spacersmall
-				+ img(image_folder + "fayum_1800.jpg")
-				+ img(image_folder + "fayum.jpg")
+				+ img(image_folder + "fayum_1800.jpg", " ", " ", true)
+				+ img(image_folder + "fayum.jpg", " ", " ", true)
 				+ "<p class='caption'>Scientific Illustration for The American Museum of Natural History, pencil and digital editing</p>"
 				)
 			//---------------------------------------
 			+ panel(""
 				+ "<p class='panelheadline'>Icons & Logos</p>"
-				+ img(image_folder + "icons-5.25.18.jpg", "darkenImage")
+				+ img(image_folder + "icons-5.25.18.jpg", "darkenImage", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "basespace_icons.jpg", "darkenImage")
+				+ img(image_folder + "basespace_icons.jpg", "darkenImage", " ", " ", true)
 				+ spacersmall
-				+ img(image_folder + "logos.jpg", "darkenImage")
+				+ img(image_folder + "logos.jpg", "darkenImage", " ", " ", true)
 				// + caption("Icons and Logos")
 				)
 			//---------------------------------------
@@ -307,7 +307,7 @@ function makedata(){
 				+ spacersmall
 				+ img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg")
 				+ spacersmall
-				+ img(image_folder + "bags_grid2.jpg", "darkenImage")
+				+ img(image_folder + "bags_grid2.jpg", "darkenImage", " ", " ", true)
 				/*
 				+ spacersmall
 				+ text("My role:", " ", "font-weight:bold;")
@@ -338,9 +338,9 @@ function makedata(){
 			//---------------------------------------
 			+ panel(""
 				+ panelheadline("Ads")
-				+ img(image_folder + "Bark_grid_2select.jpg", "", "", 1)
+				+ img(image_folder + "Bark_grid_2select.jpg")
 				+ spacersmall
-				+ img(image_folder + "Bark_grid.jpg")
+				+ img(image_folder + "Bark_grid.jpg", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "ad_startsmart.jpg")
 				+ spacersmall
