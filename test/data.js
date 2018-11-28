@@ -192,9 +192,6 @@ function makedata(){
 			//---------------------------------------
 			+ panel(""
 				+ panelheadline("Events & Trade Shows")
-				// + spacersmall
-				// + img(image_folder + "7.9b-rainbow.jpg")
-				+ spacersmall
 				+ img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
 				+ spacersmall
 				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)

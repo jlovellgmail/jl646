@@ -258,6 +258,16 @@
 	}
 }
 @media screen and (max-width: 600px) {
+	
+
+	.panelheadline {
+		display: none;
+	}
+	.panel .heading, .panel p {
+		display: none;
+	}
+
+
 	.pageContent {
 		padding-top: 30px;
 	}
