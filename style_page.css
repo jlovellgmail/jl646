@@ -260,6 +260,11 @@
 @media screen and (max-width: 600px) {
 	
 
+	.pageContent .spacer {
+		height: 27px;
+	}
+
+
 	.panelheadline {
 		display: none;
 	}

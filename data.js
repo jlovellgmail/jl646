@@ -150,204 +150,52 @@ function makedata(){
 		contentlist.all = ""
 			//---------------------------------------
 			+ panel(""
-				+ panelheadline("Digital")
+				// + panelheadline("Digital")
 				+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg", " ", " ", true)
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "20180130_Joyus_Valentines-Day-hero.jpg", " ", " ", true)
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "20180125_joyus_Tria.jpg", "darkenImage")
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "Pinterest Pin_300x600_3.jpg")
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "Social;-Creative---11.1-Grinch-Theme-Guarantee.gif", "darkenImage")
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
-				+ spacersmall
-				+ img(image_folder + "20180216_joyus_evergreen_display_ad_300x600.jpg", "darkenImage")
-				+ spacersmall
-				+ img(image_folder + "frames-from-timeline.gif", "darkenImage")
-				+ spacersmall
-				+ img(image_folder + "visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
-				+ spacersmall
-				+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
-				+ spacersmall
-				+ img(image_folder + "visual_marketing_email_crop.jpg", "darkenImage")
-				+ spacersmall
-				+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", "darkenImage")
-				+ spacersmall
-				+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
-				+ spacersmall
-				+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
-				+ spacersmall
-				+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
-				+ spacersmall
-				+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
-				+ spacersmall
+				+ spacer
 				+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
 				)
-			//---------------------------------------
 			+ panel(""
-				+ panelheadline("Events & Trade Shows")
-				+ img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.96);", " ", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_curvedwall1.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_curvedwall2.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_curvedwall3.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "Convex---Booth-Wall-1.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "Convex---Booth-Wall-2.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "LeadingAge_icecream1.jpg")
-				+ spacersmall
-				+ img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "event_7.31a-01.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "event_aramark.jpg")
-				+ spacersmall
-				+ img(image_folder + "smores2.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "event_forest.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "hersheys_double.jpg")
-				+ spacersmall
-				+ img(image_folder + "hersheys_stage.jpg")
-				+ spacersmall
-				+ img(image_folder + "FMBooth_elements_set1.jpg", " ", "filter:brightness(.97);", true)
-				+ spacersmall
-				+ img(image_folder + "Kiosk-1---flat-100dpi_detail.jpg")
+				+ img(image_folder + "20180216_joyus_evergreen_display_ad_300x600.jpg", "darkenImage")
+				+ spacer
+				+ img(image_folder + "Affiliate_Banners_Design_$9_First_Box_Promotion.jpg", " ", " ", true)
+				+ spacer
+				+ img(image_folder + "Affiliate_Banners_and_Gmail_Ad.jpg", " ", " ", true)
+				+ spacer
+				+ img(image_folder + "Black_Friday_email_AM.jpg", "darkenImage")
+				+ spacer
+				+ img(image_folder + "frames-from-timeline.gif", "darkenImage")
+				+ spacer
+				+ img(image_folder + "visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
+				+ spacer
+				+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
+				+ spacer
+				+ img(image_folder + "visual_marketing_email_crop.jpg", "darkenImage")
+				+ spacer
+				+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
 				)
-			//---------------------------------------
 			+ panel(""
-				+ panelheadline("Experimental Filters")
-				+ img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
-				+ spacerextrasmall
-				+ img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
-				+ text("Using simulations of evolution to draw pictures", "heading")
-				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
-				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
-				+ spacersmall
-				+ spacersmall
-				+ spacersmall
-				+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-				+ spacersmall
-				+ img(image_folder + "gp_eye-170912.jpg")
-				+ spacersmall
-				+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg")
-				+ spacersmall
-				+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg")
-				+ spacersmall
-				+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
-				+ caption("^^ Casting lines with genetic programs")
-				+ spacersmall
-				+ img(image_folder + "gp_cat-170912.jpg")
-				)
-			//---------------------------------------
-			//---------------------------------------
-			//---------------------------------------
-			//---------------------------------------
-			//---------------------------------------
-			//---------------------------------------
-			//---------------------------------------
-			//---------------------------------------
-			+ columnbreak()
-			//---------------------------------------
-			+ panel(""
-				+ panelheadline("Drawings")
-				+ img(image_folder + "smith.jpg", " ", " ", true)
-				// + "<p class='caption'>Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches</p>"
-				+ spacersmall
-				+ img(image_folder + "fallingwater.jpg", " ", " ", true)
-				// + "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
-				+ spacersmall
-				+ img(image_folder + "fayum_1800.jpg", " ", " ", true)
-				+ img(image_folder + "fayum.jpg", " ", " ", true)
-				+ "<p class='caption'>Scientific Illustration for The American Museum of Natural History, pencil and digital editing</p>"
-				)
-			//---------------------------------------
-			+ panel(""
-				+ "<p class='panelheadline'>Icons & Logos</p>"
-				+ img(image_folder + "icons-5.25.18.jpg", "darkenImage", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "basespace_icons.jpg", "darkenImage", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "logos.jpg", "darkenImage", " ", " ", true)
-				// + caption("Icons and Logos")
-				)
-			//---------------------------------------
-			+ panel(""
-				+ panelheadline("Product Photography")
-				+ img(image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg")
-				+ spacersmall
-				+ img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg")
-				+ spacersmall
-				+ img(image_folder + "bags_grid2.jpg", "darkenImage", " ", " ", true)
-				/*
-				+ spacersmall
-				+ text("My role:", " ", "font-weight:bold;")
-				+ text("Designed and executed all aspects including lighting, styling, photography and retouching.", " ", "margin-top:2px;")
-				*/
-				)
-			//---------------------------------------
-			+ panel(""
-				+ panelheadline("Key Art")
-				+ img(image_folder + "keyart_vegucated.jpg")
-				// + "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
-				+ spacersmall
-				+ img(image_folder + "keyart_rd_1600.jpg")
-				// + "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
-				+ spacersmall
-				+ img(image_folder + "keyart_skinnydip.jpg")
-				// + "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
-				)
-			//---------------------------------------
-			+ panel(""
-				+ panelheadline("Patterns")
-				+ img(image_folder + "pattern_dots.jpg")
-				+ spacersmall
-				+ img(image_folder + "7.27d---swatch-for-website.jpg")
-				+ spacersmall
-				+ img(image_folder + "pattern_7.7b.jpg")
-				)
-			//---------------------------------------
-			+ panel(""
-				+ panelheadline("Ads")
-				+ img(image_folder + "Bark_grid_2select.jpg")
-				+ spacersmall
-				+ img(image_folder + "Bark_grid.jpg", " ", " ", true)
-				+ spacersmall
-				+ img(image_folder + "ad_startsmart.jpg")
-				+ spacersmall
-				+ img(image_folder + "ad_secondwind.jpg")
-				+ spacersmall
-				+ img(image_folder + "ad_theonly.jpg")
-				+ spacersmall
-				+ img(image_folder + "ad_onlysit.jpg")
-				+ spacersmall
-				+ img(image_folder + "Tandem-7.26.18b.jpg", "darkenImage")
+				+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", "darkenImage")
+				+ spacer
+				+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
+				+ spacer
+				+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
+				+ spacer
+				+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
 				)
 			//---------------------------------------
 			;
