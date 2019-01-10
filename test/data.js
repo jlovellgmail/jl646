@@ -8,12 +8,35 @@ function makedata(){
 	make_content_list();
 	function make_content_list(){
 		function panel(s){
+
 			return "<div class='panel'><div class='content'>"+s+"</div></div>";
 		}
 		function panelheadline(s){
+
 			return "<p class='panelheadline'>"+s+"</p>";
 		}
+		function lineaboveheadline(){
+
+			return "<div class='lineaboveheadline'></div>";
+		}
+		function section(s) {
+
+			return "<div class='section'>"+s+"</div>";
+		}
+		function sectionheadline(s){
+
+			return "<div class='sectionheadline'>"+s+"</div>";
+		}
+		function sectionheadlinesub(s){
+
+			return "<div class='sectionheadlinesub'>"+s+"</div>";
+		}
+		function masonry(s){
+
+			return "<div class='masonry-layout'>"+s+"</div>";
+		}
 		function columnbreak(){
+
 			return "<div class='panel break'></div>";
 		}
 		function img(s, classes, style, maxwidth){
@@ -47,6 +70,7 @@ function makedata(){
 			else return "<p class='"+classes+"' style='"+style+"'>"+s+"</p>";
 		}
 		function caption(s){
+
 			return text(s, "caption");
 		}
 		function div(classes, contents){
@@ -58,6 +82,230 @@ function makedata(){
 		var spacersmall = div("spacersmall");
 		var spacerextrasmall = div("spacerextrasmall");
 		var image_folder = "/images/page_images/";
+		contentlist.all = ""
+			//---------------------------------------
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Digital Design")
+				//+ sectionheadlinesub("Emails and Digital ads")
+				+ masonry(
+					panel(""
+						+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
+						+ spacer
+						+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg", " ", " ", true)
+						+ spacer
+						+ img(image_folder + "20180130_Joyus_Valentines-Day-hero.jpg", " ", " ", true)
+						+ spacer
+						+ img(image_folder + "20180125_joyus_Tria.jpg", "darkenImage")
+						+ spacer
+						+ img(image_folder + "Pinterest Pin_300x600_3.jpg")
+						+ spacer
+						+ img(image_folder + "Social;-Creative---11.1-Grinch-Theme-Guarantee.gif", "darkenImage")
+						+ spacer
+						+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
+						+ spacer
+						+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
+						+ spacer
+						+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
+						)
+					+ panel(""
+						+ img(image_folder + "20180216_joyus_evergreen_display_ad_300x600.jpg", "darkenImage")
+						+ spacer
+						+ img(image_folder + "Affiliate_Banners_Design_$9_First_Box_Promotion.jpg", " ", " ", true)
+						+ spacer
+						+ img(image_folder + "Affiliate_Banners_and_Gmail_Ad.jpg", " ", " ", true)
+						+ spacer
+						+ img(image_folder + "Black_Friday_email_AM.jpg", "darkenImage")
+						+ spacer
+						+ img(image_folder + "frames-from-timeline.gif", "darkenImage")
+						+ spacer
+						+ img(image_folder + "visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
+						+ spacer
+						+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
+						+ spacer
+						+ img(image_folder + "visual_marketing_email_crop.jpg", "darkenImage")
+						+ spacer
+						+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
+						)
+					+ panel(""
+						+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", "darkenImage")
+						+ spacer
+						+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
+						+ spacer
+						+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
+						+ spacer
+						+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
+						)
+				)
+			)
+			//---------------------------------------
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Custom Image Filters")
+
+				// + sectionheadlinesub("Using simulations of evolution to draw pictures: ")
+				+ text("Using simulations of evolution to draw pictures", "heading")
+				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
+				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
+				+ spacer
+
+				+ masonry(
+					panel(""
+						+ img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
+						+ spacer
+						+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+						+ spacer
+						+ img(image_folder + "gp_cat-170912.jpg", " ", " ", true)
+						)
+					+ panel(""
+						+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
+						+ spacersmall
+						+ img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
+						+ spacer
+						+ img(image_folder + "gp_eye-170912.jpg", " ", " ", true)
+						)
+					+ panel(""
+						+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
+						+ spacer
+						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
+						+ caption("Casting lines with genetic programs")
+						+ spacer
+						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg", " ", " ", true)
+						)
+				)
+			)
+			//---------------------------------------
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Drawings")
+				+ masonry(""
+					+ panel(""
+						+ img(image_folder + "smith.jpg", " ", " ", true)
+						+ caption("Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches")
+						)
+					+ columnbreak()
+					+ panel(""
+						+ img(image_folder + "fallingwater.jpg", " ", " ", true)
+						+ caption("Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches")
+						)
+					+ panel(""
+						+ img(image_folder + "fayum_1800.jpg", " ", " ", true)
+						+ img(image_folder + "fayum.jpg", " ", " ", true)
+						+ caption("Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing")
+						)
+				)
+			)
+			//---------------------------------------
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Events & Tradeshows")
+				+ masonry(""
+					+ panel(""
+						+ img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "event_7.31a-01.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);", true)
+						+ caption("Sodexo fabric-wrap graphics applied to tradeshow structures.")
+						+ spacer
+						+ img(image_folder + "hersheys_double.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "hersheys_stage.jpg", " ", " ", true)
+						+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
+						+ spacer
+						+ img(image_folder + "LeadingAge_icecream1.jpg", " ", " ", true)
+						+ caption("Sodexo event signage.")
+						)
+					+ columnbreak()
+					+ panel(""
+						+ img(image_folder + "event_aramark.jpg", " ", " ", true)
+						+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
+						+ spacer
+						+ img(image_folder + "smores2.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "event_forest.jpg", " ", " ", true)
+						+ caption("Hershey's BlogHer 2010 Conference exhibits - Floor-to-ceiling environmental graphics.")
+						+ spacer
+						+ img(image_folder + "FMBooth_elements_set1.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "Kiosk-1---flat-100dpi_detail.jpg", " ", " ", true)
+						+ caption("Sodexo event grahics")
+						)
+					+ columnbreak()
+					+ panel(""
+						+ img(image_folder + "LeadingAge_curvedwall1.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "LeadingAge_curvedwall2.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "LeadingAge_curvedwall3.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "Convex---Booth-Wall-1.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "Convex---Booth-Wall-2.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "7.9b-rainbow.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);", true)
+						+ spacersmall
+						+ caption("Sodexo Trade Show Booth: initial concept renderings and final graphics")
+
+
+						)
+				)
+			)
+			//---------------------------------------
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Other Projects")
+				+ masonry(""
+					+ panel(""
+						+ img(image_folder + "keyart_vegucated.jpg")
+						+ spacersmall
+						+ img(image_folder + "keyart_rd_1600.jpg")
+						+ caption("Movie posters")
+						)
+					+ columnbreak()
+					+ panel(""
+						+ img(image_folder + "pattern_dots.jpg")
+						+ spacersmall
+						+ img(image_folder + "7.27d---swatch-for-website.jpg")
+						+ spacersmall
+						+ img(image_folder + "pattern_7.7b.jpg")
+						+ caption("Patterns")
+						)
+					+ columnbreak()
+					+ panel(""
+						+ img(image_folder + "ad_startsmart.jpg")
+						+ spacersmall
+						+ img(image_folder + "ad_secondwind.jpg")
+						+ spacersmall
+						+ img(image_folder + "ad_theonly.jpg")
+						/*
+						+ spacersmall
+						+ img(image_folder + "ad_onlysit.jpg")
+						*/
+						+ spacersmall
+						+ img(image_folder + "Tandem-7.26.18b.jpg", "darkenImage")
+						+ caption("Ads")
+						)
+				)
+			)
+			//---------------------------------------
+			//---------------------------------------
+			//---------------------------------------
+			;
 		contentlist.event = ""
 			+ panel(""
 				+ "<p class='panelheadline'><span class='clientname'>Sodexo</span> IFMA/CoreNET Booth</p>"
@@ -146,58 +394,6 @@ function makedata(){
 			+ img(image_folder + "oysters1.jpg")
 			+ spacermedium
 			+ img(image_folder + "oysters_2.jpg")
-			;
-		contentlist.all = ""
-			//---------------------------------------
-			+ panel(""
-				// + panelheadline("Digital")
-				+ img(image_folder + "visual_Joyus-20180121_joyus_Shop-40-off.jpg")
-				+ spacer
-				+ img(image_folder + "visual_Joyus-1.21.18-hero.jpg", " ", " ", true)
-				+ spacer
-				+ img(image_folder + "20180130_Joyus_Valentines-Day-hero.jpg", " ", " ", true)
-				+ spacer
-				+ img(image_folder + "20180125_joyus_Tria.jpg", "darkenImage")
-				+ spacer
-				+ img(image_folder + "Pinterest Pin_300x600_3.jpg")
-				+ spacer
-				+ img(image_folder + "Social;-Creative---11.1-Grinch-Theme-Guarantee.gif", "darkenImage")
-				+ spacer
-				+ img(image_folder + "visual_20171221_Tech_DigitalLastMinuteDeals.jpg")
-				+ spacer
-				+ img(image_folder + "visual_20171122_lifestyle_black_friday_sitewide.jpg")
-				+ spacer
-				+ img(image_folder + "20180214_Joyus_Vday_GiftsForYourself_preview.jpg")
-				)
-			+ panel(""
-				+ img(image_folder + "20180216_joyus_evergreen_display_ad_300x600.jpg", "darkenImage")
-				+ spacer
-				+ img(image_folder + "Affiliate_Banners_Design_$9_First_Box_Promotion.jpg", " ", " ", true)
-				+ spacer
-				+ img(image_folder + "Affiliate_Banners_and_Gmail_Ad.jpg", " ", " ", true)
-				+ spacer
-				+ img(image_folder + "Black_Friday_email_AM.jpg", "darkenImage")
-				+ spacer
-				+ img(image_folder + "frames-from-timeline.gif", "darkenImage")
-				+ spacer
-				+ img(image_folder + "visual_20171203_lifestyle_7DaysofGifting_Day1.jpg")
-				+ spacer
-				+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
-				+ spacer
-				+ img(image_folder + "visual_marketing_email_crop.jpg", "darkenImage")
-				+ spacer
-				+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
-				)
-			+ panel(""
-				+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", "darkenImage")
-				+ spacer
-				+ img(image_folder + "visual_20180101_Lifestyle_NewYearNewDeals.gif")
-				+ spacer
-				+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
-				+ spacer
-				+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
-				)
-			//---------------------------------------
 			;
 	}
 

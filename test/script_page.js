@@ -33,8 +33,6 @@ function getdata(){
 		$(document).ready(readyhandler);
 	}
 }
-
-
 function readyhandler(){
 	
 	// get project index from query string
@@ -48,10 +46,7 @@ function readyhandler(){
 
 
 	d3.selectAll(".content img").attr("onclick", "attribute_check_then_blowup(this)");
-
 }
-
-
 function attribute_check_then_blowup(this_arg){
 	var attr = $(this_arg).attr("maxwidth");
 	// For some browsers, `attr` is undefined; for others `attr` is false.  Check for both.
@@ -62,73 +57,15 @@ function attribute_check_then_blowup(this_arg){
 		blowup(this_arg.src);
 	}
 }
-
-
-
-// switch to using script_visual_blowup.js from original hardcoded project_visual page
-/*
-// enlarge images
-var scrollPos = 0;
-function blowup(s){
-	d3.select(".pageBody")
-		.append("div").attr("class", "blowup")
-		.append("div").attr("class", "blowupImage")
-		.attr("data-src", s)
-		.style("background-image", "url("+s+")")
-		;
-	setBlowupViewKeys();
-	// click anywhere exits blowup
-	$(".blowup").click(exitBlowup);
-	// stop scroll behind blowup
-	scrollPos = $('body').scrollTop();
-	$('body').css({
-	    overflow: 'hidden',
-	    position: 'fixed',
-	    top : -scrollPos,
-	    width: "100%"
-	});
-}
-function exitBlowup(){
-	d3.select(".blowup").remove();
-	setPageViewKeys();
-	// reenable scroll
-	$('body').css({
-	    overflow: '',
-	    position: '',
-	    top: '',
-	    width: ""
-	}).scrollTop(scrollPos);
-}
-*/
-
-
-
-
-// ...
 function getProjectIndex(){
 
-
-	// override this, putting all work on index page
-	/*
-	// get query string
-	var queries = {};
-	$.each(document.location.search.substr(1).split('&'),function(c,q){
-	  var i = q.split('=');
-	  queries[i[0].toString()] = i[1].toString();
-	});
-
-	// get index of query string in data
 	var i = data.findIndex(function(d){
-		return d.query == queries.project;
-	});
-	*/
-	var i = data.findIndex(function(d){
+
+		// override this
 		return d.query == "all";
+
 	});
-
-
-
-	return i;	
+	return i;
 }
 function getpreviousindex(){
 	var newindex = pi - 1;
@@ -150,7 +87,6 @@ function goleft(){
 	else {
 		window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
 	}
-
 }
 function goright(){
 
@@ -162,18 +98,15 @@ function goright(){
 	else {
 		window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
 	}
-
-
 }
 function getpreviousblurb(){
+
 	return data[getpreviousindex()].blurb;
 }
 function getnextblurb(){
+
 	return data[getnextindex()].blurb;
 }
-
-
-
 function setPageViewKeys(){
 	$("body").off("keydown");
 	$("body").keydown(function(e) {
@@ -191,84 +124,19 @@ function setPageViewKeys(){
 		}
 	});
 }
-
-
-
-// switch to using script_visual_blowup.js from original hardcoded project_visual page
-/*
-function setBlowupViewKeys(){
-	$("body").off("keydown");
-	$("body").keydown(function(e) {
-		if(e.keyCode == 37) { // left
-			var list = $(".pageContent img")
-				.map(function() {
-					return this.src;
-				})
-			.get();
-			var i = list.findIndex(function(d){
-				return d == $(".blowupImage").attr("data-src");
-			});
-			i -= 1;
-			if(i < 0) i = list.length - 1;
-			$(".blowupImage")
-			.css("background-image", "url("+list[i]+")")
-				.attr("data-src", list[i])
-				;
-		}
-		else if(e.keyCode == 39) { // right
-			var list = $(".pageContent img")
-				.map(function() {
-					return this.src;
-				})
-			.get();
-			var i = list.findIndex(function(d){
-				return d == $(".blowupImage").attr("data-src");
-			});
-			i = (i+1) % list.length;
-			$(".blowupImage")
-			.css("background-image", "url("+list[i]+")")
-				.attr("data-src", list[i])
-				;
-		}
-		else if (e.keyCode == 27) { // escape
-		    exitBlowup();
-		}
-	});
-}
-*/
-
-
-
-
 function populate() {
-
-
-
 
 
 	// populate page based on query string
 	var item = data[pi];
 
 
-
 	// special handling for "emailmarketing" page
 	if(item.query == "emailmarketing"){
 		window.location = "project_visual.html";
 	}
-	
 
 
-
-	/*
-	d3.select(".pageBody")
-		.append("div").attr("class", "title museo")
-		.text(item.title)
-		;
-	d3.select(".pageBody")
-		.append("div").attr("class", "subtitle")
-		.text(item.subtitle)
-		;
-	*/
 	$(".pageBody").addClass(item.query);
 	d3.select(".pageBody")
 		.insert("div",":first-child").attr("class", "subtitle")
@@ -278,27 +146,19 @@ function populate() {
 		.insert("div",":first-child").attr("class", "title museo")
 		.text(item.title)
 		;
-
-		
-
-
-
-	/*
 	d3.select(".pageContent")
-		.append("div").attr("class", "itemContent")
-		.html(item.content)
-		;
-	*/
-	d3.select(".pageContent")
-		.append("div").attr("class", "masonry-layout")
+		//.append("div").attr("class", "masonry-layout")
+		.append("div")
 		.html(item.content)
 		;
 
-	
+
+
 	// special width for emails page
 	if(item.query == "emailmarketing"){
 		$(".pageContent").addClass("emailmarketing")
 	}
+
 
 
 	// previous, next, escape
@@ -317,10 +177,7 @@ function populate() {
 	// arrow first then text
 	d3.select(".goleft .cell .arrowcontainer")
 		.append("div").attr("class", "arrow")
-		
-		//.append("img").attr("src", "images/arrow_white_fill.png")
 		.append("div").attr("class", "image")
-
 		;
 	d3.select(".goleft .cell .arrowcontainer")
 		.append("div").attr("class", "text")
@@ -334,12 +191,8 @@ function populate() {
 		;
 	d3.select(".goright .cell .arrowcontainer")
 		.append("div").attr("class", "arrow")
-		
-		//.append("img").attr("src", "images/arrow_white_fill.png")
 		.append("div").attr("class", "image")
-
 		;
-
 
 
 
@@ -363,9 +216,6 @@ function populate() {
 	   $(".menu").css("opacity", "1");
 	}
 	imageloader.src = th_folder + "arrow_white_fill.png";
-
-
-
 }
 
 
