@@ -23,10 +23,12 @@ function menu() {
 		.text("Work")
 		;
 	*/
+	/*
 	menuitems
 		.append("a").attr("href", "contact.html").attr("class", "notfirst")
 		.text("Contact")
 		;
+	*/
 }
 
 
