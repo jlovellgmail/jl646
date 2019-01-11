@@ -276,6 +276,14 @@ function makedata(){
 				+ sectionheadline("Other Projects")
 				+ masonry(""
 					+ panel(""
+						+ img(image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "bags_grid2.jpg", "darkenImage", " ", " ", true)
+						+ caption("Product photography")
+
+						+ spacer
 						+ img(image_folder + "keyart_vegucated.jpg")
 						+ spacersmall
 						+ img(image_folder + "keyart_rd_1600.jpg")
