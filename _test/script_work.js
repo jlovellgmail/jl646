@@ -7,7 +7,7 @@ var keyname = "project";
 //
 //
 //
-var datafile = "http://jl646.com/test/data.js";
+var datafile = "http://jl646.com/_test/data.js";
 //
 //
 //

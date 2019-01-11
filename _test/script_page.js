@@ -9,7 +9,7 @@ var th_folder = "/images/";
 //
 //
 //
-var datafile = "http://jl646.com/test/data.js";
+var datafile = "http://jl646.com/_test/data.js";
 //
 //
 //
