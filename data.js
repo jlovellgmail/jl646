@@ -84,6 +84,7 @@ function makedata(){
 		var image_folder = "/images/page_images/";
 		contentlist.all = ""
 			//---------------------------------------
+			// Digital
 			+ lineaboveheadline()
 			+ section(""
 				+ sectionheadline("Digital Design")
@@ -139,44 +140,7 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
-			+ lineaboveheadline()
-			+ section(""
-				+ sectionheadline("Custom Image Filters")
-
-				// + sectionheadlinesub("Using simulations of evolution to draw pictures: ")
-				+ text("Using simulations of evolution to draw pictures", "heading")
-				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
-				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
-				+ spacer
-
-				+ masonry(
-					panel(""
-						+ img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
-						+ spacer
-						+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-						+ spacer
-						+ img(image_folder + "gp_cat-170912.jpg", " ", " ", true)
-						)
-					+ panel(""
-						+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
-						+ spacersmall
-						+ img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
-						+ spacer
-						+ img(image_folder + "gp_eye-170912.jpg", " ", " ", true)
-						)
-					+ panel(""
-						+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
-						+ spacer
-						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
-						+ caption("Casting lines with genetic programs")
-						+ spacer
-						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg", " ", " ", true)
-						+ spacersmall
-						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg", " ", " ", true)
-						)
-				)
-			)
-			//---------------------------------------
+			// Drawings
 			+ lineaboveheadline()
 			+ section(""
 				+ sectionheadline("Drawings")
@@ -198,6 +162,7 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
+			// Events
 			+ lineaboveheadline()
 			+ section(""
 				+ sectionheadline("Events & Tradeshows")
@@ -266,6 +231,46 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
+			// GP
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Custom Image Filters")
+
+				// + sectionheadlinesub("Using simulations of evolution to draw pictures: ")
+				+ text("Using simulations of evolution to draw pictures", "heading")
+				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
+				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
+				+ spacer
+
+				+ masonry(
+					panel(""
+						+ img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
+						+ spacer
+						+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+						+ spacer
+						+ img(image_folder + "gp_cat-170912.jpg", " ", " ", true)
+						)
+					+ panel(""
+						+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
+						+ spacersmall
+						+ img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
+						+ spacer
+						+ img(image_folder + "gp_eye-170912.jpg", " ", " ", true)
+						)
+					+ panel(""
+						+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
+						+ spacer
+						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
+						+ caption("Casting lines with genetic programs")
+						+ spacer
+						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg", " ", " ", true)
+						)
+				)
+			)
+			//---------------------------------------
+			// Other
 			+ lineaboveheadline()
 			+ section(""
 				+ sectionheadline("Other Projects")
