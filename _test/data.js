@@ -112,6 +112,12 @@ function makedata(){
 					+ panel(""
 						+ img(image_folder + "20180216_joyus_evergreen_display_ad_300x600.jpg", "darkenImage")
 						+ spacer
+						+ img(image_folder + "Affiliate-banners-+-Gmail-ads.jpg", " ", " ", true)
+						/*
+						+ spacer
+						+ img(image_folder + "11.26_ Cyber_Monday_PM_Send.jpg", " ", " ", true)
+						*/
+						+ spacer
 						+ img(image_folder + "Affiliate_Banners_Design_$9_First_Box_Promotion.jpg", " ", " ", true)
 						+ spacer
 						+ img(image_folder + "Affiliate_Banners_and_Gmail_Ad.jpg", " ", " ", true)
@@ -125,8 +131,6 @@ function makedata(){
 						+ img(image_folder + "visual_20171204_lifestyle_7DaysofGifting_Day2.jpg")
 						+ spacer
 						+ img(image_folder + "visual_marketing_email_crop.jpg", "darkenImage")
-						+ spacer
-						+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
 						)
 					+ panel(""
 						+ img(image_folder + "20180227_joyus_pamper_yourself_preview.jpg", "darkenImage")
@@ -136,6 +140,8 @@ function makedata(){
 						+ img(image_folder + "visual_20171211_lifestyle_GreenMonday_PM_SiteWide_00.jpg")
 						+ spacer
 						+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
+						+ spacer
+						+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
 						)
 				)
 			)
