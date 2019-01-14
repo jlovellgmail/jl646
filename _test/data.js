@@ -87,7 +87,7 @@ function makedata(){
 			// Digital
 			+ lineaboveheadline()
 			+ section(""
-				+ sectionheadline("Digital Design")
+				+ sectionheadline("Digital")
 				//+ sectionheadlinesub("Emails and Digital ads")
 				+ masonry(
 					panel(""
@@ -142,28 +142,6 @@ function makedata(){
 						+ img(image_folder + "20180219_lifestyle_presidents_day_preview.gif")
 						+ spacer
 						+ img(image_folder + "visual_20171202_Lifestyle_cyber_week.jpg")
-						)
-				)
-			)
-			//---------------------------------------
-			// Drawings
-			+ lineaboveheadline()
-			+ section(""
-				+ sectionheadline("Drawings")
-				+ masonry(""
-					+ panel(""
-						+ img(image_folder + "smith.jpg", " ", " ", true)
-						+ caption("Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches")
-						)
-					+ columnbreak()
-					+ panel(""
-						+ img(image_folder + "fallingwater.jpg", " ", " ", true)
-						+ caption("Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches")
-						)
-					+ panel(""
-						+ img(image_folder + "fayum_1800.jpg", " ", " ", true)
-						+ img(image_folder + "fayum.jpg", " ", " ", true)
-						+ caption("Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing")
 						)
 				)
 			)
@@ -237,63 +215,80 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
+			// Drawings
+			+ lineaboveheadline()
+			+ section(""
+				+ sectionheadline("Drawings")
+				+ masonry(""
+					+ panel(""
+						+ img(image_folder + "smith.jpg", " ", " ", true)
+						+ caption("Graphite on paper, 56 x 52.6 inches")
+						)
+					+ columnbreak()
+					+ panel(""
+						+ img(image_folder + "fallingwater.jpg", " ", " ", true)
+						+ caption("Ballpoint pen on paper, 48.3 x 39.9 inches")
+						+ spacer
+						+ img(image_folder + "Flute-graphite-on-paper-45-x-29-inches-2007.jpg", " ", " ", true)
+						+ caption("Assisted artist with rendering<br>Graphite on paper, 45 x 29 inches")
+						)
+					+ panel(""
+						+ img(image_folder + "fayum_1800.jpg", " ", " ", true)
+						+ img(image_folder + "fayum.jpg", " ", " ", true)
+						+ caption("Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing")
+						)
+				)
+			)
+			//---------------------------------------
 			// GP
 			+ lineaboveheadline()
 			+ section(""
-				+ sectionheadline("Custom Image Filters")
-
-				// + sectionheadlinesub("Using simulations of evolution to draw pictures: ")
-				+ text("Using simulations of evolution to draw pictures", "heading")
-				+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
-				+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
-				+ spacer
-
+				+ sectionheadline("Experimental Image Filter")
 				+ masonry(
 					panel(""
 						+ img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
 						+ spacer
-						+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+						+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
 						+ spacer
 						+ img(image_folder + "gp_cat-170912.jpg", " ", " ", true)
 						)
 					+ panel(""
-						+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
-						+ spacersmall
 						+ img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
+						+ spacer
+						+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 						+ spacer
 						+ img(image_folder + "gp_eye-170912.jpg", " ", " ", true)
 						)
 					+ panel(""
-						+ img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
+						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg", " ", " ", true)
+						+ spacersmall
+						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg", " ", " ", true)
 						+ spacer
 						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
 						+ caption("Casting lines with genetic programs")
 						+ spacer
-						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg", " ", " ", true)
-						+ spacersmall
-						+ img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg", " ", " ", true)
+						+ text("Using simulations of evolution to draw pictures", "heading")
+						+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
+						+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
 						)
 				)
+
 			)
 			//---------------------------------------
 			// Other
 			+ lineaboveheadline()
 			+ section(""
-				+ sectionheadline("Other Projects")
+				+ sectionheadline("Other Work")
 				+ masonry(""
 					+ panel(""
 						+ img(image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg", " ", " ", true)
 						+ spacersmall
 						+ img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg", " ", " ", true)
 						+ spacersmall
-						+ img(image_folder + "bags_grid2.jpg", "darkenImage", " ", " ", true)
+						+ img(image_folder + "bags_grid.jpg", "darkenImage", " ", " ", true)
 						+ caption("Product photography")
-
-						+ spacer
-						+ img(image_folder + "keyart_vegucated.jpg")
-						+ spacersmall
-						+ img(image_folder + "keyart_rd_1600.jpg")
-						+ caption("Movie posters")
 						)
 					+ columnbreak()
 					+ panel(""
@@ -303,6 +298,12 @@ function makedata(){
 						+ spacersmall
 						+ img(image_folder + "pattern_7.7b.jpg")
 						+ caption("Patterns")
+
+						+ spacer
+						+ img(image_folder + "keyart_vegucated.jpg")
+						+ spacersmall
+						+ img(image_folder + "keyart_rd_1600.jpg")
+						+ caption("Movie posters")
 						)
 					+ columnbreak()
 					+ panel(""

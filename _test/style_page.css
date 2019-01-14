@@ -23,6 +23,7 @@
 	font-size: 35px;
 	margin-top: 35px;
 	margin-bottom: 50px;
+	letter-spacing: initial;
 }
 .sectionheadlinesub {
 
@@ -305,6 +306,9 @@
 	}
 	.arrowcontainer {
 		height: 21px;
+	}
+	.panel .heading, .panel p {
+		display: none;
 	}
 }
 @media screen and (max-width: 600px) {
