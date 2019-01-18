@@ -547,7 +547,7 @@ function makedata(){
 
 
 						+ spacersmall
-						+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);", true)
+						//+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
 							image: image_folder + "LeadingAge_render2.jpg"
 							,thumbnail: image_folder + thumb_folder + "LeadingAge_render2.jpg"
