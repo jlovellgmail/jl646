@@ -42,10 +42,16 @@ function attribute_check_then_blowup(this_arg){
 	var attr = $(this_arg).attr("maxwidth");
 	// For some browsers, `attr` is undefined; for others `attr` is false.  Check for both.
 	if (typeof attr !== typeof undefined && attr !== false) {
-	    blowup(this_arg.src, 1200);
+	    
+	    //blowup(this_arg.src, 1200);
+	    blowup(this_arg.getAttribute("data-image"), 1200);
+
 	}
 	else {
-		blowup(this_arg.src);
+
+		//blowup(this_arg.src);
+		blowup(this_arg.getAttribute("data-image"));
+
 	}
 }
 function getProjectIndex(){
