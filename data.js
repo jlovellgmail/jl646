@@ -155,8 +155,8 @@ function makedata(){
 						+ spacer
 						// + img(image_folder + "Pinterest Pin_300x600_3.jpg")
 						+ imgnew({
-							image: image_folder + "Pinterest Pin_300x600_3.jpg"
-							,thumbnail: image_folder + thumb_folder + "Pinterest Pin_300x600_3.jpg"
+							image: image_folder + "Pinterest_Pin_300x600_3.jpg"
+							,thumbnail: image_folder + thumb_folder + "Pinterest_Pin_300x600_3.jpg"
 						})
 
 
@@ -801,7 +801,7 @@ function makedata(){
 						)
 					+ columnbreak()
 					+ panel(""
-						+ img(image_folder + "ad_startsmart.jpg")
+						// + img(image_folder + "ad_startsmart.jpg")
 						+ imgnew({
 							image: image_folder + "ad_startsmart.jpg"
 							,thumbnail: image_folder + thumb_folder + "ad_startsmart.jpg"
