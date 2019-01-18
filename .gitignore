@@ -6,3 +6,4 @@ images/.DS_Store
 *.png
 *.jpg
 images/page_images/bags_grid.jpg
+images/*
