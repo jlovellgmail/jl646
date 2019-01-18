@@ -353,8 +353,8 @@ function makedata(){
 						+ spacersmall
 						// + img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
-							image: image_folder + "event_Hanging Sign_exterior.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Hanging Sign_exterior.jpg"
+							image: image_folder + "event_Hanging_Sign_exterior.jpg"
+							,thumbnail: image_folder + thumb_folder + "event_Hanging_Sign_exterior.jpg"
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
@@ -363,8 +363,8 @@ function makedata(){
 						+ spacersmall
 						// + img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
-							image: image_folder + "event_Curved Sign_Back.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Curved Sign_Back.jpg"
+							image: image_folder + "event_Curved_Sign_Back.jpg"
+							,thumbnail: image_folder + thumb_folder + "event_Curved_Sign_Back.jpg"
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
@@ -373,8 +373,8 @@ function makedata(){
 						+ spacersmall
 						// + img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
-							image: image_folder + "event_Curved Sign_Front.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Curved Sign_Front.jpg"
+							image: image_folder + "event_Curved_Sign_Front.jpg"
+							,thumbnail: image_folder + thumb_folder + "event_Curved_Sign_Front.jpg"
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
