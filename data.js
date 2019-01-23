@@ -331,10 +331,24 @@ function makedata(){
 				+ sectionheadline("Events & Tradeshows")
 				+ masonry(""
 					+ panel(""
+
+
+						/*
 						// + img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
 							image: image_folder + "event_7.30a.jpg"
 							,thumbnail: image_folder + thumb_folder + "event_7.30a.jpg"
+							,maxwidth: true
+							,style: "filter:brightness(.97);"
+						})
+						*/
+
+
+						+ spacersmall
+						// + img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
+						+ imgnew({
+							image: image_folder + "event_Curved_Sign_Back.jpg"
+							,thumbnail: image_folder + thumb_folder + "event_Curved_Sign_Back.jpg"
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
@@ -350,6 +364,7 @@ function makedata(){
 						})
 
 
+						/*
 						+ spacersmall
 						// + img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
@@ -358,18 +373,10 @@ function makedata(){
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
+						*/
 
 
-						+ spacersmall
-						// + img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "event_Curved_Sign_Back.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Curved_Sign_Back.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-
-
+						/*
 						+ spacersmall
 						// + img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
@@ -378,6 +385,7 @@ function makedata(){
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
+						*/
 
 
 						+ caption("Sodexo fabric-wrap graphics applied to tradeshow structures.")
@@ -464,11 +472,90 @@ function makedata(){
 						)
 					+ columnbreak()
 					+ panel(""
+
+
+						/*
 						// + img(image_folder + "LeadingAge_curvedwall1.jpg", " ", " ", true)
 						+ imgnew({
 							image: image_folder + "LeadingAge_curvedwall1.jpg"
 							,thumbnail: image_folder + thumb_folder + "LeadingAge_curvedwall1.jpg"
 							,maxwidth: true
+						})
+						*/
+
+
+						/*
+						+ spacersmall
+						// + img(image_folder + "LeadingAge_curvedwall3.jpg", " ", " ", true)
+						+ imgnew({
+							image: image_folder + "LeadingAge_curvedwall3.jpg"
+							,thumbnail: image_folder + thumb_folder + "LeadingAge_curvedwall3.jpg"
+							,maxwidth: true
+						})
+						*/
+
+
+						/*
+						+ spacersmall
+						// + img(image_folder + "Convex---Booth-Wall-1.jpg", " ", " ", true)
+						+ imgnew({
+							image: image_folder + "Convex---Booth-Wall-1.jpg"
+							,thumbnail: image_folder + thumb_folder + "Convex---Booth-Wall-1.jpg"
+							,maxwidth: true
+						})
+						*/
+
+
+						/*
+						+ spacersmall
+						// + img(image_folder + "Convex---Booth-Wall-2.jpg", " ", " ", true)
+						+ imgnew({
+							image: image_folder + "Convex---Booth-Wall-2.jpg"
+							,thumbnail: image_folder + thumb_folder + "Convex---Booth-Wall-2.jpg"
+							,maxwidth: true
+						})
+						*/
+
+
+						/*
+						+ spacersmall
+						// + img(image_folder + "7.9b-rainbow.jpg", " ", " ", true)
+						+ imgnew({
+							image: image_folder + "7.9b-rainbow.jpg"
+							,thumbnail: image_folder + thumb_folder + "7.9b-rainbow.jpg"
+							,maxwidth: true
+						})
+						*/
+
+
+						+ spacersmall
+						// + img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
+						+ imgnew({
+							image: image_folder + "Booth-9.21a.jpg"
+							,thumbnail: image_folder + thumb_folder + "Booth-9.21a.jpg"
+							,maxwidth: true
+						})
+
+
+						/*
+						+ spacersmall
+						// + img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)
+						+ imgnew({
+							image: image_folder + "LeadingAge_render1.jpg"
+							,thumbnail: image_folder + thumb_folder + "LeadingAge_render1.jpg"
+							,maxwidth: true
+							,style: "filter:brightness(.97);"
+						})
+						*/
+
+
+						+ spacersmall
+						//+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);", true)
+						+ imgnew({
+							image: image_folder + "LeadingAge_render2.jpg"
+							,thumbnail: image_folder + thumb_folder + "LeadingAge_render2.jpg"
+							,maxwidth: true
+							,style: "filter:brightness(.97);"
 						})
 
 
@@ -481,33 +568,7 @@ function makedata(){
 						})
 
 
-						+ spacersmall
-						// + img(image_folder + "LeadingAge_curvedwall3.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_curvedwall3.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_curvedwall3.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "Convex---Booth-Wall-1.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Convex---Booth-Wall-1.jpg"
-							,thumbnail: image_folder + thumb_folder + "Convex---Booth-Wall-1.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "Convex---Booth-Wall-2.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Convex---Booth-Wall-2.jpg"
-							,thumbnail: image_folder + thumb_folder + "Convex---Booth-Wall-2.jpg"
-							,maxwidth: true
-						})
-
-
+						
 						+ spacersmall
 						// + img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", true)
 						+ imgnew({
@@ -516,44 +577,7 @@ function makedata(){
 							,maxwidth: true
 							,style: "filter:brightness(.97);"
 						})
-
-
-						+ spacersmall
-						// + img(image_folder + "7.9b-rainbow.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "7.9b-rainbow.jpg"
-							,thumbnail: image_folder + thumb_folder + "7.9b-rainbow.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Booth-9.21a.jpg"
-							,thumbnail: image_folder + thumb_folder + "Booth-9.21a.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_render1.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_render1.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-
-
-						+ spacersmall
-						//+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_render2.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_render2.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
+						
 
 
 						+ spacersmall
@@ -647,6 +671,7 @@ function makedata(){
 						})
 
 
+						/*
 						+ spacer
 						// + img(image_folder + "gp_cat-170912.jpg", " ", " ", true)
 						+ imgnew({
@@ -654,6 +679,12 @@ function makedata(){
 							,thumbnail: image_folder + thumb_folder + "gp_cat-170912.jpg"
 							,maxwidth: true
 						})
+						*/
+
+
+						+ spacermedium
+						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
+						+ caption("Casting lines with genetic programs")
 
 
 						)
@@ -666,6 +697,7 @@ function makedata(){
 						})
 
 
+						/*
 						+ spacersmall
 						// + img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
 						+ imgnew({
@@ -675,6 +707,7 @@ function makedata(){
 							,style: "width:100%"
 							,class: "darkenImage"
 						})
+						*/
 
 
 						+ spacer
@@ -708,12 +741,10 @@ function makedata(){
 
 
 						+ spacer
-						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
-						+ caption("Casting lines with genetic programs")
-						+ spacer
 						+ text("Using simulations of evolution to draw pictures", "heading")
 						+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
 						+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
+
 						)
 				)
 
