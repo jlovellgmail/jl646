@@ -152,11 +152,17 @@
 @media screen and (max-width: 600px) {
 
 
+	.panel.break {
+		display: none;
+	}
+
+
+
 	.visual .masonry-layout {
 		column-count: 3;
 	}
 	.masonry-layout {
-		column-count: 3;
+		column-count: 1;
 		column-gap: 9px;
 	}
 	.caption {

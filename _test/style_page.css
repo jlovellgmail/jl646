@@ -313,6 +313,15 @@
 	}
 }
 @media screen and (max-width: 600px) {
+
+
+	.masonry-layout .panel:first-child {
+		margin-left: auto;
+	}
+	.masonry-layout .panel:last-child {
+		margin-right: auto;
+	}
+
 	
 
 	.pageContent .spacer {
