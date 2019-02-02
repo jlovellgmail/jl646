@@ -109,7 +109,7 @@ function makedata(){
 			// Digital
 			+ lineaboveheadline()
 			+ section(""
-				+ sectionheadline("Digital")
+				+ sectionheadline("Emails & Digital Assets")
 				//+ sectionheadlinesub("Emails and Digital ads")
 				+ masonry(
 					panel(""
@@ -325,269 +325,6 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
-			// Events
-			+ lineaboveheadline()
-			+ section(""
-				+ sectionheadline("Events & Tradeshows")
-				+ masonry(""
-					+ panel(""
-
-
-						/*
-						// + img(image_folder + "event_7.30a.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "event_7.30a.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_7.30a.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-						*/
-
-
-						+ spacersmall
-						// + img(image_folder + "event_Curved Sign_Back.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "event_Curved_Sign_Back.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Curved_Sign_Back.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "event_7.31a-01.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "event_7.31a-01.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_7.31a-01.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "event_Hanging Sign_exterior.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "event_Hanging_Sign_exterior.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Hanging_Sign_exterior.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-						*/
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "event_Curved Sign_Front.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "event_Curved_Sign_Front.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_Curved_Sign_Front.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-						*/
-
-
-						+ caption("Sodexo fabric-wrap graphics applied to tradeshow structures.")
-						+ spacer
-						// + img(image_folder + "hersheys_double.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "hersheys_double.jpg"
-							,thumbnail: image_folder + thumb_folder + "hersheys_double.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "hersheys_stage.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "hersheys_stage.jpg"
-							,thumbnail: image_folder + thumb_folder + "hersheys_stage.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
-						+ spacer
-						// + img(image_folder + "LeadingAge_icecream1.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_icecream1.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_icecream1.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Sodexo event signage.")
-						)
-					+ columnbreak()
-					+ panel(""
-						// + img(image_folder + "event_aramark.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "event_aramark.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_aramark.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
-						+ spacer
-						// + img(image_folder + "smores2.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "smores2.jpg"
-							,thumbnail: image_folder + thumb_folder + "smores2.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "event_forest.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "event_forest.jpg"
-							,thumbnail: image_folder + thumb_folder + "event_forest.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Hershey's BlogHer 2010 Conference exhibits - Floor-to-ceiling environmental graphics.")
-						+ spacer
-						// + img(image_folder + "FMBooth_elements_set1.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "FMBooth_elements_set1.jpg"
-							,thumbnail: image_folder + thumb_folder + "FMBooth_elements_set1.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "Kiosk-1---flat-100dpi_detail.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Kiosk-1---flat-100dpi_detail.jpg"
-							,thumbnail: image_folder + thumb_folder + "Kiosk-1---flat-100dpi_detail.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Sodexo event grahics")
-						)
-					+ columnbreak()
-					+ panel(""
-
-
-						/*
-						// + img(image_folder + "LeadingAge_curvedwall1.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_curvedwall1.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_curvedwall1.jpg"
-							,maxwidth: true
-						})
-						*/
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "LeadingAge_curvedwall3.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_curvedwall3.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_curvedwall3.jpg"
-							,maxwidth: true
-						})
-						*/
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "Convex---Booth-Wall-1.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Convex---Booth-Wall-1.jpg"
-							,thumbnail: image_folder + thumb_folder + "Convex---Booth-Wall-1.jpg"
-							,maxwidth: true
-						})
-						*/
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "Convex---Booth-Wall-2.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Convex---Booth-Wall-2.jpg"
-							,thumbnail: image_folder + thumb_folder + "Convex---Booth-Wall-2.jpg"
-							,maxwidth: true
-						})
-						*/
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "7.9b-rainbow.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "7.9b-rainbow.jpg"
-							,thumbnail: image_folder + thumb_folder + "7.9b-rainbow.jpg"
-							,maxwidth: true
-						})
-						*/
-
-
-						+ spacersmall
-						// + img(image_folder + "Booth-9.21a.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Booth-9.21a.jpg"
-							,thumbnail: image_folder + thumb_folder + "Booth-9.21a.jpg"
-							,maxwidth: true
-						})
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "LeadingAge_render1.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_render1.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_render1.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-						*/
-
-
-						+ spacersmall
-						//+ img(image_folder + "LeadingAge_render2.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_render2.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_render2.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "LeadingAge_curvedwall2.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_curvedwall2.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_curvedwall2.jpg"
-							,maxwidth: true
-						})
-
-
-						
-						+ spacersmall
-						// + img(image_folder + "LeadingAge_all.jpg", " ", "filter:brightness(.97);", true)
-						+ imgnew({
-							image: image_folder + "LeadingAge_all.jpg"
-							,thumbnail: image_folder + thumb_folder + "LeadingAge_all.jpg"
-							,maxwidth: true
-							,style: "filter:brightness(.97);"
-						})
-						
-
-
-						+ spacersmall
-						+ caption("Sodexo Trade Show Booth: initial concept renderings and final graphics")
-
-
-						)
-				)
-			)
-			//---------------------------------------
 			// Drawings
 			+ lineaboveheadline()
 			+ section(""
@@ -648,108 +385,6 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
-			// GP
-			+ lineaboveheadline()
-			+ section(""
-				+ sectionheadline("Experimental Image Filter")
-				+ masonry(
-					panel(""
-						// + img(image_folder + "gp_hand-170912.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_hand-170912.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_hand-170912.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacer
-						// + img(image_folder + "gp_camera-170912.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_camera-170912.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_camera-170912.jpg"
-							,maxwidth: true
-						})
-
-
-						/*
-						+ spacer
-						// + img(image_folder + "gp_cat-170912.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_cat-170912.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_cat-170912.jpg"
-							,maxwidth: true
-						})
-						*/
-
-
-						+ spacermedium
-						+ '<div class="aspectratio gpshapes"><iframe src="https://player.vimeo.com/video/104474094?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
-						+ caption("Casting lines with genetic programs")
-
-
-						)
-					+ panel(""
-						// + img(image_folder + "gp_horse-170912.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_horse-170912.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_horse-170912.jpg"
-							,maxwidth: true
-						})
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "gp_targethorse.jpg", "darkenImage", "width:100%;", true)
-						+ imgnew({
-							image: image_folder + "gp_targethorse.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_targethorse.jpg"
-							,maxwidth: true
-							,style: "width:100%"
-							,class: "darkenImage"
-						})
-						*/
-
-
-						+ spacer
-						+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-						+ spacer
-						// + img(image_folder + "gp_eye-170912.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_eye-170912.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_eye-170912.jpg"
-							,maxwidth: true
-						})
-
-
-						)
-					+ panel(""
-						// + img(image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_1211080-230.best.1009.fullscreen_crop_945.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg"
-							,thumbnail: image_folder + thumb_folder + "gp_1211080-230.best.1009.fullscreen_target_945.jpg"
-							,maxwidth: true
-						})
-
-
-						+ spacer
-						+ text("Using simulations of evolution to draw pictures", "heading")
-						+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
-						+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
-
-						)
-				)
-
-			)
-			//---------------------------------------
 			// Other
 			+ lineaboveheadline()
 			+ section(""
@@ -773,6 +408,7 @@ function makedata(){
 						})
 
 
+						/*
 						+ spacersmall
 						// + img(image_folder + "bags_grid.jpg", "darkenImage", " ", " ", true)
 						+ imgnew({
@@ -781,6 +417,7 @@ function makedata(){
 							,maxwidth: true
 							,class: "darkenImage"
 						})
+						*/
 
 
 						+ caption("Product photography")
@@ -802,74 +439,44 @@ function makedata(){
 						})
 
 
-						+ spacersmall
-						// + img(image_folder + "pattern_7.7b.jpg")
-						+ imgnew({
-							image: image_folder + "pattern_7.7b.jpg"
-							,thumbnail: image_folder + thumb_folder + "pattern_7.7b.jpg"
-						})
-
-
 						+ caption("Patterns")
-
-						+ spacer
-						// + img(image_folder + "keyart_vegucated.jpg")
-						+ imgnew({
-							image: image_folder + "keyart_vegucated.jpg"
-							,thumbnail: image_folder + thumb_folder + "keyart_vegucated.jpg"
-						})
-
-
-						+ spacersmall
-						// + img(image_folder + "keyart_rd_1600.jpg")
-						+ imgnew({
-							image: image_folder + "keyart_rd_1600.jpg"
-							,thumbnail: image_folder + thumb_folder + "keyart_rd_1600.jpg"
-						})
-
-
-						+ caption("Movie posters")
 						)
 					+ columnbreak()
 					+ panel(""
-						// + img(image_folder + "ad_startsmart.jpg")
+
+						// + img(image_folder + "event_aramark.jpg", " ", " ", true)
 						+ imgnew({
-							image: image_folder + "ad_startsmart.jpg"
-							,thumbnail: image_folder + thumb_folder + "ad_startsmart.jpg"
+							image: image_folder + "event_aramark.jpg"
+							,thumbnail: image_folder + thumb_folder + "event_aramark.jpg"
+							,maxwidth: true
+						})
+
+
+						+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
+
+
+						+ spacer
+						+ imgnew({
+							image: image_folder + "hersheys_double.jpg"
+							,thumbnail: image_folder + thumb_folder + "hersheys_double.jpg"
+							,maxwidth: true
 						})
 
 
 						+ spacersmall
-						// + img(image_folder + "ad_secondwind.jpg")
+						// + img(image_folder + "hersheys_stage.jpg", " ", " ", true)
 						+ imgnew({
-							image: image_folder + "ad_secondwind.jpg"
-							,thumbnail: image_folder + thumb_folder + "ad_secondwind.jpg"
+							image: image_folder + "hersheys_stage.jpg"
+							,thumbnail: image_folder + thumb_folder + "hersheys_stage.jpg"
+							,maxwidth: true
 						})
 
 
-						+ spacersmall
-						// + img(image_folder + "ad_theonly.jpg")
-						+ imgnew({
-							image: image_folder + "ad_theonly.jpg"
-							,thumbnail: image_folder + thumb_folder + "ad_theonly.jpg"
-						})
+						+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
 
 
-						/*
-						+ spacersmall
-						+ img(image_folder + "ad_onlysit.jpg")
-						*/
-						+ spacersmall
-						// + img(image_folder + "Tandem-7.26.18b.jpg", "darkenImage")
-						+ imgnew({
-							image: image_folder + "Tandem-7.26.18b.jpg"
-							,thumbnail: image_folder + thumb_folder + "Tandem-7.26.18b.jpg"
-							,class: "darkenImage"
-						})
-
-
-						+ caption("Ads")
 						)
+
 				)
 			)
 			//---------------------------------------
