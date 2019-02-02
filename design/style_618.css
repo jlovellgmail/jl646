@@ -1,0 +1,170 @@
+/* turn off mobile view */
+#mobile {
+	display: none;
+}
+
+.homepage #homelink {
+	display: none;
+}
+body {
+    letter-spacing: 0.05em;
+}
+.homepage {
+	/*background: rgba(0,0,0, .09);*/
+	padding-top: 120px;
+	margin-bottom: 120px;
+	margin-left: 24px;
+	margin-right: 24px;
+	left: 0;
+	right: 0;
+}
+.pageContent {
+	max-width: 1440px;
+	display: block;
+	margin: 0 auto;
+}
+.masonry-layout {
+	column-count: 3;
+	column-gap: 24px;
+}
+.masonry-layout .panel {
+	max-width: 290px;
+	display: block;
+	margin: 0 auto;
+}
+.masonry-layout .content {
+	margin-bottom: 100px;
+	break-inside: avoid;
+}
+.masonry-layout .content .headline {
+	line-height: 32px;
+	margin-top: 0;
+	font-family: roboto, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: initial;
+	color: rgba(0,0,0, .7);
+	margin-bottom: 7px;
+}
+.masonry-layout .content img {
+	max-width: 100%;
+}
+.masonry-layout .content .caption {
+	color: rgba(0,0,0, 0.8);
+	font-family: aktiv-grotesk;
+	line-height: 21px;
+	margin-top: 9px;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: .02em;
+}
+.masonry-layout .content a {
+	text-decoration: none;
+}
+
+.masonry-layout .panel.break {
+	break-before: column;
+}
+.masonry-layout .content .gap {
+	height: 30px;
+}
+.blowup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0, .87);
+}
+.blowupimagecontainer {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+}
+.blowupImage {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.blowup .x {
+	background-image: url(/images/x.svg);
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	margin: 9px;
+}
+@media screen and (max-width: 600px) {
+	
+	/*switch to mobile ordering */
+	.homepage .pageContent .masonry-layout {
+		display: none;
+	}
+	#mobile {
+		display: block;
+	}
+
+
+	.masonry-layout {
+	    column-gap: 9px;
+    	column-count: 1;
+	}
+
+
+	.break {
+		display: none;
+	}
+	.masonry-layout .content .gap {
+		height: 7px;
+	}
+	.masonry-layout .content {
+		/*margin-bottom: 28px;*/
+	}
+	.masonry-layout .content .caption {
+		/*display: none;*/
+	}
+	.menu .wrap {
+	    padding-left: 22px;
+	}
+	.pageBody.visual {
+	    padding-top: 75px;
+	    margin-left: 8px;
+	    margin-right: 8px;
+	}
+	.blowup {
+		background: rgba(0,0,0, .92);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
