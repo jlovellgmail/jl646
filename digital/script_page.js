@@ -3,8 +3,17 @@ var pagename = "project.html";
 var keyname = "project";
 var pi = undefined;
 var th_folder = "/images/";
-var datafile = "http://jl646.com/data.js";
 
+
+//
+//
+//
+//
+var datafile = "http://jl646.com/digital/data.js";
+//
+//
+//
+//
 
 
 // get data

@@ -1,8 +1,17 @@
 cout = console.log;
 var pagename = "project.html";
 var keyname = "project";
-var datafile = "http://jl646.com/data.js";
 
+
+//
+//
+//
+//
+var datafile = "http://jl646.com/digital/data.js";
+//
+//
+//
+//
 
 
 // get data
