@@ -325,134 +325,91 @@ function makedata(){
 				)
 			)
 			//---------------------------------------
-			// Drawings
-			+ lineaboveheadline()
-			+ section(""
-				+ sectionheadline("Drawings")
-				+ masonry(""
-					+ panel(""
-						// + img(image_folder + "smith.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "smith.jpg"
-							,thumbnail: image_folder + thumb_folder + "smith.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Graphite on paper, 56 x 52.6 inches")
-						)
-					+ columnbreak()
-					+ panel(""
-						// + img(image_folder + "fallingwater.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "fallingwater.jpg"
-							,thumbnail: image_folder + thumb_folder + "fallingwater.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Ballpoint pen on paper, 48.3 x 39.9 inches")
-						+ spacer
-						// + img(image_folder + "Flute-graphite-on-paper-45-x-29-inches-2007.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "Flute-graphite-on-paper-45-x-29-inches-2007.jpg"
-							,thumbnail: image_folder + thumb_folder + "Flute-graphite-on-paper-45-x-29-inches-2007.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Assisted artist with rendering<br>Graphite on paper, 45 x 29 inches")
-						)
-					+ panel(""
-						// + img(image_folder + "fayum_1800.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "fayum_1800.jpg"
-							,thumbnail: image_folder + thumb_folder + "fayum_1800.jpg"
-							,maxwidth: true
-						})
-
-
-						// + img(image_folder + "fayum.jpg", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "fayum.jpg"
-							,thumbnail: image_folder + thumb_folder + "fayum.jpg"
-							,maxwidth: true
-						})
-
-
-						+ caption("Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing")
-						)
-				)
-			)
-			//---------------------------------------
 			// Other
 			+ lineaboveheadline()
 			+ section(""
 				+ sectionheadline("Other Work")
 				+ masonry(""
 					+ panel(""
-						// + img(image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg", " ", " ", true)
+
+
 						+ imgnew({
 							image: image_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg"
 							,thumbnail: image_folder + thumb_folder + "SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg"
 							,maxwidth: true
 						})
-
-
 						+ spacersmall
-						// + img(image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg", " ", " ", true)
 						+ imgnew({
 							image: image_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg"
 							,thumbnail: image_folder + thumb_folder + "SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg"
 							,maxwidth: true
 						})
-
-
-						/*
-						+ spacersmall
-						// + img(image_folder + "bags_grid.jpg", "darkenImage", " ", " ", true)
-						+ imgnew({
-							image: image_folder + "bags_grid.jpg"
-							,thumbnail: image_folder + thumb_folder + "bags_grid.jpg"
-							,maxwidth: true
-							,class: "darkenImage"
-						})
-						*/
-
-
 						+ caption("Product photography")
+
+
+						+ spacer
+						+ imgnew({
+							image: image_folder + "fayum_1800.jpg"
+							,thumbnail: image_folder + thumb_folder + "fayum_1800.jpg"
+							,maxwidth: true
+						})
+						+ spacersmall
+						+ imgnew({
+							image: image_folder + "fayum.jpg"
+							,thumbnail: image_folder + thumb_folder + "fayum.jpg"
+							,maxwidth: true
+						})
+						+ caption("Scientific Illustration for a publication of The American Museum of Natural History, NYC<br>Pencil and digital editing")
+
+
 						)
 					+ columnbreak()
 					+ panel(""
-						// + img(image_folder + "pattern_dots.jpg")
+
+
 						+ imgnew({
 							image: image_folder + "pattern_dots.jpg"
 							,thumbnail: image_folder + thumb_folder + "pattern_dots.jpg"
 						})
-
-
 						+ spacersmall
-						// + img(image_folder + "7.27d---swatch-for-website.jpg")
 						+ imgnew({
 							image: image_folder + "7.27d---swatch-for-website.jpg"
 							,thumbnail: image_folder + thumb_folder + "7.27d---swatch-for-website.jpg"
 						})
-
-
 						+ caption("Patterns")
+
+
+
+
+						+ spacer
+						+ imgnew({
+							image: image_folder + "smith.jpg"
+							,thumbnail: image_folder + thumb_folder + "smith.jpg"
+							,maxwidth: true
+						})
+						+ spacersmall
+						+ imgnew({
+							image: image_folder + "fallingwater.jpg"
+							,thumbnail: image_folder + thumb_folder + "fallingwater.jpg"
+							,maxwidth: true
+						})
+						+ caption("Drawings rendered for an artist")
+
+
+
 						)
 					+ columnbreak()
 					+ panel(""
 
-						// + img(image_folder + "event_aramark.jpg", " ", " ", true)
+
+
 						+ imgnew({
 							image: image_folder + "event_aramark.jpg"
 							,thumbnail: image_folder + thumb_folder + "event_aramark.jpg"
 							,maxwidth: true
 						})
-
-
 						+ caption("Aramark Guest Chef Event - entrance and sponsor banners.")
+
 
 
 						+ spacer
@@ -461,18 +418,14 @@ function makedata(){
 							,thumbnail: image_folder + thumb_folder + "hersheys_double.jpg"
 							,maxwidth: true
 						})
-
-
 						+ spacersmall
-						// + img(image_folder + "hersheys_stage.jpg", " ", " ", true)
 						+ imgnew({
 							image: image_folder + "hersheys_stage.jpg"
 							,thumbnail: image_folder + thumb_folder + "hersheys_stage.jpg"
 							,maxwidth: true
 						})
-
-
 						+ caption("Hershey's Easter Event - step and repeat, kiosks and stage backdrop.")
+
 
 
 						)
