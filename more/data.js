@@ -109,7 +109,7 @@ function makedata(){
 			// Digital
 			+ lineaboveheadline()
 			+ section(""
-				+ sectionheadline("Digital")
+				+ sectionheadline("Emails and Digital Assets")
 				//+ sectionheadlinesub("Emails and Digital ads")
 				+ masonry(
 					panel(""
@@ -602,7 +602,7 @@ function makedata(){
 						})
 
 
-						+ caption("Graphite on paper, 56 x 52.6 inches")
+						+ caption("Rendering executed for an artist<br>Graphite on paper, 56 x 52.6 inches")
 						)
 					+ columnbreak()
 					+ panel(""
@@ -614,7 +614,7 @@ function makedata(){
 						})
 
 
-						+ caption("Ballpoint pen on paper, 48.3 x 39.9 inches")
+						+ caption("Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches")
 						+ spacer
 						// + img(image_folder + "Flute-graphite-on-paper-45-x-29-inches-2007.jpg", " ", " ", true)
 						+ imgnew({
