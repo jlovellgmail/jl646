@@ -1,0 +1,112 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="libraries/jquery-2.1.0.min.js"></script>
+	<script>
+		var open = false;
+		function itemclick(s){
+			if(open){
+				$(".expansion."+s).css("padding", "0");
+				$(".expansion."+s).css("height", "0");
+				$(".expansion."+s).css("margin", "0");
+				$(".item."+s+" .arrow").css("transition", "none");
+				$(".item."+s+" .arrow").css("opacity", "0");
+				open = false;
+			}
+			else {
+				$(".expansion."+s).css("padding", "10px");
+				$(".expansion."+s).css("height", "400px");
+				$(".expansion."+s).css("margin-top", "25px");
+				$(".expansion."+s).css("margin-bottom", "10px");
+				$(".item."+s+" .arrow").css("transition", ".1s");
+				$(".item."+s+" .arrow").css("opacity", "1");
+				open = true;
+
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="title">
+			Jack Lovell 
+			<br>Graphic Design Portfolio
+		</div>
+
+		<div class="table">
+			<div class="row">
+				<div class="cell">
+					<div class="item digital" onclick="itemclick('digital')">
+						<!-- x -->
+						<div class="arrow"></div>
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item event" onclick="itemclick('event')">
+						<!-- x -->
+						<div class="arrow"></div>
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item drawing" onclick="itemclick('drawing')">
+						<!-- x -->
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expansion digital">
+		<!-- expansion -->
+	</div>
+	<div class="expansion event">
+		<!-- expansion -->
+	</div>
+	<div class="expansion drawing">
+		<!-- expansion -->
+	</div>
+
+
+
+
+	<div class="container">
+		<div class="table">
+			<div class="row">
+				<div class="cell">
+					<div class="item gp" onclick="itemclick('gp')">
+						<!-- x -->
+						<div class="arrow"></div>
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item print" onclick="itemclick('print')">
+						<!-- x -->
+						<div class="arrow"></div>
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item other" onclick="itemclick('other')">
+						<!-- x -->
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expansion gp">
+		<!-- expansion -->
+	</div>
+	<div class="expansion print">
+		<!-- expansion -->
+	</div>
+	<div class="expansion other">
+		<!-- expansion -->
+	</div>
+
+
+
+
+
+</body>
+</html>

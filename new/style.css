@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+}
+.container {
+	/*background: yellow;*/
+	padding: 20px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.table {
+	/*background: rgba(0,255,0, .2);*/
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	column-count: 3;
+}
+.cell {
+	display: table-cell;
+	text-align: center;
+	padding: 10px;
+}
+.item {
+	padding: 20px;
+	background: rgba(0,0,0, .05);
+	background-size: cover;
+	/*height: 348px;*/
+	padding-bottom: 60%;
+	position: relative;
+}
+.item.digital {
+	background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");
+}
+.item.event {
+	background-image: url("http://jl646.com/images/page_images/event_aramark.jpg");
+	background-position: center;
+}
+.item.drawing {
+	background-image: url("http://jl646.com/images/page_images/fallingwater.jpg");
+	background-size: 107%;
+	background-position: center;
+}
+.item.gp {
+	background-image: url("http://jl646.com/images/page_images/gp_camera-170912.jpg");
+}
+.item.print {
+	background-image: url("http://jl646.com/images/page_images/ad_startsmart.jpg");
+}
+.item.other {
+	background-image: url("http://jl646.com/images/page_images/pattern_dots.jpg");
+}
+.title {
+	padding: 10px;
+	padding-top: 20px;
+}
+.row {
+	display: table-row;
+}
+.expansion {
+	background: rgba(20,18,20, 1);
+	padding: 0;
+	display: block;
+	height: 0;
+	transition: .1s;
+	transition-timing-function: ease-out;
+	margin: 0;
+}
+.arrow {
+	border-bottom: 10px solid #222;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	bottom: -35px;
+	position: absolute;
+	display: inline-block;
+	opacity: 0;
+	transition: .1s;
+	transition-delay: .1s;
+	transition-timing-function: ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
