@@ -55,15 +55,6 @@ body {
 .row {
 	display: table-row;
 }
-.expansion {
-	background: rgba(20,18,20, 1);
-	padding: 0;
-	display: block;
-	height: 0;
-	transition: .1s;
-	transition-timing-function: ease-out;
-	margin: 0;
-}
 .arrow {
 	border-bottom: 10px solid #222;
 	border-left: 10px solid transparent;
@@ -72,10 +63,85 @@ body {
 	position: absolute;
 	display: inline-block;
 	opacity: 0;
-	transition: .1s;
-	transition-delay: .1s;
+	transition-delay: 0;
+	transition: 0;
 	transition-timing-function: ease;
 }
+.arrow.open {
+	transition-delay: .1s;
+	transition: .1s;
+	opacity: 1;
+}
+.expansion {
+	background: #222;
+	padding: 0;
+	display: block;
+	height: 0;
+	transition: .1s;
+	transition-timing-function: ease-out;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+
+	/*max-height: 640px;*/
+	
+}
+.expansion.open {
+	padding: 30px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+
+	/*height: auto;*/
+	height: 640px;
+
+}
+.split {
+	margin: 0 auto;
+}
+.mainimage {
+	display: inline-block;
+	width: 800px;
+}
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.mainimage img {
+	max-height: 600px;
+	max-width: 600px;
+	vertical-align: middle;
+}
+.grid {
+	display: inline-block;
+	vertical-align: top;
+    width: 420px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.square {
+    float: left;
+    position: relative;
+    width: 22%;
+    padding-bottom: 22%;
+    margin: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+    background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");
+    background-position-y: top;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

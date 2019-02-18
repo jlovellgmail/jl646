@@ -5,25 +5,55 @@
 	<script>
 		var open = false;
 		function itemclick(s){
-			if(open){
-				$(".expansion."+s).css("padding", "0");
-				$(".expansion."+s).css("height", "0");
-				$(".expansion."+s).css("margin", "0");
-				$(".item."+s+" .arrow").css("transition", "none");
-				$(".item."+s+" .arrow").css("opacity", "0");
-				open = false;
+			if(!open) {
+				// open it
+				$(".expansion."+s).addClass("open");
+				$(".item."+s+" .arrow").addClass("open");
+				open = true;
 			}
 			else {
-				$(".expansion."+s).css("padding", "10px");
-				$(".expansion."+s).css("height", "400px");
-				$(".expansion."+s).css("margin-top", "25px");
-				$(".expansion."+s).css("margin-bottom", "10px");
-				$(".item."+s+" .arrow").css("transition", ".1s");
-				$(".item."+s+" .arrow").css("opacity", "1");
-				open = true;
-
+				// close it
+				$(".expansion."+s).removeClass("open");				
+				$(".item."+s+" .arrow").removeClass("open");				
+				open = false;
 			}
 		}
+
+		var digital = [
+			"http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg",
+			"http://jl646.com/images/page_images/thumbs/20180130_Joyus_Valentines-Day-hero.jpg",
+			"http://jl646.com/images/page_images/thumbs/20180125_joyus_Tria.jpg",
+			"http://jl646.com/images/page_images/thumbs/Affiliate-banners-+-Gmail-ads.jpg",
+			"http://jl646.com/images/page_images/thumbs/20180227_joyus_pamper_yourself_preview.jpg",
+			"http://jl646.com/images/page_images/thumbs/Affiliate_Banners_Design_$9_First_Box_Promotion.jpg",
+			"http://jl646.com/images/page_images/thumbs/Black_Friday_email_AM.jpg",
+			"http://jl646.com/images/page_images/thumbs/Pinterest_Pin_300x600_3.jpg",
+			"http://jl646.com/images/page_images/frames-from-timeline.gif",
+			"http://jl646.com/images/page_images/thumbs/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg",
+			"http://jl646.com/images/page_images/thumbs/visual_20171221_Tech_DigitalLastMinuteDeals.jpg",
+			"http://jl646.com/images/page_images/thumbs/visual_marketing_email_crop.jpg",
+			"http://jl646.com/images/page_images/20180219_lifestyle_presidents_day_preview.gif"
+		];
+
+		$(document).ready(function() {
+			digital.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					console.log($(this).data('url'));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+				/*
+				console.log("i: "+ i + "     url: "+ url);
+				console.dir(element);
+				console.log("");
+				*/
+			});
+		});
+
+
 	</script>
 </head>
 <body>
@@ -58,7 +88,33 @@
 		</div>
 	</div>
 	<div class="expansion digital">
-		<!-- expansion -->
+
+
+
+		<div class="split">
+			<div class="mainimage">
+				<span class="helper"></span>
+				<img src="http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg" />
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
+
+
+
+
 	</div>
 	<div class="expansion event">
 		<!-- expansion -->
