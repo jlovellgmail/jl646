@@ -175,6 +175,42 @@ p {
     /*background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");*/
     background-position-y: top;
 }
+@media all and (max-width: 1270px) {
+	.mainimage img {
+		max-width: 300px;
+	}
+	.gridcontainer {
+		padding-right: 20px;
+	}
+}
+@media all and (max-width: 1270px) {
+	.mainimage img {
+		max-width: 420px;
+	}
+	.expansion.open {
+		padding: 20px;
+	}
+}
+@media all and (max-width: 1000px) {
+	.mainimage img {
+		max-width: 400px;
+	}
+	.gridcontainer {
+		padding-right: 20px;
+		width: 340px;
+	}
+	.grid {
+		width: 100%;
+	}
+	.expansion.open {
+		padding: 10px;
+	}
+}
+@media all and (max-width: 800px) {
+	.mainimage img {
+		max-width: 250px;
+	}
+}
 
 
 

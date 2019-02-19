@@ -3,33 +3,53 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="libraries/jquery-2.1.0.min.js"></script>
 	<script>
+
+
+		$(document).ready(function(){
+			// do this for checking which expansion is already open
+			$(".expansion.digital").data("name", "digital");
+			$(".expansion.event").data("name", "event");
+			$(".expansion.drawing").data("name", "drawing");
+			$(".expansion.gp").data("name", "gp");
+			$(".expansion.print").data("name", "print");
+			$(".expansion.other").data("name", "other");
+		});
+		function openexpansion(s){
+			var tempScrollTop = $(window).scrollTop();
+			$(".expansion."+s).addClass("open");
+			$(".item."+s+" .arrow").addClass("open");
+			$(".expansion.open .mainimage img").attr("src", $(".expansion.open .grid .square:nth-child(1)").data("url"));
+			function timeout() {
+			    setTimeout(function () {
+		        	var e = $(".expansion.open");
+			        if(e.height() >= 640) {
+			        	window.scrollTo(0, e.offset().top + e.height()/2 - window.innerHeight / 2);
+			        }
+			        else timeout();
+			    }, 2);
+			}
+			timeout();			
+		}
+		function closeexpansion(name){
+			$(".expansion."+name).removeClass("open");
+			$(".item."+name+" .arrow").removeClass("open");				
+		}
 		function itemclick(s){
 			var e = $(".expansion.open");
 			if(e.length == 0) {
-				// open it
-				var tempScrollTop = $(window).scrollTop();
-				$(".expansion."+s).addClass("open");
-				$(".item."+s+" .arrow").addClass("open");
-				$(".expansion.open .mainimage img").attr("src", $(".expansion.open .grid .square:nth-child(1)").data("url"));
-				open = true;
-				function timeout() {
-				    setTimeout(function () {
-			        	var e = $(".expansion.open");
-				        if(e.height() >= 640) {
-				        	window.scrollTo(0, e.offset().top + e.height()/2 - window.innerHeight / 2);
-				        }
-				        else timeout();
-				    }, 2);
-				}
-				timeout();
+				// no expansions are open
+				openexpansion(s);
 			}
 			else {
-				// close it
-				$(".expansion."+s).removeClass("open");
-				$(".item."+s+" .arrow").removeClass("open");				
-				open = false;
+				// an expansion is already open
+				var currentlyopen = $(".expansion.open").data("name");
+				closeexpansion(currentlyopen);
+				if(s != currentlyopen){
+					openexpansion(s);
+				}
+
 			}
-		}
+		}			
 
 
 		//-----------------------------------------
