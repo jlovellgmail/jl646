@@ -11,6 +11,17 @@
 			$(".expansion.gp").data("name", "gp");
 			$(".expansion.print").data("name", "print");
 			$(".expansion.other").data("name", "other");
+
+			// overlay
+			$(".expansion .mainimage img").click(function(){
+				blowup($(".expansion.open .mainimage img").attr('src'));
+			});
+			$(".overlay .x").click(function(){
+				$(".overlay").removeClass("visible");
+			});
+			$(".overlay").click(function(){
+				$(".overlay").removeClass("visible");
+			});
 		});
 		function openexpansion(s){
 			var tempScrollTop = $(window).scrollTop();
@@ -26,7 +37,7 @@
 			        else timeout();
 			    }, 2);
 			}
-			timeout();			
+			timeout();
 		}
 		function closeexpansion(name){
 			$(".expansion."+name).removeClass("open");
@@ -46,6 +57,10 @@
 					openexpansion(s);
 				}
 			}
+		}
+		function blowup(imgsrc){
+			$(".overlay .wrapper").css("background-image", "url("+imgsrc+")");
+			$(".overlay").addClass("visible");
 		}
 		//-----------------------------------------
 		//-----------------------------------------
@@ -220,16 +235,11 @@
 				});
 			});
 		});
-
-
-
-
-
-
-
 	</script>
 </head>
 <body>
+
+
 
 	<div class="container">
 		<div class="title">
@@ -270,7 +280,11 @@
 	<!-- ---------------------------------------------- -->
 	<!-- Digital -->
 	<div class="expansion digital">
+		
 		<div class="mainimage">
+		<!-- <div class="mainimage" onclick="console.log($(this).find('img').attr('src'))"> -->
+		<!-- <div class="mainimage" onclick="blowup($(this).find('img').attr('src'))"> -->
+
 			<span class="helper"></span>
 			<img src="" />
 		</div>
@@ -294,8 +308,10 @@
 				<div class="square"></div>
 				<div class="square"></div>
  				<div class="square"></div>
-<!--				<div class="square"></div>
-				<div class="square"></div> -->
+ 				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
  			</div>
 		</div>
 	</div>
@@ -326,9 +342,11 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-<!-- 				<div class="square"></div>
+				<!--
 				<div class="square"></div>
-				<div class="square"></div> -->
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
 			</div>
 		</div>
 	</div>
@@ -351,7 +369,7 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-<!-- 				<div class="square"></div>
+				<!--
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
@@ -361,7 +379,9 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<div class="square"></div> -->
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
 			</div>
 		</div>
 	</div>
@@ -419,7 +439,7 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-<!-- 				<div class="square"></div>
+				<!--
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
@@ -429,7 +449,9 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<div class="square"></div> -->
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
 			</div>
 		</div>
 	</div>
@@ -451,7 +473,7 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-<!-- 				<div class="square"></div>
+				<!--
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
@@ -462,7 +484,9 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<div class="square"></div> -->
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
 			</div>
 		</div>
 	</div>
@@ -485,7 +509,7 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-<!-- 				<div class="square"></div>
+				<!--
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
@@ -495,10 +519,22 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<div class="square"></div> -->
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
 			</div>
 		</div>
 	</div>
+
+
+
+
+	<div class="overlay">
+		<div class="wrapper"></div>
+		<div class="x"></div>
+	</div>
+
+
 
 
 

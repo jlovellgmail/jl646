@@ -175,7 +175,6 @@ p {
     /*background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");*/
     background-position-y: top;
 }
-
 @media all and (max-width: 1500px) {
 	.gridcontainer {
 		padding-right: 30px;
@@ -220,6 +219,61 @@ p {
 		max-width: 250px;
 	}
 }
+
+
+
+
+
+/*
+for overlay
+*/
+.overlay.visible {
+	display: initial;
+}
+.overlay {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0, .88);
+}
+.overlay .wrapper {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	left: 0;
+	margin: 40px;
+	background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.overlay .x {
+	position: fixed;
+	top: 13px;
+	right: 11px;
+	background-image: url("http://jl646.com/new/images/x.gif");
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(.4);
+}
+/*
+@media all and (max-width: 600px) {
+	.overlay .x {
+		width: 40px;
+		height: 40px;
+	}
+}
+*/
+
+
+
 
 
 
