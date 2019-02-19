@@ -1,14 +1,16 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0;
+	font-family: Roboto, arial, sans-serif;
 }
 .container {
-	/*background: yellow;*/
 	padding: 20px;
 	padding-bottom: 0;
 	padding-top: 0;
 }
 .table {
-	/*background: rgba(0,255,0, .2);*/
 	display: table;
 	table-layout: fixed;
 	width: 100%;
@@ -19,11 +21,22 @@ body {
 	text-align: center;
 	padding: 10px;
 }
+.subtitle {
+	color: #70757a;
+	font-size: 12px;
+	letter-spacing: 0.2px;
+	line-height: 20px;
+	font-weight: 500;
+	text-align: left;
+	margin-top: 7px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .item {
 	padding: 20px;
 	background: rgba(0,0,0, .05);
 	background-size: cover;
-	/*height: 348px;*/
 	padding-bottom: 60%;
 	position: relative;
 }
@@ -59,7 +72,7 @@ body {
 	border-bottom: 10px solid #222;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	bottom: -35px;
+	bottom: -52px;
 	position: absolute;
 	display: inline-block;
 	opacity: 0;
@@ -82,25 +95,18 @@ body {
 	margin: 0;
 	overflow: hidden;
 	text-align: center;
-
-	/*max-height: 640px;*/
-	
 }
 .expansion.open {
 	padding: 30px;
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-bottom: 10px;
-
-	/*height: auto;*/
 	height: 640px;
-
 }
 .split {
 	margin: 0 auto;
 }
 .mainimage {
 	display: inline-block;
-	width: 800px;
 }
 .helper {
 	display: inline-block;
@@ -112,12 +118,47 @@ body {
 	max-width: 600px;
 	vertical-align: middle;
 }
+.gridcontainer {
+	width: 440px;
+	display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    float: right;
+    margin-top: 70px;
+    padding-right: 70px;
+}
+.gridtext {
+	color: #d6d6d6;
+}
+h1 {
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0;
+}
+p {
+	font-size: 12px;
+	margin-top: 9px;
+	margin-bottom: 18px;
+	line-height: 16px;
+}
+.gridtext p {
+	color: #888;
+}
+.title h1 .part2 {
+	color: rgba(0,0,0, .4);
+}
+.title p {
+	font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 16px;
+    color: #777;
+}
 .grid {
 	display: inline-block;
 	vertical-align: top;
     width: 420px;
-    margin-left: 200px;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
 }
 .square {
     float: left;

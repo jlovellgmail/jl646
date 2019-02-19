@@ -3,21 +3,33 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="libraries/jquery-2.1.0.min.js"></script>
 	<script>
-		var open = false;
 		function itemclick(s){
-			if(!open) {
+			var e = $(".expansion.open");
+			if(e.length == 0) {
 				// open it
+				var tempScrollTop = $(window).scrollTop();
 				$(".expansion."+s).addClass("open");
 				$(".item."+s+" .arrow").addClass("open");
 				open = true;
+				function timeout() {
+				    setTimeout(function () {
+			        	var e = $(".expansion.open");
+				        if(e.height() >= 640) {
+				        	window.scrollTo(0, e.offset().top + e.height()/2 - window.innerHeight / 2);
+				        }
+				        else timeout();
+				    }, 2);
+				}
+				timeout();
 			}
 			else {
 				// close it
-				$(".expansion."+s).removeClass("open");				
+				$(".expansion."+s).removeClass("open");
 				$(".item."+s+" .arrow").removeClass("open");				
 				open = false;
 			}
 		}
+
 
 		var digital = [
 			"http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg",
@@ -32,9 +44,9 @@
 			"http://jl646.com/images/page_images/thumbs/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg",
 			"http://jl646.com/images/page_images/thumbs/visual_20171221_Tech_DigitalLastMinuteDeals.jpg",
 			"http://jl646.com/images/page_images/thumbs/visual_marketing_email_crop.jpg",
-			"http://jl646.com/images/page_images/20180219_lifestyle_presidents_day_preview.gif"
+			"http://jl646.com/images/page_images/20180219_lifestyle_presidents_day_preview.gif",
+			"http://jl646.com/images/page_images/thumbs/20180216_joyus_evergreen_display_ad_300x600.jpg"
 		];
-
 		$(document).ready(function() {
 			digital.forEach(function(url, index){
 				var i = index+1;
@@ -42,16 +54,14 @@
 				element.css("background-image", "url("+url+")");
 				element.data("url", url);
 				element.click(function(){
-					console.log($(this).data('url'));
+					// console.log($(this).data('url'));
 					$(".expansion.open .mainimage img").attr("src", url);
 				});
-				/*
-				console.log("i: "+ i + "     url: "+ url);
-				console.dir(element);
-				console.log("");
-				*/
 			});
 		});
+
+
+		
 
 
 	</script>
@@ -60,28 +70,34 @@
 
 	<div class="container">
 		<div class="title">
-			Jack Lovell 
-			<br>Graphic Design Portfolio
+			<h1>Jack Lovell<span class="part2"> / Graphic Design</span></h1>
+			<!-- <p>Graphic Design Portfolio<p> -->
 		</div>
 
 		<div class="table">
 			<div class="row">
 				<div class="cell">
 					<div class="item digital" onclick="itemclick('digital')">
-						<!-- x -->
 						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Emails & Digital Assets
 					</div>
 				</div>
 				<div class="cell">
 					<div class="item event" onclick="itemclick('event')">
-						<!-- x -->
 						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Large-scale Graphics
 					</div>
 				</div>
 				<div class="cell">
 					<div class="item drawing" onclick="itemclick('drawing')">
-						<!-- x -->
 						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Drawings & Renderings
 					</div>
 				</div>
 			</div>
@@ -91,26 +107,34 @@
 
 
 
-		<div class="split">
+		<!-- <div class="split"> -->
 			<div class="mainimage">
 				<span class="helper"></span>
 				<img src="http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg" />
 			</div>
-			<div class="grid">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
+			<div class="gridcontainer">
+				<div class="gridtext">
+					<h1>Emails and Digital Assets</h1>
+					<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+				</div>
+				<div class="grid">
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 
 
 
@@ -131,20 +155,26 @@
 			<div class="row">
 				<div class="cell">
 					<div class="item gp" onclick="itemclick('gp')">
-						<!-- x -->
 						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Genetic Programming Experiments
 					</div>
 				</div>
 				<div class="cell">
 					<div class="item print" onclick="itemclick('print')">
-						<!-- x -->
 						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Ads
 					</div>
 				</div>
 				<div class="cell">
 					<div class="item other" onclick="itemclick('other')">
-						<!-- x -->
 						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Other Projects
 					</div>
 				</div>
 			</div>
