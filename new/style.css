@@ -53,7 +53,9 @@ body {
 	background-position: center;
 }
 .item.gp {
-	background-image: url("http://jl646.com/images/page_images/gp_camera-170912.jpg");
+	/*background-image: url("http://jl646.com/images/page_images/gp_camera-170912.jpg");*/
+	background-image: url("http://jl646.com/images/page_images/gp_hand-170912.jpg");
+	background-position-y: 48%;
 }
 .item.print {
 	background-image: url("http://jl646.com/images/page_images/ad_startsmart.jpg");
@@ -161,6 +163,7 @@ p {
     /*margin-top: 150px;*/
 }
 .square {
+    background-color: rgba(255,255,255, .05);
     float: left;
     position: relative;
     width: 22%;
@@ -169,7 +172,7 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
-    background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");
+    /*background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");*/
     background-position-y: top;
 }
 

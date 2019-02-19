@@ -10,6 +10,7 @@
 				var tempScrollTop = $(window).scrollTop();
 				$(".expansion."+s).addClass("open");
 				$(".item."+s+" .arrow").addClass("open");
+				$(".expansion.open .mainimage img").attr("src", $(".expansion.open .grid .square:nth-child(1)").data("url"));
 				open = true;
 				function timeout() {
 				    setTimeout(function () {
@@ -31,6 +32,9 @@
 		}
 
 
+		//-----------------------------------------
+		//-----------------------------------------
+		// Digital
 		var digital = [
 			"http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg",
 			"http://jl646.com/images/page_images/thumbs/20180130_Joyus_Valentines-Day-hero.jpg",
@@ -50,18 +54,162 @@
 		$(document).ready(function() {
 			digital.forEach(function(url, index){
 				var i = index+1;
-				var element = $(".grid .square:nth-child("+i+")");
+				var element = $(".expansion.digital .grid .square:nth-child("+i+")");
 				element.css("background-image", "url("+url+")");
 				element.data("url", url);
 				element.click(function(){
-					// console.log($(this).data('url'));
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Event
+		var event = [
+			"http://jl646.com/images/page_images/thumbs/event_aramark.jpg",
+			"http://jl646.com/images/page_images/thumbs/event_Curved_Sign_Back.jpg",
+			"http://jl646.com/images/page_images/thumbs/event_7.31a-01.jpg",
+			"http://jl646.com/images/page_images/thumbs/hersheys_double.jpg",
+			"http://jl646.com/images/page_images/thumbs/smores2.jpg",
+			"http://jl646.com/images/page_images/thumbs/event_forest.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_icecream1.jpg",
+			"http://jl646.com/images/page_images/thumbs/FMBooth_elements_set1.jpg",
+			"http://jl646.com/images/page_images/thumbs/Kiosk-1---flat-100dpi_detail.jpg",
+			"http://jl646.com/images/page_images/thumbs/Booth-9.21a.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_render2.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_curvedwall2.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_all.jpg",
+		];
+		$(document).ready(function() {
+			event.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.event .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Drawing
+		var drawing = [
+			"http://jl646.com/images/page_images/thumbs/fallingwater.jpg",
+			"http://jl646.com/images/page_images/thumbs/smith.jpg",
+			"http://jl646.com/images/page_images/thumbs/fayum_1800.jpg",
+			"http://jl646.com/images/page_images/thumbs/fayum.jpg",
+			"http://jl646.com/images/page_images/thumbs/Flute-graphite-on-paper-45-x-29-inches-2007.jpg",
+		];
+		$(document).ready(function() {
+			drawing.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.drawing .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// GP
+		var gp = [
+			"http://jl646.com/images/page_images/thumbs/gp_hand-170912.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_camera-170912.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_horse-170912.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_1211080-230.best.1009.fullscreen_crop_945.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_eye-170912.jpg",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+		];
+		$(document).ready(function() {
+			gp.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.gp .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Print
+		var print = [
+			"http://jl646.com/images/page_images/thumbs/ad_startsmart.jpg",
+			"http://jl646.com/images/page_images/thumbs/ad_secondwind.jpg",
+			"http://jl646.com/images/page_images/thumbs/ad_theonly.jpg",
+			"http://jl646.com/images/page_images/thumbs/Tandem-7.26.18b.jpg",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+		];
+		$(document).ready(function() {
+			print.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.print .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Other
+		var other = [
+			"http://jl646.com/images/page_images/thumbs/pattern_dots.jpg",
+			"http://jl646.com/images/page_images/thumbs/7.27d---swatch-for-website.jpg",
+			"http://jl646.com/images/page_images/thumbs/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg",
+			"http://jl646.com/images/page_images/thumbs/SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg",
+			"http://jl646.com/images/page_images/thumbs/bags_grid.jpg",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+		];
+		$(document).ready(function() {
+			other.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.other .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
 					$(".expansion.open .mainimage img").attr("src", url);
 				});
 			});
 		});
 
 
-		
+
+
+
 
 
 	</script>
@@ -103,49 +251,106 @@
 			</div>
 		</div>
 	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Digital -->
 	<div class="expansion digital">
-
-
-
-		<!-- <div class="split"> -->
-			<div class="mainimage">
-				<span class="helper"></span>
-				<img src="http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg" />
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
 			</div>
-			<div class="gridcontainer">
-				<div class="gridtext">
-					<h1>Emails and Digital Assets</h1>
-					<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
-				</div>
-				<div class="grid">
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
-				</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
 			</div>
-		<!-- </div> -->
-
-
-
-
+		</div>
 	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Event -->
 	<div class="expansion event">
-		<!-- expansion -->
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
 	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Drawing -->
 	<div class="expansion drawing">
-		<!-- expansion -->
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
 	</div>
+
 
 
 
@@ -180,14 +385,104 @@
 			</div>
 		</div>
 	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- GP -->
 	<div class="expansion gp">
-		<!-- expansion -->
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
 	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Ads -->
 	<div class="expansion print">
-		<!-- expansion -->
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
 	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Other -->
 	<div class="expansion other">
-		<!-- expansion -->
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
 	</div>
 
 
