@@ -1,0 +1,544 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="libraries/jquery-2.1.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// do this for checking which expansion is already open
+			$(".expansion.digital").data("name", "digital");
+			$(".expansion.event").data("name", "event");
+			$(".expansion.drawing").data("name", "drawing");
+			$(".expansion.gp").data("name", "gp");
+			$(".expansion.print").data("name", "print");
+			$(".expansion.other").data("name", "other");
+
+			// overlay
+			$(".expansion .mainimage img").click(function(){
+				blowup($(".expansion.open .mainimage img").attr('src'));
+			});
+			$(".overlay .x").click(function(){
+				$(".overlay").removeClass("visible");
+			});
+			$(".overlay").click(function(){
+				$(".overlay").removeClass("visible");
+			});
+		});
+		function openexpansion(s){
+			var tempScrollTop = $(window).scrollTop();
+			$(".expansion."+s).addClass("open");
+			$(".item."+s+" .arrow").addClass("open");
+			$(".expansion.open .mainimage img").attr("src", $(".expansion.open .grid .square:nth-child(1)").data("url"));
+			function timeout() {
+			    setTimeout(function () {
+		        	var e = $(".expansion.open");
+			        if(e.height() >= 640) {
+			        	window.scrollTo(0, e.offset().top + e.height()/2 - window.innerHeight / 2);
+			        }
+			        else timeout();
+			    }, 2);
+			}
+			timeout();
+		}
+		function closeexpansion(name){
+			$(".expansion."+name).removeClass("open");
+			$(".item."+name+" .arrow").removeClass("open");				
+		}
+		function itemclick(s){
+			var e = $(".expansion.open");
+			if(e.length == 0) {
+				// no expansions are open
+				openexpansion(s);
+			}
+			else {
+				// an expansion is already open
+				var currentlyopen = $(".expansion.open").data("name");
+				closeexpansion(currentlyopen);
+				if(s != currentlyopen){
+					openexpansion(s);
+				}
+			}
+		}
+		function blowup(imgsrc){
+			$(".overlay .wrapper").css("background-image", "url("+imgsrc+")");
+			$(".overlay").addClass("visible");
+		}
+		//-----------------------------------------
+		//-----------------------------------------
+		// Digital
+		var digital = [
+			"http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg",
+			"http://jl646.com/images/page_images/thumbs/20180130_Joyus_Valentines-Day-hero.jpg",
+			"http://jl646.com/images/page_images/thumbs/20180125_joyus_Tria.jpg",
+			"http://jl646.com/images/page_images/thumbs/Affiliate-banners-+-Gmail-ads.jpg",
+			"http://jl646.com/images/page_images/thumbs/20180227_joyus_pamper_yourself_preview.jpg",
+			"http://jl646.com/images/page_images/thumbs/Affiliate_Banners_Design_$9_First_Box_Promotion.jpg",
+			"http://jl646.com/images/page_images/thumbs/Black_Friday_email_AM.jpg",
+			"http://jl646.com/images/page_images/thumbs/Pinterest_Pin_300x600_3.jpg",
+			"http://jl646.com/images/page_images/frames-from-timeline.gif",
+			"http://jl646.com/images/page_images/thumbs/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg",
+			"http://jl646.com/images/page_images/thumbs/visual_20171221_Tech_DigitalLastMinuteDeals.jpg",
+			"http://jl646.com/images/page_images/thumbs/visual_marketing_email_crop.jpg",
+			"http://jl646.com/images/page_images/20180219_lifestyle_presidents_day_preview.gif",
+			"http://jl646.com/images/page_images/thumbs/20180216_joyus_evergreen_display_ad_300x600.jpg"
+		];
+		$(document).ready(function() {
+			digital.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.digital .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Event
+		var event = [
+			"http://jl646.com/images/page_images/thumbs/event_aramark.jpg",
+			"http://jl646.com/images/page_images/thumbs/event_Curved_Sign_Back.jpg",
+			"http://jl646.com/images/page_images/thumbs/event_7.31a-01.jpg",
+			"http://jl646.com/images/page_images/thumbs/hersheys_double.jpg",
+			"http://jl646.com/images/page_images/thumbs/smores2.jpg",
+			"http://jl646.com/images/page_images/thumbs/event_forest.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_icecream1.jpg",
+			"http://jl646.com/images/page_images/thumbs/FMBooth_elements_set1.jpg",
+			"http://jl646.com/images/page_images/thumbs/Kiosk-1---flat-100dpi_detail.jpg",
+			"http://jl646.com/images/page_images/thumbs/Booth-9.21a.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_render2.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_curvedwall2.jpg",
+			"http://jl646.com/images/page_images/thumbs/LeadingAge_all.jpg",
+		];
+		$(document).ready(function() {
+			event.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.event .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Drawing
+		var drawing = [
+			"http://jl646.com/images/page_images/thumbs/fallingwater.jpg",
+			"http://jl646.com/images/page_images/thumbs/smith.jpg",
+			"http://jl646.com/images/page_images/thumbs/fayum_1800.jpg",
+			"http://jl646.com/images/page_images/thumbs/fayum.jpg",
+			"http://jl646.com/images/page_images/thumbs/Flute-graphite-on-paper-45-x-29-inches-2007.jpg",
+		];
+		$(document).ready(function() {
+			drawing.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.drawing .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// GP
+		var gp = [
+			"http://jl646.com/images/page_images/thumbs/gp_hand-170912.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_camera-170912.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_horse-170912.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_1211080-230.best.1009.fullscreen_crop_945.jpg",
+			"http://jl646.com/images/page_images/thumbs/gp_eye-170912.jpg",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+		];
+		$(document).ready(function() {
+			gp.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.gp .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Print
+		var print = [
+			"http://jl646.com/images/page_images/thumbs/ad_startsmart.jpg",
+			"http://jl646.com/images/page_images/thumbs/ad_secondwind.jpg",
+			"http://jl646.com/images/page_images/thumbs/ad_theonly.jpg",
+			"http://jl646.com/images/page_images/thumbs/Tandem-7.26.18b.jpg",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+		];
+		$(document).ready(function() {
+			print.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.print .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+		//-----------------------------------------
+		//-----------------------------------------
+		// Other
+		var other = [
+			"http://jl646.com/images/page_images/thumbs/pattern_dots.jpg",
+			"http://jl646.com/images/page_images/thumbs/7.27d---swatch-for-website.jpg",
+			"http://jl646.com/images/page_images/thumbs/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg",
+			"http://jl646.com/images/page_images/thumbs/SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg",
+			"http://jl646.com/images/page_images/thumbs/bags_grid.jpg",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+			// "",
+		];
+		$(document).ready(function() {
+			other.forEach(function(url, index){
+				var i = index+1;
+				var element = $(".expansion.other .grid .square:nth-child("+i+")");
+				element.css("background-image", "url("+url+")");
+				element.data("url", url);
+				element.click(function(){
+					// console.log($(this).data("url"));
+					$(".expansion.open .mainimage img").attr("src", url);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+
+	<div class="container">
+		<div class="title">
+			<h1>Jack Lovell<span class="part2"> / Graphic Design</span></h1>
+			<!-- <p>Graphic Design Portfolio<p> -->
+		</div>
+
+		<div class="table">
+			<div class="row">
+				<div class="cell">
+					<div class="item digital" onclick="itemclick('digital')">
+						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Emails & Digital Assets
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item event" onclick="itemclick('event')">
+						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Large-scale Graphics
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item drawing" onclick="itemclick('drawing')">
+						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Drawings & Renderings
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Digital -->
+	<div class="expansion digital">
+		
+		<div class="mainimage">
+		<!-- <div class="mainimage" onclick="console.log($(this).find('img').attr('src'))"> -->
+		<!-- <div class="mainimage" onclick="blowup($(this).find('img').attr('src'))"> -->
+
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Emails and Digital Assets</h1>
+				<p>Emails, Digital Ads, hero images, banners for ecommerce clients including BarkBox, Joyus, Mashable, StackCommerce.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+ 				<div class="square"></div>
+ 				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
+ 			</div>
+		</div>
+	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Event -->
+	<div class="expansion event">
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Large-scale Graphics</h1>
+				<p>Large-scale and Environmental graphics for banners, walls and fabric-wrap structures.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
+			</div>
+		</div>
+	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Drawing -->
+	<div class="expansion drawing">
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Renderings</h1>
+				<p>Renderings created by hand for an artist's studio and a museum.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="container">
+		<div class="table">
+			<div class="row">
+				<div class="cell">
+					<div class="item gp" onclick="itemclick('gp')">
+						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Experimental Image Filter
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item print" onclick="itemclick('print')">
+						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Ads
+					</div>
+				</div>
+				<div class="cell">
+					<div class="item other" onclick="itemclick('other')">
+						<div class="arrow"></div>
+					</div>
+					<div class="subtitle">
+						Other Projects
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- GP -->
+	<div class="expansion gp">
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Experimental Image Filter</h1>
+				<p>Using methods from artificial intelligence to draw pictures.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
+			</div>
+		</div>
+	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Ads -->
+	<div class="expansion print">
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Print</h1>
+				<p>Print ads and inserts.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
+			</div>
+		</div>
+	</div>
+	<!-- ---------------------------------------------- -->
+	<!-- ---------------------------------------------- -->
+	<!-- Other -->
+	<div class="expansion other">
+		<div class="mainimage">
+			<span class="helper"></span>
+			<img src="" />
+		</div>
+		<div class="gridcontainer">
+			<div class="gridtext">
+				<h1>Other Projects</h1>
+				<p>Pattern repeats for CPG goods, Product photography for luxury handbags.</p>
+			</div>
+			<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<!--
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				-->
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="overlay">
+		<div class="wrapper"></div>
+		<div class="x"></div>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
