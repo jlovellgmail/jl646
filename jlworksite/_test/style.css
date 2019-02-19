@@ -97,6 +97,7 @@ body {
 	margin: 0;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
 }
 .expansion.open {
 	padding: 30px;
@@ -175,6 +176,26 @@ p {
     /*background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");*/
     background-position-y: top;
 }
+.scrollarrow {
+	position: absolute;
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20px;
+	background-size: 20px;
+	height: 100%;
+	top: 0;
+	padding: 10px;
+	cursor: pointer;
+	filter: brightness(.35);
+}
+.scrollarrow.left {
+	transform: scaleX(-1);
+	left: 0;
+}
+.scrollarrow.right {
+	right: 0;
+}
 @media all and (max-width: 1500px) {
 	.gridcontainer {
 		padding-right: 30px;
@@ -217,6 +238,10 @@ p {
 @media all and (max-width: 800px) {
 	.mainimage img {
 		max-width: 250px;
+	}
+@media all and (max-width: 700px) {
+	.expansion.open .gridcontainer {
+		display: none;
 	}
 }
 
