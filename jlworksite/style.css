@@ -53,7 +53,6 @@ body {
 	background-position: center;
 }
 .item.gp {
-	/*background-image: url("http://jl646.com/images/page_images/gp_camera-170912.jpg");*/
 	background-image: url("http://jl646.com/images/page_images/gp_hand-170912.jpg");
 	background-position-y: 48%;
 }
@@ -71,10 +70,13 @@ body {
 	display: table-row;
 }
 .arrow {
-	border-bottom: 10px solid #222;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	bottom: -52px;
+	width: 30px;
+	height: 30px;
+	background-image: url(http://jlwork.site/images/triangle.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: -70px;
+	transform: translate(-50%);
 	position: absolute;
 	display: inline-block;
 	opacity: 0;
@@ -97,6 +99,7 @@ body {
 	margin: 0;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
 }
 .expansion.open {
 	padding: 30px;
@@ -160,7 +163,6 @@ p {
 	display: inline-block;
 	vertical-align: top;
     width: 420px;
-    /*margin-top: 150px;*/
 }
 .square {
     background-color: rgba(255,255,255, .05);
@@ -171,9 +173,28 @@ p {
     margin: 5px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
-    /*background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");*/
+    background-size: cover;
     background-position-y: top;
+}
+.scrollarrow {
+	position: absolute;
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20px;
+	background-size: 20px;
+	height: 100%;
+	top: 0;
+	padding: 10px;
+	cursor: pointer;
+	filter: brightness(.35);
+}
+.scrollarrow.left {
+	transform: scaleX(-1);
+	left: 0;
+}
+.scrollarrow.right {
+	right: 0;
 }
 @media all and (max-width: 1500px) {
 	.gridcontainer {
@@ -219,7 +240,22 @@ p {
 		max-width: 250px;
 	}
 }
-
+@media all and (max-width: 700px) {
+	.expansion.open .gridcontainer {
+		display: none;
+	}
+	.expansion.open {
+		height: 500px;
+	}
+	.mainimage img {
+		max-height: 470px;
+	}
+}
+@media all and (max-width: 600px) {
+	.cell {
+		padding: 6px;
+	}
+}
 
 
 
@@ -255,7 +291,7 @@ for overlay
 	position: fixed;
 	top: 13px;
 	right: 11px;
-	background-image: url("http://jl646.com/new/images/x.gif");
+	background-image: url("images/x.gif");
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
@@ -263,14 +299,6 @@ for overlay
 	background-size: cover;
 	filter: brightness(.4);
 }
-/*
-@media all and (max-width: 600px) {
-	.overlay .x {
-		width: 40px;
-		height: 40px;
-	}
-}
-*/
 
 
 

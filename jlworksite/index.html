@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
 	<link rel="stylesheet" href="style.css">
 	<script src="libraries/jquery-2.1.0.min.js"></script>
 	<script>
@@ -22,6 +23,36 @@
 			$(".overlay").click(function(){
 				$(".overlay").removeClass("visible");
 			});
+
+			// scroll arrows
+			function previmage(){
+				var mainimage_src = $(".expansion.open .mainimage img").attr("src");
+				var squares = $(".expansion.open .grid .square");
+				// find the thumbnail
+				// - - could have used .data("url") here instead?
+				var thumb = squares.filter(function() {
+				     return $(this).css("background-image").replace('url("','').replace('")','') == mainimage_src;
+				});
+				if(thumb.is(squares.first())) {
+					squares.last().click();
+				}
+				else thumb.prev().click();
+			}
+			function nextimage(){
+				var mainimage_src = $(".expansion.open .mainimage img").attr("src");
+				var squares = $(".expansion.open .grid .square");
+				// find the thumbnail
+				// - - could have used .data("url") here instead?
+				var thumb = squares.filter(function() {
+				     return $(this).css("background-image").replace('url("','').replace('")','') == mainimage_src;
+				});
+				if(thumb.is(squares.last())) {
+					squares.first().click();
+				}
+				else thumb.next().click();
+			}
+			$(".scrollarrow.left").click(function(){previmage()});
+			$(".scrollarrow.right").click(function(){nextimage()});
 		});
 		function openexpansion(s){
 			var tempScrollTop = $(window).scrollTop();
@@ -41,7 +72,7 @@
 		}
 		function closeexpansion(name){
 			$(".expansion."+name).removeClass("open");
-			$(".item."+name+" .arrow").removeClass("open");				
+			$(".item."+name+" .arrow").removeClass("open");
 		}
 		function itemclick(s){
 			var e = $(".expansion.open");
@@ -282,9 +313,6 @@
 	<div class="expansion digital">
 		
 		<div class="mainimage">
-		<!-- <div class="mainimage" onclick="console.log($(this).find('img').attr('src'))"> -->
-		<!-- <div class="mainimage" onclick="blowup($(this).find('img').attr('src'))"> -->
-
 			<span class="helper"></span>
 			<img src="" />
 		</div>
@@ -314,6 +342,8 @@
 				-->
  			</div>
 		</div>
+		<div class="scrollarrow left"></div>
+		<div class="scrollarrow right"></div>
 	</div>
 	<!-- ---------------------------------------------- -->
 	<!-- ---------------------------------------------- -->
@@ -349,6 +379,8 @@
 				-->
 			</div>
 		</div>
+		<div class="scrollarrow left"></div>
+		<div class="scrollarrow right"></div>
 	</div>
 	<!-- ---------------------------------------------- -->
 	<!-- ---------------------------------------------- -->
@@ -361,7 +393,7 @@
 		<div class="gridcontainer">
 			<div class="gridtext">
 				<h1>Renderings</h1>
-				<p>Renderings created by hand for an artist's studio and a museum.</p>
+				<p>Large drawings rendered by hand for an artist. Scientific Illustration created for the Museum of Natural History, NYC.</p>
 			</div>
 			<div class="grid">
 				<div class="square"></div>
@@ -384,6 +416,8 @@
 				-->
 			</div>
 		</div>
+		<div class="scrollarrow left"></div>
+		<div class="scrollarrow right"></div>
 	</div>
 
 
@@ -454,6 +488,8 @@
 				-->
 			</div>
 		</div>
+		<div class="scrollarrow left"></div>
+		<div class="scrollarrow right"></div>
 	</div>
 	<!-- ---------------------------------------------- -->
 	<!-- ---------------------------------------------- -->
@@ -489,6 +525,8 @@
 				-->
 			</div>
 		</div>
+		<div class="scrollarrow left"></div>
+		<div class="scrollarrow right"></div>
 	</div>
 	<!-- ---------------------------------------------- -->
 	<!-- ---------------------------------------------- -->
@@ -524,6 +562,8 @@
 				-->
 			</div>
 		</div>
+		<div class="scrollarrow left"></div>
+		<div class="scrollarrow right"></div>
 	</div>
 
 
