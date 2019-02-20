@@ -26,55 +26,33 @@
 
 			// scroll arrows
 			function previmage(){
-				console.log("previmage");
-
-				// main image src:
 				var mainimage_src = $(".expansion.open .mainimage img").attr("src");
-				// console.log("mainimage_src: " + mainimage_src);
-
 				var squares = $(".expansion.open .grid .square");
-
 				// find the thumbnail
 				// - - could have used .data("url") here instead?
 				var thumb = squares.filter(function() {
-					// console.log("this background-image: " + $(this).css("background-image").replace('url("','').replace('")',''));
 				     return $(this).css("background-image").replace('url("','').replace('")','') == mainimage_src;
 				});
-				// console.dir(thumb);
-				// check if we're at the first element so we can wrap
 				if(thumb.is(squares.first())) {
 					squares.last().click();
 				}
 				else thumb.prev().click();
-
 			}
 			function nextimage(){
-				console.log("nextimage");
-				
-				// main image src:
 				var mainimage_src = $(".expansion.open .mainimage img").attr("src");
-				// console.log("mainimage_src: " + mainimage_src);
-
 				var squares = $(".expansion.open .grid .square");
-
 				// find the thumbnail
 				// - - could have used .data("url") here instead?
 				var thumb = squares.filter(function() {
-					// console.log("this background-image: " + $(this).css("background-image").replace('url("','').replace('")',''));
 				     return $(this).css("background-image").replace('url("','').replace('")','') == mainimage_src;
 				});
-				// console.dir(thumb);
-				// check if we're at the last element so we can wrap
 				if(thumb.is(squares.last())) {
 					squares.first().click();
 				}
 				else thumb.next().click();
-				
-
 			}
 			$(".scrollarrow.left").click(function(){previmage()});
 			$(".scrollarrow.right").click(function(){nextimage()});
-
 		});
 		function openexpansion(s){
 			var tempScrollTop = $(window).scrollTop();
