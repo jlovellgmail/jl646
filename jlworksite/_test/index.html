@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="libraries/jquery-2.1.0.min.js"></script>
 	<script>
+		var finishedtransition = false;
 		$(document).ready(function(){
 			// do this for checking which expansion is already open
 			$(".expansion.digital").data("name", "digital");
@@ -53,12 +54,37 @@
 			}
 			$(".scrollarrow.left").click(function(){previmage()});
 			$(".scrollarrow.right").click(function(){nextimage()});
+
+
+			var events = [
+			    "transitionend",
+			    "oTransitionEnd",
+			    "otransitionend",
+			    "MSTransitionEnd",
+			    "webkitTransitionEnd"
+			];
+			$(".expansion").on(events.join(" "), function(e){
+			    // console.log( e.type + " @ " + +(new Date()) + "\n" );
+			    if(finishedtransition) afterexpansion();
+			});
+
+
 		});
+		function afterexpansion(){
+			// console.log("afterexpansion();");
+			finishedtransition = false;
+			var e = $(".expansion.open");
+			window.scrollTo(0, e.offset().top + e.height()/2 - window.innerHeight / 2);
+		}
 		function openexpansion(s){
 			var tempScrollTop = $(window).scrollTop();
 			$(".expansion."+s).addClass("open");
 			$(".item."+s+" .arrow").addClass("open");
 			$(".expansion.open .mainimage img").attr("src", $(".expansion.open .grid .square:nth-child(1)").data("url"));
+			
+
+
+			/*
 			function timeout() {
 			    setTimeout(function () {
 		        	var e = $(".expansion.open");
@@ -69,6 +95,11 @@
 			    }, 2);
 			}
 			timeout();
+			*/
+			finishedtransition = true;
+
+
+
 		}
 		function closeexpansion(name){
 			$(".expansion."+name).removeClass("open");
@@ -274,7 +305,7 @@
 
 	<div class="container">
 		<div class="title">
-			<h1>Jack Lovell<span class="part2"> / Graphic Design</span></h1>
+			<h1>Jack Lovell<span class="part2"></span></h1>
 			<!-- <p>Graphic Design Portfolio<p> -->
 		</div>
 

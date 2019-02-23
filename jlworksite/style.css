@@ -39,6 +39,7 @@ body {
 	background-size: cover;
 	padding-bottom: 60%;
 	position: relative;
+	cursor: pointer;
 }
 .item.digital {
 	background-image: url("http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg");
@@ -64,7 +65,8 @@ body {
 }
 .title {
 	padding: 10px;
-	padding-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 13px;
 }
 .row {
 	display: table-row;
@@ -122,6 +124,7 @@ body {
 	max-height: 600px;
 	max-width: 700px;
 	vertical-align: middle;
+	cursor: pointer;
 }
 .gridcontainer {
 	width: 440px;
@@ -175,6 +178,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
+    cursor: pointer;
 }
 .scrollarrow {
 	position: absolute;
@@ -245,10 +249,10 @@ p {
 		display: none;
 	}
 	.expansion.open {
-		height: 500px;
+		height: 420px;
 	}
 	.mainimage img {
-		max-height: 470px;
+		max-height: 400px;
 	}
 }
 @media all and (max-width: 600px) {
