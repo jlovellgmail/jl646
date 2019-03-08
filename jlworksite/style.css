@@ -61,7 +61,9 @@ body {
 	background-image: url("http://jl646.com/images/page_images/ad_startsmart.jpg");
 }
 .item.other {
-	background-image: url("http://jl646.com/images/page_images/pattern_dots.jpg");
+	/*background-image: url("http://jl646.com/images/page_images/pattern_dots.jpg");*/
+	background-image: url("http://jl646.com/images/page_images/trifold_brochure_both_sides.jpg");
+	background-position: center;
 }
 .title {
 	padding: 10px;
@@ -107,7 +109,8 @@ body {
 	padding: 30px;
 	margin-top: 15px;
 	margin-bottom: 10px;
-	height: 640px;
+	/*height: 640px;*/
+	height: 660px;
 }
 .split {
 	margin: 0 auto;
@@ -120,11 +123,23 @@ body {
 	height: 100%;
 	vertical-align: middle;
 }
+.imagewithcaption {
+	vertical-align: middle;
+	display: inline-block;
+}
 .mainimage img {
 	max-height: 600px;
 	max-width: 700px;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	cursor: pointer;
+	margin-top: 9px;
+}
+.caption {
+	color: #888;
+	font-size: 12px;
+	margin-top: 9px;
+	line-height: 16px;
+	text-align: left;
 }
 .gridcontainer {
 	width: 440px;
@@ -208,16 +223,30 @@ p {
 		padding: 10px;
 	}
 }
+
+
+/*
 @media all and (max-width: 1270px) {
 	.mainimage img {
+		max-width: 300px;
+	}
+	.imagewithcaption {
 		max-width: 300px;
 	}
 	.gridcontainer {
 		padding-right: 20px;
 	}
 }
+*/
+
+
+
+
 @media all and (max-width: 1270px) {
 	.mainimage img {
+		max-width: 420px;
+	}
+	.imagewithcaption {
 		max-width: 420px;
 	}
 	.expansion.open {
@@ -226,6 +255,9 @@ p {
 }
 @media all and (max-width: 1000px) {
 	.mainimage img {
+		max-width: 400px;
+	}
+	.imagewithcaption {
 		max-width: 400px;
 	}
 	.gridcontainer {
@@ -239,8 +271,11 @@ p {
 		padding: 10px;
 	}
 }
-@media all and (max-width: 800px) {
+@media all and (max-width: 830px) {
 	.mainimage img {
+		max-width: 250px;
+	}
+	.imagewithcaption {
 		max-width: 250px;
 	}
 }
@@ -252,12 +287,27 @@ p {
 		height: 420px;
 	}
 	.mainimage img {
-		max-height: 400px;
+		max-height: 350px;
+		max-width: 400px;
+	}
+	.imagewithcaption {
+		max-width: 400px;
+	}
+}
+@media all and (min-width: 701px) {
+	.scrollarrow {
+		display: none;
 	}
 }
 @media all and (max-width: 600px) {
 	.cell {
 		padding: 6px;
+	}
+	.mainimage img {
+		max-width: 300px;
+	}
+	.imagewithcaption {
+		max-width: 300px;
 	}
 }
 
