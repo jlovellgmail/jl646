@@ -78,6 +78,8 @@
 			$(".expansion."+s).addClass("open");
 			$(".item."+s+" .arrow").addClass("open");
 			$(".expansion.open .mainimage img").attr("src", $(".expansion.open .grid .square:nth-child(1)").data("url"));
+			$(".expansion.open .mainimage .caption").text("");
+			$(".expansion.open .mainimage .caption").text($(".expansion.open .grid .square:nth-child(1)").data("caption"));
 			finishedtransition = true;
 		}
 		function closeexpansion(name){
@@ -107,60 +109,151 @@
 		//-----------------------------------------
 		// Digital
 		var digital = [
-			"http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg",
-			"http://jl646.com/images/page_images/thumbs/20180130_Joyus_Valentines-Day-hero.jpg",
-			"http://jl646.com/images/page_images/thumbs/20180125_joyus_Tria.jpg",
-			"http://jl646.com/images/page_images/thumbs/Affiliate-banners-+-Gmail-ads.jpg",
-			"http://jl646.com/images/page_images/thumbs/20180227_joyus_pamper_yourself_preview.jpg",
-			"http://jl646.com/images/page_images/thumbs/Affiliate_Banners_Design_$9_First_Box_Promotion.jpg",
-			"http://jl646.com/images/page_images/thumbs/Black_Friday_email_AM.jpg",
-			"http://jl646.com/images/page_images/thumbs/Pinterest_Pin_300x600_3.jpg",
-			"http://jl646.com/images/page_images/frames-from-timeline.gif",
-			"http://jl646.com/images/page_images/thumbs/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg",
-			"http://jl646.com/images/page_images/thumbs/visual_20171221_Tech_DigitalLastMinuteDeals.jpg",
-			"http://jl646.com/images/page_images/thumbs/visual_marketing_email_crop.jpg",
-			"http://jl646.com/images/page_images/20180219_lifestyle_presidents_day_preview.gif",
-			"http://jl646.com/images/page_images/thumbs/20180216_joyus_evergreen_display_ad_300x600.jpg"
+			{
+				url: "http://jl646.com/images/page_images/thumbs/visual_Joyus-20180121_joyus_Shop-40-off.jpg"
+				,caption: "Email for Joyus."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/20180130_Joyus_Valentines-Day-hero.jpg"
+				,caption: "Banner for Joyus."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/20180125_joyus_Tria.jpg"
+				,caption: "Email for Joyus."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/Affiliate-banners-+-Gmail-ads.jpg"
+				,caption: "Assets for BarkBox."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/20180227_joyus_pamper_yourself_preview.jpg"
+				,caption: "Email for Joyus."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/Affiliate_Banners_Design_$9_First_Box_Promotion.jpg"
+				,caption: "Digital assets for BarkBox."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/Black_Friday_email_AM.jpg"
+				,caption: "Email for BarkBox."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/Pinterest_Pin_300x600_3.jpg"
+				,caption: "Pinterest pin for BarkBox."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/frames-from-timeline.gif"
+				,caption: "Email for StackCommerce."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/visual_20171203_lifestyle_7DaysofGifting_Day1.jpg"
+				,caption: "Email for StackCommerce."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/visual_20171221_Tech_DigitalLastMinuteDeals.jpg"
+				,caption: "Email for StackCommerce."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/visual_marketing_email_crop.jpg"
+				,caption: "Email for StackCommerce."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/20180219_lifestyle_presidents_day_preview.gif"
+				,caption: "Email for StackCommerce."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/20180216_joyus_evergreen_display_ad_300x600.jpg"
+				,caption: "Digital Asset for Joyus."
+			}
 		];
 		$(document).ready(function() {
-			digital.forEach(function(url, index){
+			digital.forEach(function(object, index){
 				var i = index+1;
 				var element = $(".expansion.digital .grid .square:nth-child("+i+")");
+				var url = object.url;
 				element.css("background-image", "url("+url+")");
 				element.data("url", url);
+				element.data("caption", object.caption);
 				element.click(function(){
-					// console.log($(this).data("url"));
 					$(".expansion.open .mainimage img").attr("src", url);
+					$(".expansion.open .mainimage .caption").text("");
+					if(object.caption) $(".expansion.open .mainimage .caption").text(object.caption);
 				});
 			});
 		});
+
 		//-----------------------------------------
 		//-----------------------------------------
 		// Event
 		var event = [
-			"http://jl646.com/images/page_images/thumbs/event_aramark.jpg",
-			"http://jl646.com/images/page_images/thumbs/event_Curved_Sign_Back.jpg",
-			"http://jl646.com/images/page_images/thumbs/event_7.31a-01.jpg",
-			"http://jl646.com/images/page_images/thumbs/hersheys_double.jpg",
-			"http://jl646.com/images/page_images/thumbs/smores2.jpg",
-			"http://jl646.com/images/page_images/thumbs/event_forest.jpg",
-			"http://jl646.com/images/page_images/thumbs/LeadingAge_icecream1.jpg",
-			"http://jl646.com/images/page_images/thumbs/FMBooth_elements_set1.jpg",
-			"http://jl646.com/images/page_images/thumbs/Kiosk-1---flat-100dpi_detail.jpg",
-			"http://jl646.com/images/page_images/thumbs/Booth-9.21a.jpg",
-			"http://jl646.com/images/page_images/thumbs/LeadingAge_render2.jpg",
-			"http://jl646.com/images/page_images/thumbs/LeadingAge_curvedwall2.jpg",
-			"http://jl646.com/images/page_images/thumbs/LeadingAge_all.jpg",
+			{
+				url: "http://jl646.com/images/page_images/thumbs/event_aramark.jpg"
+				,caption: "Aramark event. Entrance banner 8x8 ft."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/event_Curved_Sign_Back.jpg"
+				,caption: "Sodexo tradeshow signage"
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/event_7.31a-01.jpg"
+				,caption: "Sodexo tradeshow. Concepts for 30 ft. suspended ring"
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/hersheys_double.jpg"
+				,caption: "Hershey's event. Kiosk and Step & Repeat"
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/smores2.jpg"
+				,caption: "Hershey's event. Floor-to-ceiling immersive graphics"
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/event_forest.jpg"
+				,caption: "Hershey's event. Wraparound floor-to-ceiling immersive graphics"
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/LeadingAge_icecream1.jpg"
+				,caption: "Sodexo Event. 8 ft. photo shoot wall"
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/FMBooth_elements_set1.jpg"
+				,caption: "Sodexo tradeshow graphics."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/Kiosk-1---flat-100dpi_detail.jpg"
+				,caption: "Sodexo tradeshow graphics - detail."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/Booth-9.21a.jpg"
+				,caption: "Sodexo tradeshow - concept rendering."
+			}
+			,{
+				// url: "http://jl646.com/images/page_images/thumbs/LeadingAge_render2.jpg"
+				url: "http://jl646.com/images/page_images/LeadingAge_render2.jpg"
+				,caption: "Sodexo tradeshow - concept rendering."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/LeadingAge_curvedwall2.jpg"
+				,caption: "Sodexo event. 8 ft. graphics."
+			}
+			,{
+				// url: "http://jl646.com/images/page_images/thumbs/LeadingAge_all.jpg"
+				url: "http://jl646.com/images/page_images/LeadingAge_all.jpg"
+				,caption: "Sodexo event. Suite of graphics for 30 ft. circular hanging sign, cylindrical column, multiple 8 ft. curved walls, photo shoot wall."
+			}
 		];
 		$(document).ready(function() {
-			event.forEach(function(url, index){
+			event.forEach(function(object, index){
 				var i = index+1;
 				var element = $(".expansion.event .grid .square:nth-child("+i+")");
+				var url = object.url;
 				element.css("background-image", "url("+url+")");
 				element.data("url", url);
+				element.data("caption", object.caption);
 				element.click(function(){
 					// console.log($(this).data("url"));
 					$(".expansion.open .mainimage img").attr("src", url);
+					$(".expansion.open .mainimage .caption").text("");
+					if(object.caption) $(".expansion.open .mainimage .caption").text(object.caption);
 				});
 			});
 		});
@@ -190,29 +283,39 @@
 		//-----------------------------------------
 		// GP
 		var gp = [
-			"http://jl646.com/images/page_images/thumbs/gp_hand-170912.jpg",
-			"http://jl646.com/images/page_images/thumbs/gp_camera-170912.jpg",
-			"http://jl646.com/images/page_images/thumbs/gp_horse-170912.jpg",
-			"http://jl646.com/images/page_images/thumbs/gp_1211080-230.best.1009.fullscreen_crop_945.jpg",
-			"http://jl646.com/images/page_images/thumbs/gp_eye-170912.jpg",
-			// "",
-			// "",
-			// "",
-			// "",
-			// "",
-			// "",
-			// "",
-			// "",
+			{
+				url: "http://jl646.com/images/page_images/thumbs/gp_hand-170912.jpg"
+				,caption: "Image rendered with custom software."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/gp_camera-170912.jpg"
+				,caption: "Image rendered with custom software."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/gp_horse-170912.jpg"
+				,caption: "Image rendered with custom software."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/gp_1211080-230.best.1009.fullscreen_crop_945.jpg"
+				,caption: "Image rendered with custom software."
+			}
+			,{
+				url: "http://jl646.com/images/page_images/thumbs/gp_eye-170912.jpg"
+				,caption: "Image rendered with custom software."
+			}
 		];
 		$(document).ready(function() {
-			gp.forEach(function(url, index){
+			gp.forEach(function(object, index){
 				var i = index+1;
 				var element = $(".expansion.gp .grid .square:nth-child("+i+")");
+				var url = object.url;
 				element.css("background-image", "url("+url+")");
 				element.data("url", url);
+				element.data("caption", object.caption);
 				element.click(function(){
-					// console.log($(this).data("url"));
 					$(".expansion.open .mainimage img").attr("src", url);
+					$(".expansion.open .mainimage .caption").text("");
+					if(object.caption) $(".expansion.open .mainimage .caption").text(object.caption);
 				});
 			});
 		});
@@ -250,12 +353,12 @@
 		//-----------------------------------------
 		// Other
 		var other = [
-			"http://jl646.com/images/page_images/thumbs/pattern_dots.jpg",
-			"http://jl646.com/images/page_images/thumbs/7.27d---swatch-for-website.jpg",
-			"http://jl646.com/images/page_images/thumbs/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg",
-			"http://jl646.com/images/page_images/thumbs/SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg",
-			"http://jl646.com/images/page_images/thumbs/bags_grid.jpg",
-			// "",
+			"http://jl646.com/images/page_images/trifold_brochure_both_sides.jpg"
+			,"http://jl646.com/images/page_images/thumbs/pattern_dots.jpg"
+			,"http://jl646.com/images/page_images/thumbs/7.27d---swatch-for-website.jpg"
+			,"http://jl646.com/images/page_images/thumbs/SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_whitebg_1800.jpg"
+			,"http://jl646.com/images/page_images/thumbs/SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_whitebg_1800.jpg"
+			,"http://jl646.com/images/page_images/thumbs/bags_grid.jpg"
 			// "",
 			// "",
 			// "",
@@ -324,7 +427,12 @@
 		
 		<div class="mainimage">
 			<span class="helper"></span>
-			<img src="" />
+			<div class="imagewithcaption">
+				<img src="" />
+				<div class="caption">
+					Test caption here
+				</div>
+			</div>
 		</div>
 		<div class="gridcontainer">
 			<div class="gridtext">
@@ -361,7 +469,12 @@
 	<div class="expansion event">
 		<div class="mainimage">
 			<span class="helper"></span>
-			<img src="" />
+			<div class="imagewithcaption">
+				<img src="" />
+				<div class="caption">
+					Test caption here
+				</div>
+			</div>
 		</div>
 		<div class="gridcontainer">
 			<div class="gridtext">
@@ -398,7 +511,12 @@
 	<div class="expansion drawing">
 		<div class="mainimage">
 			<span class="helper"></span>
-			<img src="" />
+			<div class="imagewithcaption">
+				<img src="" />
+				<div class="caption">
+					Test caption here
+				</div>
+			</div>
 		</div>
 		<div class="gridcontainer">
 			<div class="gridtext">
@@ -470,7 +588,12 @@
 	<div class="expansion gp">
 		<div class="mainimage">
 			<span class="helper"></span>
-			<img src="" />
+			<div class="imagewithcaption">
+				<img src="" />
+				<div class="caption">
+					Test caption here
+				</div>
+			</div>
 		</div>
 		<div class="gridcontainer">
 			<div class="gridtext">
@@ -507,7 +630,12 @@
 	<div class="expansion print">
 		<div class="mainimage">
 			<span class="helper"></span>
-			<img src="" />
+			<div class="imagewithcaption">
+				<img src="" />
+				<div class="caption">
+					Test caption here
+				</div>
+			</div>
 		</div>
 		<div class="gridcontainer">
 			<div class="gridtext">
@@ -544,7 +672,12 @@
 	<div class="expansion other">
 		<div class="mainimage">
 			<span class="helper"></span>
-			<img src="" />
+			<div class="imagewithcaption">
+				<img src="" />
+				<div class="caption">
+					Test caption here
+				</div>
+			</div>
 		</div>
 		<div class="gridcontainer">
 			<div class="gridtext">
@@ -557,8 +690,8 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<!--
 				<div class="square"></div>
+				<!--
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
