@@ -215,6 +215,9 @@ p {
 .scrollarrow.right {
 	right: 0;
 }
+.mobile {
+	display: none;
+}
 @media all and (max-width: 1500px) {
 	.gridcontainer {
 		padding-right: 30px;
@@ -293,6 +296,17 @@ p {
 	.imagewithcaption {
 		max-width: 400px;
 	}
+
+
+
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: initial;
+	}
+
+
 }
 @media all and (min-width: 701px) {
 	.scrollarrow {
